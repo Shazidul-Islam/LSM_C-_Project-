@@ -16,7 +16,7 @@ namespace FinalProject_C_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new MainWindow());
             //Application.Run(new SignUp());
         }
     }
