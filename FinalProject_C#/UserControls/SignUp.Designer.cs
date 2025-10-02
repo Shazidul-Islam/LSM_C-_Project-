@@ -53,7 +53,7 @@
             this.btnSignUpBTOLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSignUpBTOLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSignUpBTOLogin.ForeColor = System.Drawing.Color.White;
-            this.btnSignUpBTOLogin.Location = new System.Drawing.Point(460, 334);
+            this.btnSignUpBTOLogin.Location = new System.Drawing.Point(86, 600);
             this.btnSignUpBTOLogin.Name = "btnSignUpBTOLogin";
             this.btnSignUpBTOLogin.Size = new System.Drawing.Size(180, 45);
             this.btnSignUpBTOLogin.TabIndex = 6;
