@@ -30,11 +30,13 @@
         {
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMainPanel
             // 
+            this.pnlMainPanel.Controls.Add(this.btnSignUp);
             this.pnlMainPanel.Controls.Add(this.label1);
             this.pnlMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
@@ -57,13 +59,28 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Login";
             // 
-            // Login
+            // btnSignUp
+            // 
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(475, 448);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(180, 45);
+            this.btnSignUp.TabIndex = 5;
+            this.btnSignUp.Text = "Sign Up";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            // 
+            // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(74)))), ((int)(((byte)(55)))));
             this.Controls.Add(this.pnlMainPanel);
-            this.Name = "Login";
+            this.Name = "LogIn";
             this.Size = new System.Drawing.Size(1100, 713);
             this.pnlMainPanel.ResumeLayout(false);
             this.pnlMainPanel.PerformLayout();
@@ -75,5 +92,6 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
     }
 }

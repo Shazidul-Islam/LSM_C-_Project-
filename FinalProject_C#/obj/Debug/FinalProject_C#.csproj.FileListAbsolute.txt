@@ -6,7 +6,6 @@ D:\C# Project\FinalProject_C#\FinalProject_C#\bin\Debug\MetroFramework.Design.dl
 D:\C# Project\FinalProject_C#\FinalProject_C#\bin\Debug\MetroFramework.dll
 D:\C# Project\FinalProject_C#\FinalProject_C#\bin\Debug\MetroFramework.Fonts.dll
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C#.csproj.AssemblyReference.cache
-D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C_.Login.resources
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C_.Properties.Resources.resources
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C#.csproj.GenerateResource.cache
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C#.csproj.CoreCompileInputs.cache
@@ -14,7 +13,6 @@ D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalPro.3D0639F7.Up2Dat
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C#.exe
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C#.pdb
 D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C#.exe.config
-D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C_.SignUp.resources
 D:\LSM_C-_Project-\FinalProject_C#\bin\Debug\FinalProject_C#.exe.config
 D:\LSM_C-_Project-\FinalProject_C#\bin\Debug\FinalProject_C#.exe
 D:\LSM_C-_Project-\FinalProject_C#\bin\Debug\FinalProject_C#.pdb
@@ -32,3 +30,6 @@ D:\LSM_C-_Project-\FinalProject_C#\obj\Debug\FinalProject_C#.exe
 D:\LSM_C-_Project-\FinalProject_C#\obj\Debug\FinalProject_C#.pdb
 D:\LSM_C-_Project-\FinalProject_C#\obj\Debug\FinalProject_C_.MainWindow.resources
 D:\LSM_C-_Project-\FinalProject_C#\obj\Debug\FinalProject_C_.UserControls.LogIn.resources
+D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C_.MainWindow.resources
+D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C_.UserControls.LogIn.resources
+D:\C# Project\FinalProject_C#\FinalProject_C#\obj\Debug\FinalProject_C_.UserControls.SignUp.resources
