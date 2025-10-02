@@ -24,5 +24,22 @@ namespace FinalProject_C_.UserControls
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(signUp);
         }
+
+        
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
