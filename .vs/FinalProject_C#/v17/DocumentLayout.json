@@ -1,21 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\LSM_C-_Project-\\",
+  "WorkspaceRootPath": "D:\\C# Project\\FinalProject_C#\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\lsm_c-_project-\\finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\c# project\\finalproject_c#\\finalproject_c#\\usercontrols\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\usercontrols\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\lsm_c-_project-\\finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\c# project\\finalproject_c#\\finalproject_c#\\usercontrols\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\usercontrols\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\lsm_c-_project-\\finalproject_c#\\usercontrols\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\c# project\\finalproject_c#\\finalproject_c#\\usercontrols\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\usercontrols\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|D:\\C# Project\\FinalProject_C#\\finalproject_c#\\usercontrols\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\usercontrols\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\lsm_c-_project-\\finalproject_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|d:\\c# project\\finalproject_c#\\finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|D:\\C# Project\\FinalProject_C#\\finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\mainwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|D:\\C# Project\\FinalProject_C#\\finalproject_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D32FA928-9EDD-4518-A026-93975BE1D142}|FinalProject_C#\\FinalProject_C#.csproj|solutionrelative:finalproject_c#\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,28 +38,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\SignUp.cs",
+              "RelativeDocumentMoniker": "FinalProject_C#\\UserControls\\SignUp.cs",
+              "ToolTip": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\SignUp.cs",
+              "RelativeToolTip": "FinalProject_C#\\UserControls\\SignUp.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:15:17.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LogIn.cs [Design]",
-              "DocumentMoniker": "D:\\LSM_C-_Project-\\FinalProject_C#\\UserControls\\LogIn.cs",
+              "Title": "LogIn.cs",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\LogIn.cs",
               "RelativeDocumentMoniker": "FinalProject_C#\\UserControls\\LogIn.cs",
-              "ToolTip": "D:\\LSM_C-_Project-\\FinalProject_C#\\UserControls\\LogIn.cs [Design]*",
-              "RelativeToolTip": "FinalProject_C#\\UserControls\\LogIn.cs [Design]*",
+              "ToolTip": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\LogIn.cs",
+              "RelativeToolTip": "FinalProject_C#\\UserControls\\LogIn.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAlwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:10:29.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\SignUp.cs",
+              "RelativeDocumentMoniker": "FinalProject_C#\\UserControls\\SignUp.cs",
+              "ToolTip": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\SignUp.cs [Design]",
+              "RelativeToolTip": "FinalProject_C#\\UserControls\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:04:54.963Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LogIn.cs [Design]",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\LogIn.cs",
+              "RelativeDocumentMoniker": "FinalProject_C#\\UserControls\\LogIn.cs",
+              "ToolTip": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\UserControls\\LogIn.cs [Design]",
+              "RelativeToolTip": "FinalProject_C#\\UserControls\\LogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T17:31:56.671Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.cs",
-              "DocumentMoniker": "D:\\LSM_C-_Project-\\FinalProject_C#\\MainWindow.cs",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\MainWindow.cs",
               "RelativeDocumentMoniker": "FinalProject_C#\\MainWindow.cs",
-              "ToolTip": "D:\\LSM_C-_Project-\\FinalProject_C#\\MainWindow.cs*",
-              "RelativeToolTip": "FinalProject_C#\\MainWindow.cs*",
+              "ToolTip": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\MainWindow.cs",
+              "RelativeToolTip": "FinalProject_C#\\MainWindow.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T17:22:46.105Z",
@@ -55,28 +105,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MainWindow.cs [Design]",
-              "DocumentMoniker": "D:\\LSM_C-_Project-\\FinalProject_C#\\MainWindow.cs",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\MainWindow.cs",
               "RelativeDocumentMoniker": "FinalProject_C#\\MainWindow.cs",
               "ToolTip": "D:\\LSM_C-_Project-\\FinalProject_C#\\MainWindow.cs [Design]*",
-              "RelativeToolTip": "FinalProject_C#\\MainWindow.cs [Design]*",
+              "RelativeToolTip": "..\\..\\LSM_C-_Project-\\FinalProject_C#\\MainWindow.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T17:11:36.949Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-10-02T17:11:36.949Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\LSM_C-_Project-\\FinalProject_C#\\Program.cs",
+              "DocumentMoniker": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\Program.cs",
               "RelativeDocumentMoniker": "FinalProject_C#\\Program.cs",
-              "ToolTip": "D:\\LSM_C-_Project-\\FinalProject_C#\\Program.cs",
+              "ToolTip": "D:\\C# Project\\FinalProject_C#\\FinalProject_C#\\Program.cs",
               "RelativeToolTip": "FinalProject_C#\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T17:10:22.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T17:10:22.006Z"
             }
           ]
         }

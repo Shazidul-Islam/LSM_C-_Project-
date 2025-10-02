@@ -16,5 +16,13 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp signUp = new SignUp();
+            signUp.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(signUp);
+        }
     }
 }
