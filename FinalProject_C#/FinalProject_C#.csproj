@@ -75,11 +75,23 @@
     <Compile Include="UserControls\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Payment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Profile.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ServiceDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ServiceDetails.Designer.cs">
+      <DependentUpon>ServiceDetails.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SignUp.cs">
       <SubType>UserControl</SubType>
@@ -102,8 +114,14 @@
     <EmbeddedResource Include="UserControls\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ServiceDetails.resx">
+      <DependentUpon>ServiceDetails.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
