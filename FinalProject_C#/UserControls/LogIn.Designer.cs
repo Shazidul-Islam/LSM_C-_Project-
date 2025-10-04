@@ -36,16 +36,16 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pnlSUB = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblED = new System.Windows.Forms.Label();
+            this.lblLOGIN = new System.Windows.Forms.Label();
+            this.lblDS = new System.Windows.Forms.Label();
+            this.lblT = new System.Windows.Forms.Label();
+            this.lblW = new System.Windows.Forms.Label();
             this.pnlMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2GradientPanel1.SuspendLayout();
+            this.pnlSUB.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMainPanel
@@ -64,7 +64,7 @@
             this.pnlMainPanel.Controls.Add(this.guna2PictureBox3);
             this.pnlMainPanel.Controls.Add(this.guna2PictureBox2);
             this.pnlMainPanel.Controls.Add(this.guna2PictureBox1);
-            this.pnlMainPanel.Controls.Add(this.guna2GradientPanel1);
+            this.pnlMainPanel.Controls.Add(this.pnlSUB);
             this.pnlMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
             this.pnlMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -144,29 +144,29 @@
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // guna2GradientPanel1
+            // pnlSUB
             // 
-            this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel1.BorderRadius = 15;
-            this.guna2GradientPanel1.Controls.Add(this.btnSignUp);
-            this.guna2GradientPanel1.Controls.Add(this.btnLogIn);
-            this.guna2GradientPanel1.Controls.Add(this.guna2TextBox2);
-            this.guna2GradientPanel1.Controls.Add(this.guna2TextBox1);
-            this.guna2GradientPanel1.Controls.Add(this.label5);
-            this.guna2GradientPanel1.Controls.Add(this.label4);
-            this.guna2GradientPanel1.Controls.Add(this.label3);
-            this.guna2GradientPanel1.Controls.Add(this.label2);
-            this.guna2GradientPanel1.Controls.Add(this.label1);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(80)))), ((int)(((byte)(59)))));
-            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(208, 103);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.BorderRadius = 15;
-            this.guna2GradientPanel1.ShadowDecoration.Depth = 5;
-            this.guna2GradientPanel1.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(20);
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(684, 508);
-            this.guna2GradientPanel1.TabIndex = 0;
+            this.pnlSUB.BackColor = System.Drawing.Color.Transparent;
+            this.pnlSUB.BorderRadius = 15;
+            this.pnlSUB.Controls.Add(this.btnSignUp);
+            this.pnlSUB.Controls.Add(this.btnLogIn);
+            this.pnlSUB.Controls.Add(this.guna2TextBox2);
+            this.pnlSUB.Controls.Add(this.guna2TextBox1);
+            this.pnlSUB.Controls.Add(this.lblED);
+            this.pnlSUB.Controls.Add(this.lblLOGIN);
+            this.pnlSUB.Controls.Add(this.lblDS);
+            this.pnlSUB.Controls.Add(this.lblT);
+            this.pnlSUB.Controls.Add(this.lblW);
+            this.pnlSUB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
+            this.pnlSUB.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(80)))), ((int)(((byte)(59)))));
+            this.pnlSUB.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.pnlSUB.Location = new System.Drawing.Point(208, 103);
+            this.pnlSUB.Name = "pnlSUB";
+            this.pnlSUB.ShadowDecoration.BorderRadius = 15;
+            this.pnlSUB.ShadowDecoration.Depth = 5;
+            this.pnlSUB.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(20);
+            this.pnlSUB.Size = new System.Drawing.Size(684, 508);
+            this.pnlSUB.TabIndex = 0;
             // 
             // btnSignUp
             // 
@@ -253,64 +253,64 @@
             this.guna2TextBox1.TabIndex = 5;
             this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label5
+            // lblED
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(229, 259);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Enter Your Account Details";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblED.AutoSize = true;
+            this.lblED.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblED.Location = new System.Drawing.Point(229, 259);
+            this.lblED.Name = "lblED";
+            this.lblED.Size = new System.Drawing.Size(181, 17);
+            this.lblED.TabIndex = 4;
+            this.lblED.Text = "Enter Your Account Details";
+            this.lblED.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lblLOGIN
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(227, 228);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Login";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblLOGIN.AutoSize = true;
+            this.lblLOGIN.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblLOGIN.Location = new System.Drawing.Point(227, 228);
+            this.lblLOGIN.Name = "lblLOGIN";
+            this.lblLOGIN.Size = new System.Drawing.Size(61, 24);
+            this.lblLOGIN.TabIndex = 3;
+            this.lblLOGIN.Text = "Login";
+            this.lblLOGIN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLOGIN.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label3
+            // lblDS
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(81)))));
-            this.label3.Location = new System.Drawing.Point(224, 131);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(313, 45);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "DoorBell Service";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDS.AutoSize = true;
+            this.lblDS.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblDS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(81)))));
+            this.lblDS.Location = new System.Drawing.Point(224, 131);
+            this.lblDS.Name = "lblDS";
+            this.lblDS.Size = new System.Drawing.Size(313, 45);
+            this.lblDS.TabIndex = 2;
+            this.lblDS.Text = "DoorBell Service";
+            this.lblDS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblT
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(81)))));
-            this.label2.Location = new System.Drawing.Point(339, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 45);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "To";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblT.AutoSize = true;
+            this.lblT.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(81)))));
+            this.lblT.Location = new System.Drawing.Point(339, 91);
+            this.lblT.Name = "lblT";
+            this.lblT.Size = new System.Drawing.Size(62, 45);
+            this.lblT.TabIndex = 1;
+            this.lblT.Text = "To";
+            this.lblT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblT.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label1
+            // lblW
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(81)))));
-            this.label1.Location = new System.Drawing.Point(280, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome";
+            this.lblW.AutoSize = true;
+            this.lblW.Font = new System.Drawing.Font("Arial", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblW.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(81)))));
+            this.lblW.Location = new System.Drawing.Point(280, 46);
+            this.lblW.Name = "lblW";
+            this.lblW.Size = new System.Drawing.Size(187, 45);
+            this.lblW.TabIndex = 0;
+            this.lblW.Text = "Welcome";
             // 
             // LogIn
             // 
@@ -327,8 +327,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2GradientPanel1.ResumeLayout(false);
-            this.guna2GradientPanel1.PerformLayout();
+            this.pnlSUB.ResumeLayout(false);
+            this.pnlSUB.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -336,13 +336,13 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2GradientPanel pnlSUB;
+        private System.Windows.Forms.Label lblW;
+        private System.Windows.Forms.Label lblDS;
+        private System.Windows.Forms.Label lblT;
+        private System.Windows.Forms.Label lblLOGIN;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblED;
         private Guna.UI2.WinForms.Guna2GradientButton btnSignUp;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogIn;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
