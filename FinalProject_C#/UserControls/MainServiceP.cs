@@ -16,5 +16,10 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
