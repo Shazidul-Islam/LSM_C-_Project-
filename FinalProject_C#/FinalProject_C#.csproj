@@ -75,6 +75,12 @@
     <Compile Include="UserControls\LogIn.Designer.cs">
       <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\MainServiceP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainServiceP.Designer.cs">
+      <DependentUpon>MainServiceP.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Payment.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </Compile>
     <EmbeddedResource Include="UserControls\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MainServiceP.resx">
+      <DependentUpon>MainServiceP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
