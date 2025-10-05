@@ -39,6 +39,7 @@
             this.gdtpDT = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.gbSU = new Guna.UI2.WinForms.Guna2GradientButton();
             this.cbPL = new System.Windows.Forms.CheckBox();
             this.cbCL = new System.Windows.Forms.CheckBox();
             this.lblST = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.gtbE = new Guna.UI2.WinForms.Guna2TextBox();
             this.gtbUN = new Guna.UI2.WinForms.Guna2TextBox();
             this.gtbFN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gbSU = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnlMainPanel.SuspendLayout();
             this.pnlSUBPN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gpbPIC)).BeginInit();
@@ -208,6 +208,24 @@
             this.checkBox3.TabIndex = 20;
             this.checkBox3.Text = "Gardening";
             this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // gbSU
+            // 
+            this.gbSU.BorderRadius = 8;
+            this.gbSU.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.gbSU.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.gbSU.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gbSU.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.gbSU.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.gbSU.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.gbSU.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.gbSU.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.gbSU.ForeColor = System.Drawing.Color.White;
+            this.gbSU.Location = new System.Drawing.Point(154, 507);
+            this.gbSU.Name = "gbSU";
+            this.gbSU.Size = new System.Drawing.Size(135, 36);
+            this.gbSU.TabIndex = 8;
+            this.gbSU.Text = "Sign Up";
             // 
             // cbPL
             // 
@@ -454,24 +472,6 @@
             this.gtbFN.Size = new System.Drawing.Size(380, 35);
             this.gtbFN.TabIndex = 6;
             this.gtbFN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gbSU
-            // 
-            this.gbSU.BorderRadius = 8;
-            this.gbSU.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.gbSU.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.gbSU.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gbSU.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gbSU.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gbSU.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.gbSU.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.gbSU.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.gbSU.ForeColor = System.Drawing.Color.White;
-            this.gbSU.Location = new System.Drawing.Point(154, 507);
-            this.gbSU.Name = "gbSU";
-            this.gbSU.Size = new System.Drawing.Size(135, 36);
-            this.gbSU.TabIndex = 8;
-            this.gbSU.Text = "Sign Up";
             // 
             // SignUp
             // 
