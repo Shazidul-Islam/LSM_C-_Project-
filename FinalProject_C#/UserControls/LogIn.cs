@@ -39,12 +39,28 @@ namespace FinalProject_C_.UserControls
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            MainWindow.SideBar.Visible = true;
+            if(this.txtEmail.Text==""||this.txtPassword.Text=="")
+            {
+                MessageBox.Show("Fill the email and password first");
+                return;
+            }
+            try
+            {
+                var query =$@"select * from Users where Email='{this.txtEmail.Text}' and Password='{this.txtPassword.Text}'";
+                var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
+                if (DA.Rows.Count == 1)
+                {
+                    MainWindow.SideBar.Visible = true;
 
-            MainServiceP Home = new MainServiceP();
-            Home.Dock = DockStyle.Fill;
-            MainWindow.MainPanel.Controls.Clear();
-            MainWindow.MainPanel.Controls.Add(Home);
+                    MainServiceP Home = new MainServiceP();
+                    Home.Dock = DockStyle.Fill;
+                    MainWindow.MainPanel.Controls.Clear();
+                    MainWindow.MainPanel.Controls.Add(Home);
+                }
+                else { MessageBox.Show("Invalid User"); }
+            }
+            catch (Exception ex){ MessageBox.Show($"ERROR {ex.Message}"); }
+           
         }
     }
 }

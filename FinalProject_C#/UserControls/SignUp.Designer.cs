@@ -35,30 +35,30 @@
             this.lblLGS = new System.Windows.Forms.Label();
             this.gpbPIC = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlFM = new Guna.UI2.WinForms.Guna2Panel();
-            this.gcbUT = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gdtpDT = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.gbSU = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.cbPL = new System.Windows.Forms.CheckBox();
-            this.cbCL = new System.Windows.Forms.CheckBox();
+            this.cbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dtpDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.cbElectrician = new System.Windows.Forms.CheckBox();
+            this.cbGardening = new System.Windows.Forms.CheckBox();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.cbPlumbing = new System.Windows.Forms.CheckBox();
+            this.cbCleaning = new System.Windows.Forms.CheckBox();
             this.lblST = new System.Windows.Forms.Label();
-            this.pnlGENDER = new System.Windows.Forms.Panel();
-            this.rbF = new System.Windows.Forms.RadioButton();
-            this.rbM = new System.Windows.Forms.RadioButton();
-            this.lblG = new System.Windows.Forms.Label();
-            this.gtbUD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gtbCP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gtbP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gtbPN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gtbE = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gtbUN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.gtbFN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserDescription = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMainPanel.SuspendLayout();
             this.pnlSUBPN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gpbPIC)).BeginInit();
             this.pnlFM.SuspendLayout();
-            this.pnlGENDER.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMainPanel
@@ -124,23 +124,23 @@
             // pnlFM
             // 
             this.pnlFM.BackColor = System.Drawing.Color.Transparent;
-            this.pnlFM.Controls.Add(this.gcbUT);
-            this.pnlFM.Controls.Add(this.gdtpDT);
-            this.pnlFM.Controls.Add(this.checkBox4);
-            this.pnlFM.Controls.Add(this.checkBox3);
-            this.pnlFM.Controls.Add(this.gbSU);
-            this.pnlFM.Controls.Add(this.cbPL);
-            this.pnlFM.Controls.Add(this.cbCL);
+            this.pnlFM.Controls.Add(this.panel1);
+            this.pnlFM.Controls.Add(this.label1);
+            this.pnlFM.Controls.Add(this.cbUserType);
+            this.pnlFM.Controls.Add(this.dtpDate);
+            this.pnlFM.Controls.Add(this.cbElectrician);
+            this.pnlFM.Controls.Add(this.cbGardening);
+            this.pnlFM.Controls.Add(this.btnSignUp);
+            this.pnlFM.Controls.Add(this.cbPlumbing);
+            this.pnlFM.Controls.Add(this.cbCleaning);
             this.pnlFM.Controls.Add(this.lblST);
-            this.pnlFM.Controls.Add(this.pnlGENDER);
-            this.pnlFM.Controls.Add(this.lblG);
-            this.pnlFM.Controls.Add(this.gtbUD);
-            this.pnlFM.Controls.Add(this.gtbCP);
-            this.pnlFM.Controls.Add(this.gtbP);
-            this.pnlFM.Controls.Add(this.gtbPN);
-            this.pnlFM.Controls.Add(this.gtbE);
-            this.pnlFM.Controls.Add(this.gtbUN);
-            this.pnlFM.Controls.Add(this.gtbFN);
+            this.pnlFM.Controls.Add(this.txtUserDescription);
+            this.pnlFM.Controls.Add(this.txtCPassword);
+            this.pnlFM.Controls.Add(this.txtPassword);
+            this.pnlFM.Controls.Add(this.txtPhoneNo);
+            this.pnlFM.Controls.Add(this.txtEmail);
+            this.pnlFM.Controls.Add(this.txtUserName);
+            this.pnlFM.Controls.Add(this.txtUserID);
             this.pnlFM.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.pnlFM.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.pnlFM.Location = new System.Drawing.Point(560, 23);
@@ -148,108 +148,108 @@
             this.pnlFM.Size = new System.Drawing.Size(414, 562);
             this.pnlFM.TabIndex = 9;
             // 
-            // gcbUT
+            // cbUserType
             // 
-            this.gcbUT.BackColor = System.Drawing.Color.Transparent;
-            this.gcbUT.BorderRadius = 5;
-            this.gcbUT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gcbUT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gcbUT.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gcbUT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gcbUT.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gcbUT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.gcbUT.ItemHeight = 30;
-            this.gcbUT.Items.AddRange(new object[] {
+            this.cbUserType.BackColor = System.Drawing.Color.Transparent;
+            this.cbUserType.BorderRadius = 5;
+            this.cbUserType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUserType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbUserType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbUserType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbUserType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbUserType.ItemHeight = 30;
+            this.cbUserType.Items.AddRange(new object[] {
             "USER",
             "EMPLOYEE"});
-            this.gcbUT.Location = new System.Drawing.Point(19, 315);
-            this.gcbUT.Name = "gcbUT";
-            this.gcbUT.Size = new System.Drawing.Size(380, 36);
-            this.gcbUT.TabIndex = 23;
+            this.cbUserType.Location = new System.Drawing.Point(19, 360);
+            this.cbUserType.Name = "cbUserType";
+            this.cbUserType.Size = new System.Drawing.Size(380, 36);
+            this.cbUserType.TabIndex = 23;
             // 
-            // gdtpDT
+            // dtpDate
             // 
-            this.gdtpDT.BorderRadius = 5;
-            this.gdtpDT.BorderThickness = 1;
-            this.gdtpDT.Checked = true;
-            this.gdtpDT.FillColor = System.Drawing.Color.White;
-            this.gdtpDT.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gdtpDT.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.gdtpDT.Location = new System.Drawing.Point(19, 143);
-            this.gdtpDT.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.gdtpDT.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.gdtpDT.Name = "gdtpDT";
-            this.gdtpDT.Size = new System.Drawing.Size(380, 36);
-            this.gdtpDT.TabIndex = 22;
-            this.gdtpDT.Value = new System.DateTime(2025, 10, 3, 2, 41, 25, 580);
+            this.dtpDate.BorderRadius = 5;
+            this.dtpDate.BorderThickness = 1;
+            this.dtpDate.Checked = true;
+            this.dtpDate.FillColor = System.Drawing.Color.LightGray;
+            this.dtpDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpDate.Location = new System.Drawing.Point(19, 189);
+            this.dtpDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(380, 36);
+            this.dtpDate.TabIndex = 22;
+            this.dtpDate.Value = new System.DateTime(2025, 10, 3, 2, 41, 25, 580);
             // 
-            // checkBox4
+            // cbElectrician
             // 
-            this.checkBox4.AccessibleDescription = "cbEL";
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox4.Location = new System.Drawing.Point(266, 429);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(100, 20);
-            this.checkBox4.TabIndex = 21;
-            this.checkBox4.Text = "Electrician";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbElectrician.AccessibleDescription = "";
+            this.cbElectrician.AutoSize = true;
+            this.cbElectrician.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.cbElectrician.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cbElectrician.Location = new System.Drawing.Point(266, 429);
+            this.cbElectrician.Name = "cbElectrician";
+            this.cbElectrician.Size = new System.Drawing.Size(100, 20);
+            this.cbElectrician.TabIndex = 21;
+            this.cbElectrician.Text = "Electrician";
+            this.cbElectrician.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // cbGardening
             // 
-            this.checkBox3.AccessibleDescription = "cbGD";
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.checkBox3.Location = new System.Drawing.Point(154, 429);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(100, 20);
-            this.checkBox3.TabIndex = 20;
-            this.checkBox3.Text = "Gardening";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbGardening.AccessibleDescription = "";
+            this.cbGardening.AutoSize = true;
+            this.cbGardening.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.cbGardening.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cbGardening.Location = new System.Drawing.Point(154, 429);
+            this.cbGardening.Name = "cbGardening";
+            this.cbGardening.Size = new System.Drawing.Size(100, 20);
+            this.cbGardening.TabIndex = 20;
+            this.cbGardening.Text = "Gardening";
+            this.cbGardening.UseVisualStyleBackColor = true;
             // 
-            // gbSU
+            // btnSignUp
             // 
-            this.gbSU.BorderRadius = 8;
-            this.gbSU.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.gbSU.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.gbSU.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gbSU.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gbSU.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gbSU.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.gbSU.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.gbSU.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.gbSU.ForeColor = System.Drawing.Color.White;
-            this.gbSU.Location = new System.Drawing.Point(154, 507);
-            this.gbSU.Name = "gbSU";
-            this.gbSU.Size = new System.Drawing.Size(135, 36);
-            this.gbSU.TabIndex = 8;
-            this.gbSU.Text = "Sign Up";
+            this.btnSignUp.BorderRadius = 8;
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.btnSignUp.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.btnSignUp.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(154, 507);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(135, 36);
+            this.btnSignUp.TabIndex = 8;
+            this.btnSignUp.Text = "Sign Up";
             // 
-            // cbPL
+            // cbPlumbing
             // 
-            this.cbPL.AutoSize = true;
-            this.cbPL.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.cbPL.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbPL.Location = new System.Drawing.Point(266, 403);
-            this.cbPL.Name = "cbPL";
-            this.cbPL.Size = new System.Drawing.Size(91, 20);
-            this.cbPL.TabIndex = 19;
-            this.cbPL.Text = "Plumbing";
-            this.cbPL.UseVisualStyleBackColor = true;
+            this.cbPlumbing.AutoSize = true;
+            this.cbPlumbing.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.cbPlumbing.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cbPlumbing.Location = new System.Drawing.Point(266, 403);
+            this.cbPlumbing.Name = "cbPlumbing";
+            this.cbPlumbing.Size = new System.Drawing.Size(91, 20);
+            this.cbPlumbing.TabIndex = 19;
+            this.cbPlumbing.Text = "Plumbing";
+            this.cbPlumbing.UseVisualStyleBackColor = true;
             // 
-            // cbCL
+            // cbCleaning
             // 
-            this.cbCL.AutoSize = true;
-            this.cbCL.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.cbCL.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbCL.Location = new System.Drawing.Point(154, 403);
-            this.cbCL.Name = "cbCL";
-            this.cbCL.Size = new System.Drawing.Size(88, 20);
-            this.cbCL.TabIndex = 18;
-            this.cbCL.Text = "Cleaning";
-            this.cbCL.UseVisualStyleBackColor = true;
+            this.cbCleaning.AutoSize = true;
+            this.cbCleaning.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.cbCleaning.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.cbCleaning.Location = new System.Drawing.Point(154, 403);
+            this.cbCleaning.Name = "cbCleaning";
+            this.cbCleaning.Size = new System.Drawing.Size(88, 20);
+            this.cbCleaning.TabIndex = 18;
+            this.cbCleaning.Text = "Cleaning";
+            this.cbCleaning.UseVisualStyleBackColor = true;
             // 
             // lblST
             // 
@@ -262,216 +262,215 @@
             this.lblST.TabIndex = 17;
             this.lblST.Text = "Service Type:";
             // 
-            // pnlGENDER
+            // txtUserDescription
             // 
-            this.pnlGENDER.Controls.Add(this.rbF);
-            this.pnlGENDER.Controls.Add(this.rbM);
-            this.pnlGENDER.Location = new System.Drawing.Point(103, 363);
-            this.pnlGENDER.Name = "pnlGENDER";
-            this.pnlGENDER.Size = new System.Drawing.Size(296, 33);
-            this.pnlGENDER.TabIndex = 16;
+            this.txtUserDescription.BorderRadius = 5;
+            this.txtUserDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserDescription.DefaultText = "";
+            this.txtUserDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserDescription.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUserDescription.ForeColor = System.Drawing.Color.Black;
+            this.txtUserDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserDescription.Location = new System.Drawing.Point(19, 465);
+            this.txtUserDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserDescription.Name = "txtUserDescription";
+            this.txtUserDescription.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUserDescription.PlaceholderText = "User Description";
+            this.txtUserDescription.SelectedText = "";
+            this.txtUserDescription.Size = new System.Drawing.Size(380, 35);
+            this.txtUserDescription.TabIndex = 14;
+            this.txtUserDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // rbF
+            // txtCPassword
             // 
-            this.rbF.AutoSize = true;
-            this.rbF.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.rbF.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.rbF.Location = new System.Drawing.Point(174, 5);
-            this.rbF.Name = "rbF";
-            this.rbF.Size = new System.Drawing.Size(77, 22);
-            this.rbF.TabIndex = 1;
-            this.rbF.TabStop = true;
-            this.rbF.Text = "Female";
-            this.rbF.UseVisualStyleBackColor = true;
-            this.rbF.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.txtCPassword.BorderRadius = 5;
+            this.txtCPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCPassword.DefaultText = "";
+            this.txtCPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCPassword.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtCPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtCPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCPassword.Location = new System.Drawing.Point(19, 318);
+            this.txtCPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCPassword.Name = "txtCPassword";
+            this.txtCPassword.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtCPassword.PlaceholderText = "Confirm Password";
+            this.txtCPassword.SelectedText = "";
+            this.txtCPassword.Size = new System.Drawing.Size(380, 35);
+            this.txtCPassword.TabIndex = 12;
+            this.txtCPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCPassword.UseSystemPasswordChar = true;
             // 
-            // rbM
+            // txtPassword
             // 
-            this.rbM.AutoSize = true;
-            this.rbM.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.rbM.ForeColor = System.Drawing.Color.White;
-            this.rbM.Location = new System.Drawing.Point(32, 5);
-            this.rbM.Name = "rbM";
-            this.rbM.Size = new System.Drawing.Size(60, 22);
-            this.rbM.TabIndex = 0;
-            this.rbM.TabStop = true;
-            this.rbM.Text = "Male";
-            this.rbM.UseVisualStyleBackColor = true;
+            this.txtPassword.BorderRadius = 5;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Location = new System.Drawing.Point(19, 275);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(380, 35);
+            this.txtPassword.TabIndex = 11;
+            this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
-            // lblG
+            // txtPhoneNo
             // 
-            this.lblG.AutoSize = true;
-            this.lblG.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblG.ForeColor = System.Drawing.Color.White;
-            this.lblG.Location = new System.Drawing.Point(15, 368);
-            this.lblG.Name = "lblG";
-            this.lblG.Size = new System.Drawing.Size(87, 24);
-            this.lblG.TabIndex = 15;
-            this.lblG.Text = "Gender:";
+            this.txtPhoneNo.BorderRadius = 5;
+            this.txtPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNo.DefaultText = "";
+            this.txtPhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhoneNo.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPhoneNo.ForeColor = System.Drawing.Color.Black;
+            this.txtPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhoneNo.Location = new System.Drawing.Point(19, 232);
+            this.txtPhoneNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhoneNo.Name = "txtPhoneNo";
+            this.txtPhoneNo.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtPhoneNo.PlaceholderText = "Phone Number";
+            this.txtPhoneNo.SelectedText = "";
+            this.txtPhoneNo.Size = new System.Drawing.Size(380, 35);
+            this.txtPhoneNo.TabIndex = 10;
+            this.txtPhoneNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gtbUD
+            // txtEmail
             // 
-            this.gtbUD.BorderRadius = 5;
-            this.gtbUD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbUD.DefaultText = "";
-            this.gtbUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbUD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbUD.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbUD.ForeColor = System.Drawing.Color.Black;
-            this.gtbUD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbUD.Location = new System.Drawing.Point(19, 465);
-            this.gtbUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbUD.Name = "gtbUD";
-            this.gtbUD.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbUD.PlaceholderText = "User Description";
-            this.gtbUD.SelectedText = "";
-            this.gtbUD.Size = new System.Drawing.Size(380, 35);
-            this.gtbUD.TabIndex = 14;
-            this.gtbUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.BorderRadius = 5;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmail.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Location = new System.Drawing.Point(19, 147);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtEmail.PlaceholderText = "Email";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.Size = new System.Drawing.Size(380, 35);
+            this.txtEmail.TabIndex = 8;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtEmail.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
-            // gtbCP
+            // txtUserName
             // 
-            this.gtbCP.BorderRadius = 5;
-            this.gtbCP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbCP.DefaultText = "";
-            this.gtbCP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbCP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbCP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbCP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbCP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbCP.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbCP.ForeColor = System.Drawing.Color.Black;
-            this.gtbCP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbCP.Location = new System.Drawing.Point(19, 272);
-            this.gtbCP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbCP.Name = "gtbCP";
-            this.gtbCP.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbCP.PlaceholderText = "Confirm Password";
-            this.gtbCP.SelectedText = "";
-            this.gtbCP.Size = new System.Drawing.Size(380, 35);
-            this.gtbCP.TabIndex = 12;
-            this.gtbCP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gtbCP.UseSystemPasswordChar = true;
+            this.txtUserName.BorderRadius = 5;
+            this.txtUserName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserName.DefaultText = "";
+            this.txtUserName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserName.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUserName.ForeColor = System.Drawing.Color.Black;
+            this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserName.Location = new System.Drawing.Point(19, 57);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUserName.PlaceholderText = "UserName";
+            this.txtUserName.SelectedText = "";
+            this.txtUserName.Size = new System.Drawing.Size(380, 35);
+            this.txtUserName.TabIndex = 7;
+            this.txtUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gtbP
+            // txtUserID
             // 
-            this.gtbP.BorderRadius = 5;
-            this.gtbP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbP.DefaultText = "";
-            this.gtbP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbP.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbP.ForeColor = System.Drawing.Color.Black;
-            this.gtbP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbP.Location = new System.Drawing.Point(19, 229);
-            this.gtbP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbP.Name = "gtbP";
-            this.gtbP.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbP.PlaceholderText = "Password";
-            this.gtbP.SelectedText = "";
-            this.gtbP.Size = new System.Drawing.Size(380, 35);
-            this.gtbP.TabIndex = 11;
-            this.gtbP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gtbP.UseSystemPasswordChar = true;
+            this.txtUserID.BorderRadius = 5;
+            this.txtUserID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserID.DefaultText = "";
+            this.txtUserID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserID.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUserID.ForeColor = System.Drawing.Color.Black;
+            this.txtUserID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserID.Location = new System.Drawing.Point(19, 14);
+            this.txtUserID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtUserID.PlaceholderText = "UserID";
+            this.txtUserID.SelectedText = "";
+            this.txtUserID.Size = new System.Drawing.Size(380, 35);
+            this.txtUserID.TabIndex = 6;
+            this.txtUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gtbPN
+            // panel1
             // 
-            this.gtbPN.BorderRadius = 5;
-            this.gtbPN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbPN.DefaultText = "";
-            this.gtbPN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbPN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbPN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbPN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbPN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbPN.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbPN.ForeColor = System.Drawing.Color.Black;
-            this.gtbPN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbPN.Location = new System.Drawing.Point(19, 186);
-            this.gtbPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbPN.Name = "gtbPN";
-            this.gtbPN.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbPN.PlaceholderText = "Phone Number";
-            this.gtbPN.SelectedText = "";
-            this.gtbPN.Size = new System.Drawing.Size(380, 35);
-            this.gtbPN.TabIndex = 10;
-            this.gtbPN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.panel1.Controls.Add(this.rbFemale);
+            this.panel1.Controls.Add(this.rbMale);
+            this.panel1.Location = new System.Drawing.Point(120, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(279, 33);
+            this.panel1.TabIndex = 26;
             // 
-            // gtbE
+            // rbFemale
             // 
-            this.gtbE.BorderRadius = 5;
-            this.gtbE.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbE.DefaultText = "";
-            this.gtbE.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbE.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbE.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbE.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbE.ForeColor = System.Drawing.Color.Black;
-            this.gtbE.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbE.Location = new System.Drawing.Point(19, 100);
-            this.gtbE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbE.Name = "gtbE";
-            this.gtbE.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbE.PlaceholderText = "Email";
-            this.gtbE.SelectedText = "";
-            this.gtbE.Size = new System.Drawing.Size(380, 35);
-            this.gtbE.TabIndex = 8;
-            this.gtbE.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gtbE.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.rbFemale.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.rbFemale.Location = new System.Drawing.Point(174, 5);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(77, 22);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
             // 
-            // gtbUN
+            // rbMale
             // 
-            this.gtbUN.BorderRadius = 5;
-            this.gtbUN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbUN.DefaultText = "";
-            this.gtbUN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbUN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbUN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbUN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbUN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbUN.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbUN.ForeColor = System.Drawing.Color.Black;
-            this.gtbUN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbUN.Location = new System.Drawing.Point(19, 57);
-            this.gtbUN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbUN.Name = "gtbUN";
-            this.gtbUN.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbUN.PlaceholderText = "UserName";
-            this.gtbUN.SelectedText = "";
-            this.gtbUN.Size = new System.Drawing.Size(380, 35);
-            this.gtbUN.TabIndex = 7;
-            this.gtbUN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.rbMale.ForeColor = System.Drawing.Color.White;
+            this.rbMale.Location = new System.Drawing.Point(32, 5);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(60, 22);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
             // 
-            // gtbFN
+            // label1
             // 
-            this.gtbFN.BorderRadius = 5;
-            this.gtbFN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gtbFN.DefaultText = "";
-            this.gtbFN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gtbFN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gtbFN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbFN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gtbFN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbFN.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.gtbFN.ForeColor = System.Drawing.Color.Black;
-            this.gtbFN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gtbFN.Location = new System.Drawing.Point(19, 14);
-            this.gtbFN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gtbFN.Name = "gtbFN";
-            this.gtbFN.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.gtbFN.PlaceholderText = "Full Name";
-            this.gtbFN.SelectedText = "";
-            this.gtbFN.Size = new System.Drawing.Size(380, 35);
-            this.gtbFN.TabIndex = 6;
-            this.gtbFN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(15, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 24);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Gender:";
             // 
             // SignUp
             // 
@@ -487,8 +486,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gpbPIC)).EndInit();
             this.pnlFM.ResumeLayout(false);
             this.pnlFM.PerformLayout();
-            this.pnlGENDER.ResumeLayout(false);
-            this.pnlGENDER.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -497,28 +496,28 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel pnlSUBPN;
-        private Guna.UI2.WinForms.Guna2GradientButton gbSU;
+        private Guna.UI2.WinForms.Guna2GradientButton btnSignUp;
         private Guna.UI2.WinForms.Guna2Panel pnlFM;
-        private Guna.UI2.WinForms.Guna2TextBox gtbE;
-        private Guna.UI2.WinForms.Guna2TextBox gtbUN;
-        private Guna.UI2.WinForms.Guna2TextBox gtbFN;
-        private Guna.UI2.WinForms.Guna2TextBox gtbUD;
-        private Guna.UI2.WinForms.Guna2TextBox gtbCP;
-        private Guna.UI2.WinForms.Guna2TextBox gtbP;
-        private Guna.UI2.WinForms.Guna2TextBox gtbPN;
-        private System.Windows.Forms.Panel pnlGENDER;
-        private System.Windows.Forms.RadioButton rbM;
-        private System.Windows.Forms.Label lblG;
-        private System.Windows.Forms.RadioButton rbF;
-        private System.Windows.Forms.CheckBox cbCL;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserID;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserDescription;
+        private Guna.UI2.WinForms.Guna2TextBox txtCPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
+        private System.Windows.Forms.CheckBox cbCleaning;
         private System.Windows.Forms.Label lblST;
-        private Guna.UI2.WinForms.Guna2DateTimePicker gdtpDT;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox cbPL;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpDate;
+        private System.Windows.Forms.CheckBox cbElectrician;
+        private System.Windows.Forms.CheckBox cbGardening;
+        private System.Windows.Forms.CheckBox cbPlumbing;
         private System.Windows.Forms.Label lblLGS;
         private Guna.UI2.WinForms.Guna2PictureBox gpbPIC;
-        private Guna.UI2.WinForms.Guna2ComboBox gcbUT;
+        private Guna.UI2.WinForms.Guna2ComboBox cbUserType;
         private System.Windows.Forms.Label lblCD;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -17,11 +17,13 @@ namespace FinalProject_C_
         internal static Panel SideBar {  get; set; }
         internal static UserControl ucLogIn {  get; set; }
         internal static UserControl ucProfile {  get; set; }
+        internal static DataAccess dataAccess { get; set; }
         public MainWindow()
         {
             InitializeComponent();
             MainPanel = this.pnlMainPanel;
             SideBar = this.pnlSideBar;
+            dataAccess = new DataAccess();
         }
 
         private void ChangeWindow(UserControl NextPage)
