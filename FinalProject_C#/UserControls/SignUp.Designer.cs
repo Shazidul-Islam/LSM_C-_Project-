@@ -35,6 +35,10 @@
             this.lblLGS = new System.Windows.Forms.Label();
             this.gpbPIC = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlFM = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.cbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.cbElectrician = new System.Windows.Forms.CheckBox();
@@ -50,10 +54,6 @@
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rbFemale = new System.Windows.Forms.RadioButton();
-            this.rbMale = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.pnlMainPanel.SuspendLayout();
             this.pnlSUBPN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gpbPIC)).BeginInit();
@@ -147,6 +147,52 @@
             this.pnlFM.Name = "pnlFM";
             this.pnlFM.Size = new System.Drawing.Size(414, 562);
             this.pnlFM.TabIndex = 9;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rbFemale);
+            this.panel1.Controls.Add(this.rbMale);
+            this.panel1.Location = new System.Drawing.Point(120, 99);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(279, 33);
+            this.panel1.TabIndex = 26;
+            // 
+            // rbFemale
+            // 
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.rbFemale.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.rbFemale.Location = new System.Drawing.Point(174, 5);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(77, 22);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbMale
+            // 
+            this.rbMale.AutoSize = true;
+            this.rbMale.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.rbMale.ForeColor = System.Drawing.Color.White;
+            this.rbMale.Location = new System.Drawing.Point(32, 5);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(60, 22);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(15, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 24);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Gender:";
             // 
             // cbUserType
             // 
@@ -397,7 +443,7 @@
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtUserName.PlaceholderText = "UserName";
+            this.txtUserName.PlaceholderText = "Full Name";
             this.txtUserName.SelectedText = "";
             this.txtUserName.Size = new System.Drawing.Size(380, 35);
             this.txtUserName.TabIndex = 7;
@@ -425,52 +471,6 @@
             this.txtUserID.Size = new System.Drawing.Size(380, 35);
             this.txtUserID.TabIndex = 6;
             this.txtUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.rbFemale);
-            this.panel1.Controls.Add(this.rbMale);
-            this.panel1.Location = new System.Drawing.Point(120, 99);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(279, 33);
-            this.panel1.TabIndex = 26;
-            // 
-            // rbFemale
-            // 
-            this.rbFemale.AutoSize = true;
-            this.rbFemale.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.rbFemale.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.rbFemale.Location = new System.Drawing.Point(174, 5);
-            this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(77, 22);
-            this.rbFemale.TabIndex = 1;
-            this.rbFemale.TabStop = true;
-            this.rbFemale.Text = "Female";
-            this.rbFemale.UseVisualStyleBackColor = true;
-            // 
-            // rbMale
-            // 
-            this.rbMale.AutoSize = true;
-            this.rbMale.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.rbMale.ForeColor = System.Drawing.Color.White;
-            this.rbMale.Location = new System.Drawing.Point(32, 5);
-            this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(60, 22);
-            this.rbMale.TabIndex = 0;
-            this.rbMale.TabStop = true;
-            this.rbMale.Text = "Male";
-            this.rbMale.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 104);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 24);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Gender:";
             // 
             // SignUp
             // 
