@@ -16,5 +16,15 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
