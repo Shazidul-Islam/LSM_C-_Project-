@@ -24,35 +24,77 @@ namespace FinalProject_C_.UserControls
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(login);
         }
-
-        private void guna2TextBox3_TextChanged(object sender, EventArgs e)
+        
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
+            if (this.txtUserID.Text==""||this.txtFullName.Text == "" || this.txtEmail.Text == "" || this.txtPhoneNo.Text==""||this.txtPassword.Text==""||this.txtCPassword.Text==""||this.cmbUserType.Text=="")
+            {
+                MessageBox.Show("Fill All the Field First");
+                return;
+            }
+            string Gender = "";
+            if (rbMale.Checked)
+            {
+                Gender="Male";
+                
+            }
+            else if(rbFemale.Checked)
+            {
+                Gender = "Female";
+
+            }
+            else
+            {
+                MessageBox.Show("Please Select Gender");
+            }
+            if(this.txtPassword.Text!=this.txtCPassword.Text)
+            {
+                MessageBox.Show("Password not Matched with Confirm Password");
+                return;
+            }
+            if (this.cmbUserType.Text == "EMPLOYEE" && this.cmbServiceType.Text == "")
+            {
+                MessageBox.Show("Fill All the Field First");
+                return;
+            }
+            string ServiceType=this.cmbServiceType.Text;
+            if (this.cmbUserType.Text=="USER"){ ServiceType = "NORMAL USER"; }
+
+
+            try
+            {
+                var query = $@"Insert into Users values ('{this.txtUserID.Text}','{this.txtFullName.Text}','{Gender}','{this.dtpDate.Text}','{this.txtEmail.Text}','{this.txtPhoneNo.Text}','{this.txtPassword.Text}','{this.txtUserDescription.Text}');";
+                var query1 = $@"Insert into UserType values ('{this.txtUserID.Text}','{ServiceType}');";
+                var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
+                var validate1 = MainWindow.dataAccess.ExecuteDMLQuery(query1);
+                if(validate==1&&validate1==1)
+                {
+                    MessageBox.Show("SignUP Successful");
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ERROR {ex.Message}");
+            }
 
         }
-
-        private void guna2TextBox8_TextChanged(object sender, EventArgs e)
+        private void cmbUserType_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if(this.cmbUserType.Text== "EMPLOYEE")
+            {
+                this.cmbServiceType.Visible =true;
+                this.txtUserDescription.Visible =true;
+            }
+            else { this.cmbServiceType.Visible =false; this.txtUserDescription.Visible =false;}
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
+            MainWindow.ucLogIn = new LogIn();
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(MainWindow.ucLogIn);
+            MainWindow.ucLogIn.Show();
         }
     }
 }
