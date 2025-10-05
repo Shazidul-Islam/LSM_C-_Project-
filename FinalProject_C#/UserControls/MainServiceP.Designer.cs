@@ -30,31 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainServiceP));
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblGS = new System.Windows.Forms.Label();
+            this.lblCS = new System.Windows.Forms.Label();
+            this.lblES = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btBack = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblOSS = new System.Windows.Forms.Label();
             this.lblYPA = new System.Windows.Forms.Label();
-            this.btnGS = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnCS = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.btnES = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.lblES = new System.Windows.Forms.Label();
-            this.lblCS = new System.Windows.Forms.Label();
-            this.lblGS = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
-            this.btBack = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.SerBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlMainPanel.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMainPanel
             // 
+            this.pnlMainPanel.Controls.Add(this.guna2Panel3);
+            this.pnlMainPanel.Controls.Add(this.guna2Panel2);
+            this.pnlMainPanel.Controls.Add(this.guna2Panel1);
             this.pnlMainPanel.Controls.Add(this.lblGS);
             this.pnlMainPanel.Controls.Add(this.lblCS);
             this.pnlMainPanel.Controls.Add(this.lblES);
             this.pnlMainPanel.Controls.Add(this.guna2GradientPanel1);
-            this.pnlMainPanel.Controls.Add(this.btnGS);
-            this.pnlMainPanel.Controls.Add(this.btnCS);
-            this.pnlMainPanel.Controls.Add(this.btnES);
             this.pnlMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
             this.pnlMainPanel.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -66,10 +66,47 @@
             this.pnlMainPanel.Size = new System.Drawing.Size(918, 713);
             this.pnlMainPanel.TabIndex = 5;
             // 
+            // lblGS
+            // 
+            this.lblGS.AutoSize = true;
+            this.lblGS.BackColor = System.Drawing.Color.Transparent;
+            this.lblGS.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblGS.ForeColor = System.Drawing.Color.White;
+            this.lblGS.Location = new System.Drawing.Point(612, 254);
+            this.lblGS.Name = "lblGS";
+            this.lblGS.Size = new System.Drawing.Size(298, 40);
+            this.lblGS.TabIndex = 13;
+            this.lblGS.Text = "Gardening Service";
+            // 
+            // lblCS
+            // 
+            this.lblCS.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
+            this.lblCS.AutoSize = true;
+            this.lblCS.BackColor = System.Drawing.Color.Transparent;
+            this.lblCS.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblCS.ForeColor = System.Drawing.Color.White;
+            this.lblCS.Location = new System.Drawing.Point(322, 254);
+            this.lblCS.Name = "lblCS";
+            this.lblCS.Size = new System.Drawing.Size(272, 40);
+            this.lblCS.TabIndex = 12;
+            this.lblCS.Text = "Cleaning Service";
+            // 
+            // lblES
+            // 
+            this.lblES.AutoSize = true;
+            this.lblES.BackColor = System.Drawing.Color.Transparent;
+            this.lblES.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblES.ForeColor = System.Drawing.Color.White;
+            this.lblES.Location = new System.Drawing.Point(30, 254);
+            this.lblES.Name = "lblES";
+            this.lblES.Size = new System.Drawing.Size(253, 40);
+            this.lblES.TabIndex = 11;
+            this.lblES.Text = "Electric Service";
+            // 
             // guna2GradientPanel1
             // 
+            this.guna2GradientPanel1.Controls.Add(this.SerBox);
             this.guna2GradientPanel1.Controls.Add(this.btBack);
-            this.guna2GradientPanel1.Controls.Add(this.guna2TextBox1);
             this.guna2GradientPanel1.Controls.Add(this.lblOSS);
             this.guna2GradientPanel1.Controls.Add(this.lblYPA);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
@@ -79,6 +116,25 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(887, 223);
             this.guna2GradientPanel1.TabIndex = 10;
+            // 
+            // btBack
+            // 
+            this.btBack.BackColor = System.Drawing.Color.Transparent;
+            this.btBack.BorderRadius = 8;
+            this.btBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.btBack.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.btBack.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btBack.ForeColor = System.Drawing.Color.White;
+            this.btBack.Location = new System.Drawing.Point(1, 3);
+            this.btBack.Name = "btBack";
+            this.btBack.Size = new System.Drawing.Size(135, 36);
+            this.btBack.TabIndex = 8;
+            this.btBack.Text = "Back";
             // 
             // lblOSS
             // 
@@ -105,104 +161,6 @@
             this.lblYPA.Text = "Your Personal Assistant";
             this.lblYPA.Click += new System.EventHandler(this.label3_Click);
             // 
-            // btnGS
-            // 
-            this.btnGS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGS.BackgroundImage")));
-            this.btnGS.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnGS.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnGS.Image = ((System.Drawing.Image)(resources.GetObject("btnGS.Image")));
-            this.btnGS.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnGS.ImageRotate = 0F;
-            this.btnGS.Location = new System.Drawing.Point(619, 297);
-            this.btnGS.Name = "btnGS";
-            this.btnGS.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnGS.Size = new System.Drawing.Size(286, 397);
-            this.btnGS.TabIndex = 6;
-            // 
-            // btnCS
-            // 
-            this.btnCS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCS.BackgroundImage")));
-            this.btnCS.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnCS.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnCS.Image = ((System.Drawing.Image)(resources.GetObject("btnCS.Image")));
-            this.btnCS.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnCS.ImageRotate = 0F;
-            this.btnCS.Location = new System.Drawing.Point(317, 297);
-            this.btnCS.Name = "btnCS";
-            this.btnCS.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnCS.Size = new System.Drawing.Size(286, 397);
-            this.btnCS.TabIndex = 5;
-            // 
-            // btnES
-            // 
-            this.btnES.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnES.BackgroundImage")));
-            this.btnES.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnES.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnES.Image = ((System.Drawing.Image)(resources.GetObject("btnES.Image")));
-            this.btnES.ImageOffset = new System.Drawing.Point(0, 0);
-            this.btnES.ImageRotate = 0F;
-            this.btnES.Location = new System.Drawing.Point(14, 297);
-            this.btnES.Name = "btnES";
-            this.btnES.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.btnES.Size = new System.Drawing.Size(286, 397);
-            this.btnES.TabIndex = 4;
-            // 
-            // lblES
-            // 
-            this.lblES.AutoSize = true;
-            this.lblES.BackColor = System.Drawing.Color.Transparent;
-            this.lblES.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblES.ForeColor = System.Drawing.Color.White;
-            this.lblES.Location = new System.Drawing.Point(30, 254);
-            this.lblES.Name = "lblES";
-            this.lblES.Size = new System.Drawing.Size(253, 40);
-            this.lblES.TabIndex = 11;
-            this.lblES.Text = "Electric Service";
-            // 
-            // lblCS
-            // 
-            this.lblCS.AccessibleRole = System.Windows.Forms.AccessibleRole.Sound;
-            this.lblCS.AutoSize = true;
-            this.lblCS.BackColor = System.Drawing.Color.Transparent;
-            this.lblCS.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblCS.ForeColor = System.Drawing.Color.White;
-            this.lblCS.Location = new System.Drawing.Point(322, 254);
-            this.lblCS.Name = "lblCS";
-            this.lblCS.Size = new System.Drawing.Size(272, 40);
-            this.lblCS.TabIndex = 12;
-            this.lblCS.Text = "Cleaning Service";
-            // 
-            // lblGS
-            // 
-            this.lblGS.AutoSize = true;
-            this.lblGS.BackColor = System.Drawing.Color.Transparent;
-            this.lblGS.Font = new System.Drawing.Font("Arial", 35F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblGS.ForeColor = System.Drawing.Color.White;
-            this.lblGS.Location = new System.Drawing.Point(612, 254);
-            this.lblGS.Name = "lblGS";
-            this.lblGS.Size = new System.Drawing.Size(298, 40);
-            this.lblGS.TabIndex = 13;
-            this.lblGS.Text = "Gardening Service";
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BorderRadius = 5;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(134, 0);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(753, 36);
-            this.guna2TextBox1.TabIndex = 2;
-            // 
             // guna2ContextMenuStrip1
             // 
             this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
@@ -217,24 +175,60 @@
             this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // btBack
+            // guna2Panel1
             // 
-            this.btBack.BackColor = System.Drawing.Color.Transparent;
-            this.btBack.BorderRadius = 8;
-            this.btBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.btBack.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.btBack.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btBack.ForeColor = System.Drawing.Color.White;
-            this.btBack.Location = new System.Drawing.Point(-1, 0);
-            this.btBack.Name = "btBack";
-            this.btBack.Size = new System.Drawing.Size(135, 36);
-            this.btBack.TabIndex = 8;
-            this.btBack.Text = "Back";
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel1.BackgroundImage")));
+            this.guna2Panel1.BorderRadius = 10;
+            this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Location = new System.Drawing.Point(15, 297);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(286, 397);
+            this.guna2Panel1.TabIndex = 14;
+            // 
+            // SerBox
+            // 
+            this.SerBox.BackColor = System.Drawing.Color.Transparent;
+            this.SerBox.BorderRadius = 8;
+            this.SerBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.SerBox.DefaultText = "";
+            this.SerBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.SerBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.SerBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SerBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.SerBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.SerBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SerBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.SerBox.ForeColor = System.Drawing.Color.Black;
+            this.SerBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SerBox.Location = new System.Drawing.Point(140, 3);
+            this.SerBox.Name = "SerBox";
+            this.SerBox.PlaceholderText = "";
+            this.SerBox.SelectedText = "";
+            this.SerBox.Size = new System.Drawing.Size(744, 37);
+            this.SerBox.TabIndex = 9;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel2.BackgroundImage")));
+            this.guna2Panel2.BorderRadius = 10;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Location = new System.Drawing.Point(317, 297);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.Size = new System.Drawing.Size(286, 397);
+            this.guna2Panel2.TabIndex = 15;
+            // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel3.BackgroundImage")));
+            this.guna2Panel3.BorderRadius = 10;
+            this.guna2Panel3.BorderThickness = 1;
+            this.guna2Panel3.Location = new System.Drawing.Point(616, 297);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.Size = new System.Drawing.Size(286, 397);
+            this.guna2Panel3.TabIndex = 16;
             // 
             // MainServiceP
             // 
@@ -254,17 +248,17 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
-        private Guna.UI2.WinForms.Guna2ImageButton btnGS;
-        private Guna.UI2.WinForms.Guna2ImageButton btnCS;
-        private Guna.UI2.WinForms.Guna2ImageButton btnES;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label lblYPA;
         private System.Windows.Forms.Label lblOSS;
         private System.Windows.Forms.Label lblGS;
         private System.Windows.Forms.Label lblCS;
         private System.Windows.Forms.Label lblES;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
         private Guna.UI2.WinForms.Guna2GradientButton btBack;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2TextBox SerBox;
     }
 }

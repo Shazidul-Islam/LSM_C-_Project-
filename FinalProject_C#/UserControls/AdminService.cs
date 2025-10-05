@@ -16,5 +16,10 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+
+        private void UDescription_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

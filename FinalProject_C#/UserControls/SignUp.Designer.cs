@@ -37,11 +37,7 @@
             this.pnlFM = new Guna.UI2.WinForms.Guna2Panel();
             this.cbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.cbElectrician = new System.Windows.Forms.CheckBox();
-            this.cbGardening = new System.Windows.Forms.CheckBox();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.cbPlumbing = new System.Windows.Forms.CheckBox();
-            this.cbCleaning = new System.Windows.Forms.CheckBox();
             this.lblST = new System.Windows.Forms.Label();
             this.txtUserDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,11 +50,17 @@
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.pnlMainPanel.SuspendLayout();
             this.pnlSUBPN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gpbPIC)).BeginInit();
             this.pnlFM.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlMainPanel
@@ -124,15 +126,12 @@
             // pnlFM
             // 
             this.pnlFM.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFM.Controls.Add(this.panel2);
             this.pnlFM.Controls.Add(this.panel1);
             this.pnlFM.Controls.Add(this.label1);
             this.pnlFM.Controls.Add(this.cbUserType);
             this.pnlFM.Controls.Add(this.dtpDate);
-            this.pnlFM.Controls.Add(this.cbElectrician);
-            this.pnlFM.Controls.Add(this.cbGardening);
             this.pnlFM.Controls.Add(this.btnSignUp);
-            this.pnlFM.Controls.Add(this.cbPlumbing);
-            this.pnlFM.Controls.Add(this.cbCleaning);
             this.pnlFM.Controls.Add(this.lblST);
             this.pnlFM.Controls.Add(this.txtUserDescription);
             this.pnlFM.Controls.Add(this.txtCPassword);
@@ -183,32 +182,6 @@
             this.dtpDate.TabIndex = 22;
             this.dtpDate.Value = new System.DateTime(2025, 10, 3, 2, 41, 25, 580);
             // 
-            // cbElectrician
-            // 
-            this.cbElectrician.AccessibleDescription = "";
-            this.cbElectrician.AutoSize = true;
-            this.cbElectrician.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.cbElectrician.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbElectrician.Location = new System.Drawing.Point(266, 429);
-            this.cbElectrician.Name = "cbElectrician";
-            this.cbElectrician.Size = new System.Drawing.Size(100, 20);
-            this.cbElectrician.TabIndex = 21;
-            this.cbElectrician.Text = "Electrician";
-            this.cbElectrician.UseVisualStyleBackColor = true;
-            // 
-            // cbGardening
-            // 
-            this.cbGardening.AccessibleDescription = "";
-            this.cbGardening.AutoSize = true;
-            this.cbGardening.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.cbGardening.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbGardening.Location = new System.Drawing.Point(154, 429);
-            this.cbGardening.Name = "cbGardening";
-            this.cbGardening.Size = new System.Drawing.Size(100, 20);
-            this.cbGardening.TabIndex = 20;
-            this.cbGardening.Text = "Gardening";
-            this.cbGardening.UseVisualStyleBackColor = true;
-            // 
             // btnSignUp
             // 
             this.btnSignUp.BorderRadius = 8;
@@ -226,30 +199,6 @@
             this.btnSignUp.Size = new System.Drawing.Size(135, 36);
             this.btnSignUp.TabIndex = 8;
             this.btnSignUp.Text = "Sign Up";
-            // 
-            // cbPlumbing
-            // 
-            this.cbPlumbing.AutoSize = true;
-            this.cbPlumbing.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.cbPlumbing.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbPlumbing.Location = new System.Drawing.Point(266, 403);
-            this.cbPlumbing.Name = "cbPlumbing";
-            this.cbPlumbing.Size = new System.Drawing.Size(91, 20);
-            this.cbPlumbing.TabIndex = 19;
-            this.cbPlumbing.Text = "Plumbing";
-            this.cbPlumbing.UseVisualStyleBackColor = true;
-            // 
-            // cbCleaning
-            // 
-            this.cbCleaning.AutoSize = true;
-            this.cbCleaning.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.cbCleaning.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.cbCleaning.Location = new System.Drawing.Point(154, 403);
-            this.cbCleaning.Name = "cbCleaning";
-            this.cbCleaning.Size = new System.Drawing.Size(88, 20);
-            this.cbCleaning.TabIndex = 18;
-            this.cbCleaning.Text = "Cleaning";
-            this.cbCleaning.UseVisualStyleBackColor = true;
             // 
             // lblST
             // 
@@ -472,6 +421,71 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Gender:";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.radioButton1.ForeColor = System.Drawing.Color.White;
+            this.radioButton1.Location = new System.Drawing.Point(129, 31);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(101, 22);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Electrician";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.radioButton1);
+            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Controls.Add(this.radioButton2);
+            this.panel2.Controls.Add(this.radioButton3);
+            this.panel2.Location = new System.Drawing.Point(147, 402);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(232, 56);
+            this.panel2.TabIndex = 27;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.radioButton2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.radioButton2.Location = new System.Drawing.Point(129, 5);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(92, 22);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Plumbing";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.radioButton3.ForeColor = System.Drawing.Color.White;
+            this.radioButton3.Location = new System.Drawing.Point(3, 5);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(89, 22);
+            this.radioButton3.TabIndex = 0;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Cleaning";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.radioButton4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.radioButton4.Location = new System.Drawing.Point(3, 31);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(101, 22);
+            this.radioButton4.TabIndex = 2;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Gardening";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -488,6 +502,8 @@
             this.pnlFM.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -505,12 +521,8 @@
         private Guna.UI2.WinForms.Guna2TextBox txtCPassword;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
-        private System.Windows.Forms.CheckBox cbCleaning;
         private System.Windows.Forms.Label lblST;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpDate;
-        private System.Windows.Forms.CheckBox cbElectrician;
-        private System.Windows.Forms.CheckBox cbGardening;
-        private System.Windows.Forms.CheckBox cbPlumbing;
         private System.Windows.Forms.Label lblLGS;
         private Guna.UI2.WinForms.Guna2PictureBox gpbPIC;
         private Guna.UI2.WinForms.Guna2ComboBox cbUserType;
@@ -519,5 +531,10 @@
         private System.Windows.Forms.RadioButton rbFemale;
         private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton radioButton4;
     }
 }

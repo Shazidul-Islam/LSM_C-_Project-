@@ -144,9 +144,9 @@
             this.label13.ForeColor = System.Drawing.Color.White;
             this.label13.Location = new System.Drawing.Point(52, 462);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 23);
+            this.label13.Size = new System.Drawing.Size(139, 23);
             this.label13.TabIndex = 10;
-            this.label13.Text = "Birthday  :";
+            this.label13.Text = "Date of Birth  :";
             // 
             // lblBirthday
             // 
@@ -156,9 +156,9 @@
             this.lblBirthday.ForeColor = System.Drawing.Color.Gray;
             this.lblBirthday.Location = new System.Drawing.Point(215, 462);
             this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(82, 23);
+            this.lblBirthday.Size = new System.Drawing.Size(121, 23);
             this.lblBirthday.TabIndex = 9;
-            this.lblBirthday.Text = "Birthday";
+            this.lblBirthday.Text = "Date of Birth";
             // 
             // label10
             // 
@@ -228,9 +228,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(52, 258);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 23);
+            this.label5.Size = new System.Drawing.Size(109, 23);
             this.label5.TabIndex = 4;
-            this.label5.Text = "User Name :";
+            this.label5.Text = "Full Name :";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // lblUserName
@@ -241,9 +241,9 @@
             this.lblUserName.ForeColor = System.Drawing.Color.Gray;
             this.lblUserName.Location = new System.Drawing.Point(215, 258);
             this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(102, 23);
+            this.lblUserName.Size = new System.Drawing.Size(91, 23);
             this.lblUserName.TabIndex = 3;
-            this.lblUserName.Text = "UserName";
+            this.lblUserName.Text = "FullName";
             this.lblUserName.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
