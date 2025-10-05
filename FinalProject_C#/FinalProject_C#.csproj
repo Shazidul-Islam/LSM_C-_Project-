@@ -69,6 +69,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\AdminService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminService.Designer.cs">
+      <DependentUpon>AdminService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AdminUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\AdminUser.Designer.cs">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\BookN.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +141,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControls\AdminService.resx">
+      <DependentUpon>AdminService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\AdminUser.resx">
+      <DependentUpon>AdminUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\BookN.resx">
       <DependentUpon>BookN.cs</DependentUpon>
     </EmbeddedResource>
