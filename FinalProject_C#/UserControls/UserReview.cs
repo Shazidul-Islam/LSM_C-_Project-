@@ -16,5 +16,20 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+
+        private void lblSP_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtSCN_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblSCN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
