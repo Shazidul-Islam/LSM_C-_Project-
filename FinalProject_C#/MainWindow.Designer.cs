@@ -53,7 +53,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUserTable = new Guna.UI2.WinForms.Guna2Button();
             this.pnlBTN1 = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -397,7 +397,7 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.guna2Button2);
+            this.panel3.Controls.Add(this.btnUserTable);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 55);
             this.panel3.Name = "panel3";
@@ -405,23 +405,24 @@
             this.panel3.Size = new System.Drawing.Size(182, 55);
             this.panel3.TabIndex = 1;
             // 
-            // guna2Button2
+            // btnUserTable
             // 
-            this.guna2Button2.BorderRadius = 8;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button2.TabIndex = 0;
-            this.guna2Button2.Text = "guna2Button2";
+            this.btnUserTable.BorderRadius = 8;
+            this.btnUserTable.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUserTable.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUserTable.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUserTable.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUserTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnUserTable.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnUserTable.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnUserTable.ForeColor = System.Drawing.Color.White;
+            this.btnUserTable.Location = new System.Drawing.Point(7, 7);
+            this.btnUserTable.Margin = new System.Windows.Forms.Padding(0);
+            this.btnUserTable.Name = "btnUserTable";
+            this.btnUserTable.Size = new System.Drawing.Size(168, 43);
+            this.btnUserTable.TabIndex = 0;
+            this.btnUserTable.Text = "User Table";
+            this.btnUserTable.Click += new System.EventHandler(this.btnUserTable_Click);
             // 
             // pnlBTN1
             // 
@@ -508,7 +509,7 @@
         private System.Windows.Forms.Panel panel4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Panel panel3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnUserTable;
         private System.Windows.Forms.Panel panel10;
         private Guna.UI2.WinForms.Guna2Button btnProfile;
         private System.Windows.Forms.Panel panel9;

@@ -62,5 +62,16 @@ namespace FinalProject_C_.UserControls
             catch (Exception ex){ MessageBox.Show($"ERROR {ex.Message}"); }
            
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+            MainWindow.SideBar.Visible = true;
+
+            MainServiceP Home = new MainServiceP();
+            Home.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(Home);
+        }
     }
 }
