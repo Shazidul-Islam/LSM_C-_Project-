@@ -19,6 +19,11 @@ namespace FinalProject_C_
         internal static UserControl ucProfile {  get; set; }
         internal static DataAccess dataAccess { get; set; }
         internal static UserControl ucUserTable { get; set; }
+        internal static UserControl ucSevices { get; set; }
+        internal static UserControl ucServiceTable { get; set; }
+        internal static UserControl ucTransaction { get; set; }
+        internal static UserControl ucWorkList { get; set; }
+        internal static UserControl ucReview { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -68,6 +73,36 @@ namespace FinalProject_C_
         {
             ucUserTable = new AdminUser();
             this.ChangeWindow(ucUserTable);
+        }
+
+        private void btnServices_Click(object sender, EventArgs e)
+        {
+            ucSevices = new MainServiceP();
+            this.ChangeWindow(ucSevices);
+        }
+
+        private void btnServiceT_Click(object sender, EventArgs e)
+        {
+            ucServiceTable = new AdminService();
+            this.ChangeWindow(ucServiceTable); 
+        }
+
+        private void btnTransactions_Click(object sender, EventArgs e)
+        {
+            ucTransaction= new AdminTransaction();
+            this.ChangeWindow(ucTransaction);
+        }
+
+        private void btnWorkList_Click(object sender, EventArgs e)
+        {
+            ucWorkList = new EmployeeAssigned();
+            this.ChangeWindow(ucWorkList);
+        }
+
+        private void btnReview_Click(object sender, EventArgs e)
+        {
+            ucReview= new UserReview();
+            this.ChangeWindow(ucReview);
         }
     }
 }
