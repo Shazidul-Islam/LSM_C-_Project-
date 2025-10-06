@@ -33,23 +33,18 @@
             this.txtSID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSN = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSCN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSelect = new Guna.UI2.WinForms.Guna2Button();
-            this.btnRemove = new Guna.UI2.WinForms.Guna2Button();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSR = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.txtSI = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblSI = new System.Windows.Forms.Label();
-            this.txtSP = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblSP = new System.Windows.Forms.Label();
-            this.lblSD = new System.Windows.Forms.Label();
+            this.lblSRATE = new System.Windows.Forms.Label();
+            this.lblSR = new System.Windows.Forms.Label();
             this.lblSCN = new System.Windows.Forms.Label();
             this.lnlSN = new System.Windows.Forms.Label();
             this.lblSID = new System.Windows.Forms.Label();
-            this.lblAURU = new System.Windows.Forms.Label();
+            this.lblASR = new System.Windows.Forms.Label();
             this.btnClr = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.tctSRATE = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -75,23 +70,18 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 8;
+            this.guna2Panel2.Controls.Add(this.tctSRATE);
             this.guna2Panel2.Controls.Add(this.txtSID);
             this.guna2Panel2.Controls.Add(this.txtSN);
             this.guna2Panel2.Controls.Add(this.txtSCN);
-            this.guna2Panel2.Controls.Add(this.txtSD);
-            this.guna2Panel2.Controls.Add(this.btnSelect);
-            this.guna2Panel2.Controls.Add(this.btnRemove);
-            this.guna2Panel2.Controls.Add(this.btnUpdate);
+            this.guna2Panel2.Controls.Add(this.txtSR);
             this.guna2Panel2.Controls.Add(this.btnAdd);
-            this.guna2Panel2.Controls.Add(this.txtSI);
-            this.guna2Panel2.Controls.Add(this.lblSI);
-            this.guna2Panel2.Controls.Add(this.txtSP);
-            this.guna2Panel2.Controls.Add(this.lblSP);
-            this.guna2Panel2.Controls.Add(this.lblSD);
+            this.guna2Panel2.Controls.Add(this.lblSRATE);
+            this.guna2Panel2.Controls.Add(this.lblSR);
             this.guna2Panel2.Controls.Add(this.lblSCN);
             this.guna2Panel2.Controls.Add(this.lnlSN);
             this.guna2Panel2.Controls.Add(this.lblSID);
-            this.guna2Panel2.Controls.Add(this.lblAURU);
+            this.guna2Panel2.Controls.Add(this.lblASR);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.guna2Panel2.Location = new System.Drawing.Point(599, 66);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -111,7 +101,7 @@
             this.txtSID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSID.Location = new System.Drawing.Point(9, 78);
+            this.txtSID.Location = new System.Drawing.Point(9, 91);
             this.txtSID.Name = "txtSID";
             this.txtSID.PlaceholderText = "";
             this.txtSID.SelectedText = "";
@@ -131,7 +121,7 @@
             this.txtSN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSN.Location = new System.Drawing.Point(9, 149);
+            this.txtSN.Location = new System.Drawing.Point(9, 172);
             this.txtSN.Name = "txtSN";
             this.txtSN.PlaceholderText = "";
             this.txtSN.SelectedText = "";
@@ -151,80 +141,33 @@
             this.txtSCN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSCN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSCN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSCN.Location = new System.Drawing.Point(9, 218);
+            this.txtSCN.Location = new System.Drawing.Point(9, 253);
             this.txtSCN.Name = "txtSCN";
             this.txtSCN.PlaceholderText = "";
             this.txtSCN.SelectedText = "";
             this.txtSCN.Size = new System.Drawing.Size(287, 35);
             this.txtSCN.TabIndex = 35;
+            this.txtSCN.TextChanged += new System.EventHandler(this.txtSCN_TextChanged);
             // 
-            // txtSD
+            // txtSR
             // 
-            this.txtSD.BorderRadius = 8;
-            this.txtSD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSD.DefaultText = "";
-            this.txtSD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSD.Location = new System.Drawing.Point(9, 290);
-            this.txtSD.Name = "txtSD";
-            this.txtSD.PlaceholderText = "";
-            this.txtSD.SelectedText = "";
-            this.txtSD.Size = new System.Drawing.Size(287, 35);
-            this.txtSD.TabIndex = 34;
-            // 
-            // btnSelect
-            // 
-            this.btnSelect.BorderRadius = 8;
-            this.btnSelect.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelect.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSelect.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSelect.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSelect.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnSelect.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnSelect.ForeColor = System.Drawing.Color.White;
-            this.btnSelect.Location = new System.Drawing.Point(196, 425);
-            this.btnSelect.Name = "btnSelect";
-            this.btnSelect.Size = new System.Drawing.Size(111, 35);
-            this.btnSelect.TabIndex = 33;
-            this.btnSelect.Text = "SELECT";
-            // 
-            // btnRemove
-            // 
-            this.btnRemove.BorderRadius = 8;
-            this.btnRemove.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRemove.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRemove.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRemove.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRemove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(25)))), ((int)(((byte)(0)))));
-            this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(9, 586);
-            this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(293, 35);
-            this.btnRemove.TabIndex = 32;
-            this.btnRemove.Text = "REMOVE";
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BorderRadius = 8;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(9, 545);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(293, 35);
-            this.btnUpdate.TabIndex = 31;
-            this.btnUpdate.Text = "UPDATE";
+            this.txtSR.BorderRadius = 8;
+            this.txtSR.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSR.DefaultText = "";
+            this.txtSR.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSR.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSR.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSR.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSR.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtSR.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSR.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSR.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSR.Location = new System.Drawing.Point(9, 337);
+            this.txtSR.Name = "txtSR";
+            this.txtSR.PlaceholderText = "";
+            this.txtSR.SelectedText = "";
+            this.txtSR.Size = new System.Drawing.Size(287, 35);
+            this.txtSR.TabIndex = 34;
             // 
             // btnAdd
             // 
@@ -234,104 +177,55 @@
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(9, 501);
+            this.btnAdd.Location = new System.Drawing.Point(9, 551);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(293, 35);
+            this.btnAdd.Size = new System.Drawing.Size(287, 54);
             this.btnAdd.TabIndex = 30;
             this.btnAdd.Text = "ADD";
             // 
-            // txtSI
+            // lblSRATE
             // 
-            this.txtSI.BorderRadius = 8;
-            this.txtSI.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSI.DefaultText = "";
-            this.txtSI.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSI.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSI.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSI.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSI.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSI.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSI.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSI.Location = new System.Drawing.Point(9, 426);
-            this.txtSI.Name = "txtSI";
-            this.txtSI.PlaceholderText = "";
-            this.txtSI.SelectedText = "";
-            this.txtSI.Size = new System.Drawing.Size(181, 35);
-            this.txtSI.TabIndex = 29;
+            this.lblSRATE.AutoSize = true;
+            this.lblSRATE.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblSRATE.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSRATE.Location = new System.Drawing.Point(10, 400);
+            this.lblSRATE.Name = "lblSRATE";
+            this.lblSRATE.Size = new System.Drawing.Size(133, 18);
+            this.lblSRATE.TabIndex = 13;
+            this.lblSRATE.Text = "SERVICE RATING";
+            this.lblSRATE.Click += new System.EventHandler(this.lblSP_Click);
             // 
-            // lblSI
+            // lblSR
             // 
-            this.lblSI.AutoSize = true;
-            this.lblSI.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSI.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSI.Location = new System.Drawing.Point(10, 406);
-            this.lblSI.Name = "lblSI";
-            this.lblSI.Size = new System.Drawing.Size(125, 18);
-            this.lblSI.TabIndex = 19;
-            this.lblSI.Text = "SERVICE IMAGE";
-            // 
-            // txtSP
-            // 
-            this.txtSP.BorderRadius = 8;
-            this.txtSP.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSP.DefaultText = "";
-            this.txtSP.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSP.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSP.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSP.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSP.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSP.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSP.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSP.Location = new System.Drawing.Point(9, 356);
-            this.txtSP.Name = "txtSP";
-            this.txtSP.PlaceholderText = "";
-            this.txtSP.SelectedText = "";
-            this.txtSP.Size = new System.Drawing.Size(287, 35);
-            this.txtSP.TabIndex = 14;
-            // 
-            // lblSP
-            // 
-            this.lblSP.AutoSize = true;
-            this.lblSP.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSP.Location = new System.Drawing.Point(10, 335);
-            this.lblSP.Name = "lblSP";
-            this.lblSP.Size = new System.Drawing.Size(123, 18);
-            this.lblSP.TabIndex = 13;
-            this.lblSP.Text = "SERVICE PRICE";
-            // 
-            // lblSD
-            // 
-            this.lblSD.AutoSize = true;
-            this.lblSD.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSD.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSD.Location = new System.Drawing.Point(10, 269);
-            this.lblSD.Name = "lblSD";
-            this.lblSD.Size = new System.Drawing.Size(181, 18);
-            this.lblSD.TabIndex = 9;
-            this.lblSD.Text = "SERVICE DESCRIPTION";
+            this.lblSR.AutoSize = true;
+            this.lblSR.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblSR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblSR.Location = new System.Drawing.Point(9, 316);
+            this.lblSR.Name = "lblSR";
+            this.lblSR.Size = new System.Drawing.Size(134, 18);
+            this.lblSR.TabIndex = 9;
+            this.lblSR.Text = "SERVICE REVIEW";
             // 
             // lblSCN
             // 
             this.lblSCN.AutoSize = true;
             this.lblSCN.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblSCN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSCN.Location = new System.Drawing.Point(10, 198);
+            this.lblSCN.Location = new System.Drawing.Point(10, 232);
             this.lblSCN.Name = "lblSCN";
             this.lblSCN.Size = new System.Drawing.Size(205, 18);
             this.lblSCN.TabIndex = 7;
             this.lblSCN.Text = "SERVICE CATAGORY NAME";
+            this.lblSCN.Click += new System.EventHandler(this.lblSCN_Click);
             // 
             // lnlSN
             // 
             this.lnlSN.AutoSize = true;
             this.lnlSN.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lnlSN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lnlSN.Location = new System.Drawing.Point(10, 128);
+            this.lnlSN.Location = new System.Drawing.Point(10, 151);
             this.lnlSN.Name = "lnlSN";
             this.lnlSN.Size = new System.Drawing.Size(120, 18);
             this.lnlSN.TabIndex = 3;
@@ -342,22 +236,22 @@
             this.lblSID.AutoSize = true;
             this.lblSID.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblSID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSID.Location = new System.Drawing.Point(10, 55);
+            this.lblSID.Location = new System.Drawing.Point(10, 70);
             this.lblSID.Name = "lblSID";
             this.lblSID.Size = new System.Drawing.Size(92, 18);
             this.lblSID.TabIndex = 1;
             this.lblSID.Text = "SERVICE ID";
             // 
-            // lblAURU
+            // lblASR
             // 
-            this.lblAURU.AutoSize = true;
-            this.lblAURU.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblAURU.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAURU.Location = new System.Drawing.Point(61, 14);
-            this.lblAURU.Name = "lblAURU";
-            this.lblAURU.Size = new System.Drawing.Size(191, 18);
-            this.lblAURU.TabIndex = 0;
-            this.lblAURU.Text = "ADD OR REMOVE USER";
+            this.lblASR.AutoSize = true;
+            this.lblASR.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblASR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblASR.Location = new System.Drawing.Point(64, 14);
+            this.lblASR.Name = "lblASR";
+            this.lblASR.Size = new System.Drawing.Size(183, 18);
+            this.lblASR.TabIndex = 0;
+            this.lblASR.Text = "ADD SERVICE REVIEW";
             // 
             // btnClr
             // 
@@ -408,6 +302,30 @@
             this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
             this.txtSearchBox.TabIndex = 1;
             // 
+            // tctSRATE
+            // 
+            this.tctSRATE.BackColor = System.Drawing.Color.Transparent;
+            this.tctSRATE.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.tctSRATE.BorderRadius = 5;
+            this.tctSRATE.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.tctSRATE.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.tctSRATE.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.tctSRATE.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tctSRATE.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.tctSRATE.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.tctSRATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.tctSRATE.ItemHeight = 30;
+            this.tctSRATE.Items.AddRange(new object[] {
+            "EXCELLENT",
+            "GOOD",
+            "AVERAGE",
+            "BAD",
+            "WORST"});
+            this.tctSRATE.Location = new System.Drawing.Point(9, 421);
+            this.tctSRATE.Name = "tctSRATE";
+            this.tctSRATE.Size = new System.Drawing.Size(287, 36);
+            this.tctSRATE.TabIndex = 38;
+            // 
             // UserReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,22 +347,17 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSID;
         private Guna.UI2.WinForms.Guna2TextBox txtSN;
         private Guna.UI2.WinForms.Guna2TextBox txtSCN;
-        private Guna.UI2.WinForms.Guna2TextBox txtSD;
-        private Guna.UI2.WinForms.Guna2Button btnSelect;
-        private Guna.UI2.WinForms.Guna2Button btnRemove;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2TextBox txtSR;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private Guna.UI2.WinForms.Guna2TextBox txtSI;
-        private System.Windows.Forms.Label lblSI;
-        private Guna.UI2.WinForms.Guna2TextBox txtSP;
-        private System.Windows.Forms.Label lblSP;
-        private System.Windows.Forms.Label lblSD;
+        private System.Windows.Forms.Label lblSRATE;
+        private System.Windows.Forms.Label lblSR;
         private System.Windows.Forms.Label lblSCN;
         private System.Windows.Forms.Label lnlSN;
         private System.Windows.Forms.Label lblSID;
-        private System.Windows.Forms.Label lblAURU;
+        private System.Windows.Forms.Label lblASR;
         private Guna.UI2.WinForms.Guna2Button btnClr;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchBox;
+        private Guna.UI2.WinForms.Guna2ComboBox tctSRATE;
     }
 }
