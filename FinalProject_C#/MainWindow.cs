@@ -18,6 +18,7 @@ namespace FinalProject_C_
         internal static UserControl ucLogIn {  get; set; }
         internal static UserControl ucProfile {  get; set; }
         internal static DataAccess dataAccess { get; set; }
+        internal static UserControl ucUserTable { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -61,6 +62,12 @@ namespace FinalProject_C_
         {
             ucProfile = new Profile();
             this.ChangeWindow(ucProfile);
+        }
+
+        private void btnUserTable_Click(object sender, EventArgs e)
+        {
+            ucUserTable = new AdminUser();
+            this.ChangeWindow(ucUserTable);
         }
     }
 }

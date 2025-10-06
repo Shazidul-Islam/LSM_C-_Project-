@@ -28,54 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.ButRemove = new Guna.UI2.WinForms.Guna2Button();
-            this.ButUp = new Guna.UI2.WinForms.Guna2Button();
-            this.ButAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.txtUD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtUT = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.dtpDOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.txtPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.txtUserDescription = new Guna.UI2.WinForms.Guna2TextBox();
+            this.cmbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.dtpDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtPhn = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtMail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtUN = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbFemale = new System.Windows.Forms.RadioButton();
+            this.rbMale = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtFN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUID = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ButClr = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.SerBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.rbtnPlumbing = new System.Windows.Forms.RadioButton();
-            this.rbtnCleaning = new System.Windows.Forms.RadioButton();
-            this.rbtnElectrician = new System.Windows.Forms.RadioButton();
-            this.rbtnGardening = new System.Windows.Forms.RadioButton();
+            this.dgvUserTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cmbServiceType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhoneNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UserType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUserTable)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel2);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
-            this.guna2GradientPanel2.Controls.Add(this.ButClr);
+            this.guna2GradientPanel2.Controls.Add(this.btnClear);
             this.guna2GradientPanel2.Controls.Add(this.SerBox);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
@@ -92,30 +97,26 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 8;
-            this.guna2Panel2.Controls.Add(this.panel2);
+            this.guna2Panel2.Controls.Add(this.cmbServiceType);
             this.guna2Panel2.Controls.Add(this.ButRemove);
-            this.guna2Panel2.Controls.Add(this.ButUp);
-            this.guna2Panel2.Controls.Add(this.ButAdd);
-            this.guna2Panel2.Controls.Add(this.txtUD);
-            this.guna2Panel2.Controls.Add(this.label10);
-            this.guna2Panel2.Controls.Add(this.label9);
-            this.guna2Panel2.Controls.Add(this.txtUT);
-            this.guna2Panel2.Controls.Add(this.dtpDOB);
-            this.guna2Panel2.Controls.Add(this.txtPass);
+            this.guna2Panel2.Controls.Add(this.btnUpdate);
+            this.guna2Panel2.Controls.Add(this.btnAdd);
+            this.guna2Panel2.Controls.Add(this.txtUserDescription);
+            this.guna2Panel2.Controls.Add(this.cmbUserType);
+            this.guna2Panel2.Controls.Add(this.dtpDate);
+            this.guna2Panel2.Controls.Add(this.txtPassword);
             this.guna2Panel2.Controls.Add(this.label12);
             this.guna2Panel2.Controls.Add(this.label11);
-            this.guna2Panel2.Controls.Add(this.txtPhn);
+            this.guna2Panel2.Controls.Add(this.txtPhoneNo);
             this.guna2Panel2.Controls.Add(this.label8);
             this.guna2Panel2.Controls.Add(this.label7);
-            this.guna2Panel2.Controls.Add(this.txtMail);
+            this.guna2Panel2.Controls.Add(this.txtEmail);
             this.guna2Panel2.Controls.Add(this.label6);
-            this.guna2Panel2.Controls.Add(this.txtUN);
-            this.guna2Panel2.Controls.Add(this.label5);
             this.guna2Panel2.Controls.Add(this.panel1);
             this.guna2Panel2.Controls.Add(this.label4);
-            this.guna2Panel2.Controls.Add(this.txtFN);
+            this.guna2Panel2.Controls.Add(this.txtFullName);
             this.guna2Panel2.Controls.Add(this.label3);
-            this.guna2Panel2.Controls.Add(this.txtUID);
+            this.guna2Panel2.Controls.Add(this.txtUserID);
             this.guna2Panel2.Controls.Add(this.label2);
             this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
@@ -136,142 +137,130 @@
             this.ButRemove.ForeColor = System.Drawing.Color.White;
             this.ButRemove.Location = new System.Drawing.Point(78, 597);
             this.ButRemove.Name = "ButRemove";
-            this.ButRemove.Size = new System.Drawing.Size(162, 35);
+            this.ButRemove.Size = new System.Drawing.Size(145, 35);
             this.ButRemove.TabIndex = 32;
             this.ButRemove.Text = "REMOVE";
             // 
-            // ButUp
+            // btnUpdate
             // 
-            this.ButUp.BorderRadius = 8;
-            this.ButUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.ButUp.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButUp.ForeColor = System.Drawing.Color.White;
-            this.ButUp.Location = new System.Drawing.Point(165, 556);
-            this.ButUp.Name = "ButUp";
-            this.ButUp.Size = new System.Drawing.Size(145, 35);
-            this.ButUp.TabIndex = 31;
-            this.ButUp.Text = "UPDATE";
+            this.btnUpdate.BorderRadius = 8;
+            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Location = new System.Drawing.Point(78, 556);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(145, 35);
+            this.btnUpdate.TabIndex = 31;
+            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // ButAdd
+            // btnAdd
             // 
-            this.ButAdd.BorderRadius = 8;
-            this.ButAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.ButAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButAdd.ForeColor = System.Drawing.Color.White;
-            this.ButAdd.Location = new System.Drawing.Point(13, 556);
-            this.ButAdd.Name = "ButAdd";
-            this.ButAdd.Size = new System.Drawing.Size(145, 35);
-            this.ButAdd.TabIndex = 30;
-            this.ButAdd.Text = "ADD";
+            this.btnAdd.BorderRadius = 8;
+            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.Location = new System.Drawing.Point(78, 515);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(145, 35);
+            this.btnAdd.TabIndex = 30;
+            this.btnAdd.Text = "ADD";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // txtUD
+            // txtUserDescription
             // 
-            this.txtUD.BorderRadius = 8;
-            this.txtUD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUD.DefaultText = "";
-            this.txtUD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUD.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtUD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUD.Location = new System.Drawing.Point(16, 520);
-            this.txtUD.Name = "txtUD";
-            this.txtUD.PlaceholderText = "";
-            this.txtUD.SelectedText = "";
-            this.txtUD.Size = new System.Drawing.Size(287, 20);
-            this.txtUD.TabIndex = 29;
+            this.txtUserDescription.BorderRadius = 8;
+            this.txtUserDescription.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserDescription.DefaultText = "";
+            this.txtUserDescription.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserDescription.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserDescription.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserDescription.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserDescription.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtUserDescription.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserDescription.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUserDescription.ForeColor = System.Drawing.Color.White;
+            this.txtUserDescription.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserDescription.Location = new System.Drawing.Point(13, 466);
+            this.txtUserDescription.Name = "txtUserDescription";
+            this.txtUserDescription.PlaceholderText = "User Description (Optional)";
+            this.txtUserDescription.SelectedText = "";
+            this.txtUserDescription.Size = new System.Drawing.Size(287, 20);
+            this.txtUserDescription.TabIndex = 29;
+            this.txtUserDescription.Visible = false;
             // 
-            // label10
+            // cmbUserType
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(16, 499);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(133, 16);
-            this.label10.TabIndex = 28;
-            this.label10.Text = "USER DESCRIPTION";
+            this.cmbUserType.BackColor = System.Drawing.Color.Transparent;
+            this.cmbUserType.BorderRadius = 8;
+            this.cmbUserType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbUserType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbUserType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.cmbUserType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbUserType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbUserType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbUserType.ForeColor = System.Drawing.Color.White;
+            this.cmbUserType.ItemHeight = 30;
+            this.cmbUserType.Items.AddRange(new object[] {
+            "USER",
+            "EMPLOYEE"});
+            this.cmbUserType.Location = new System.Drawing.Point(13, 350);
+            this.cmbUserType.Name = "cmbUserType";
+            this.cmbUserType.Size = new System.Drawing.Size(287, 36);
+            this.cmbUserType.TabIndex = 22;
+            this.cmbUserType.SelectedIndexChanged += new System.EventHandler(this.cmbUserType_SelectedIndexChanged);
             // 
-            // label9
+            // dtpDate
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(15, 432);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(102, 16);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "SERVICE TYPE";
+            this.dtpDate.BorderRadius = 8;
+            this.dtpDate.Checked = true;
+            this.dtpDate.CustomFormat = "yyyy-MM-dd";
+            this.dtpDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.dtpDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpDate.Location = new System.Drawing.Point(13, 224);
+            this.dtpDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtpDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtpDate.Name = "dtpDate";
+            this.dtpDate.Size = new System.Drawing.Size(287, 20);
+            this.dtpDate.TabIndex = 21;
+            this.dtpDate.Value = new System.DateTime(2025, 10, 5, 18, 35, 2, 351);
             // 
-            // txtUT
+            // txtPassword
             // 
-            this.txtUT.BackColor = System.Drawing.Color.Transparent;
-            this.txtUT.BorderRadius = 8;
-            this.txtUT.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtUT.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtUT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtUT.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUT.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUT.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtUT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtUT.ItemHeight = 30;
-            this.txtUT.Location = new System.Drawing.Point(14, 393);
-            this.txtUT.Name = "txtUT";
-            this.txtUT.Size = new System.Drawing.Size(287, 36);
-            this.txtUT.TabIndex = 22;
-            // 
-            // dtpDOB
-            // 
-            this.dtpDOB.BorderRadius = 8;
-            this.dtpDOB.Checked = true;
-            this.dtpDOB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.dtpDOB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpDOB.Location = new System.Drawing.Point(13, 263);
-            this.dtpDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(287, 20);
-            this.dtpDOB.TabIndex = 21;
-            this.dtpDOB.Value = new System.DateTime(2025, 10, 5, 18, 35, 2, 351);
-            // 
-            // txtPass
-            // 
-            this.txtPass.BorderRadius = 8;
-            this.txtPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPass.DefaultText = "";
-            this.txtPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPass.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPass.Location = new System.Drawing.Point(13, 351);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.PlaceholderText = "";
-            this.txtPass.SelectedText = "";
-            this.txtPass.Size = new System.Drawing.Size(287, 20);
-            this.txtPass.TabIndex = 20;
+            this.txtPassword.BorderRadius = 8;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Location = new System.Drawing.Point(13, 308);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(287, 20);
+            this.txtPassword.TabIndex = 20;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Location = new System.Drawing.Point(13, 330);
+            this.label12.Location = new System.Drawing.Point(13, 289);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(83, 16);
             this.label12.TabIndex = 19;
@@ -282,38 +271,39 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label11.Location = new System.Drawing.Point(13, 374);
+            this.label11.Location = new System.Drawing.Point(11, 331);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 16);
             this.label11.TabIndex = 19;
             this.label11.Text = "USER TYPE";
             // 
-            // txtPhn
+            // txtPhoneNo
             // 
-            this.txtPhn.BorderRadius = 8;
-            this.txtPhn.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhn.DefaultText = "";
-            this.txtPhn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPhn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPhn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhn.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtPhn.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPhn.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhn.Location = new System.Drawing.Point(13, 307);
-            this.txtPhn.Name = "txtPhn";
-            this.txtPhn.PlaceholderText = "";
-            this.txtPhn.SelectedText = "";
-            this.txtPhn.Size = new System.Drawing.Size(287, 20);
-            this.txtPhn.TabIndex = 14;
+            this.txtPhoneNo.BorderRadius = 8;
+            this.txtPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNo.DefaultText = "";
+            this.txtPhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPhoneNo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhoneNo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtPhoneNo.ForeColor = System.Drawing.Color.White;
+            this.txtPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPhoneNo.Location = new System.Drawing.Point(13, 266);
+            this.txtPhoneNo.Name = "txtPhoneNo";
+            this.txtPhoneNo.PlaceholderText = "";
+            this.txtPhoneNo.SelectedText = "";
+            this.txtPhoneNo.Size = new System.Drawing.Size(287, 20);
+            this.txtPhoneNo.TabIndex = 14;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(13, 286);
+            this.label8.Location = new System.Drawing.Point(13, 247);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 16);
             this.label8.TabIndex = 13;
@@ -324,110 +314,80 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(13, 242);
+            this.label7.Location = new System.Drawing.Point(10, 205);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(103, 16);
             this.label7.TabIndex = 11;
             this.label7.Text = "DATE OF BIRTH";
             // 
-            // txtMail
+            // txtEmail
             // 
-            this.txtMail.BorderRadius = 8;
-            this.txtMail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMail.DefaultText = "";
-            this.txtMail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtMail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMail.Location = new System.Drawing.Point(13, 217);
-            this.txtMail.Name = "txtMail";
-            this.txtMail.PlaceholderText = "";
-            this.txtMail.SelectedText = "";
-            this.txtMail.Size = new System.Drawing.Size(287, 20);
-            this.txtMail.TabIndex = 10;
+            this.txtEmail.BorderRadius = 8;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEmail.ForeColor = System.Drawing.Color.White;
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Location = new System.Drawing.Point(13, 178);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.Size = new System.Drawing.Size(287, 20);
+            this.txtEmail.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(13, 198);
+            this.label6.Location = new System.Drawing.Point(13, 159);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(46, 16);
             this.label6.TabIndex = 9;
             this.label6.Text = "EMAIL";
             // 
-            // txtUN
-            // 
-            this.txtUN.BorderRadius = 8;
-            this.txtUN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUN.DefaultText = "";
-            this.txtUN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtUN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUN.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUN.Location = new System.Drawing.Point(13, 175);
-            this.txtUN.Name = "txtUN";
-            this.txtUN.PlaceholderText = "";
-            this.txtUN.SelectedText = "";
-            this.txtUN.Size = new System.Drawing.Size(287, 20);
-            this.txtUN.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(13, 154);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 16);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "USER NAME";
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.rbFemale);
+            this.panel1.Controls.Add(this.rbMale);
             this.panel1.Location = new System.Drawing.Point(97, 120);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(208, 31);
             this.panel1.TabIndex = 6;
             // 
-            // radioButton2
+            // rbFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton2.Location = new System.Drawing.Point(104, 7);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(72, 20);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.rbFemale.AutoSize = true;
+            this.rbFemale.BackColor = System.Drawing.Color.Transparent;
+            this.rbFemale.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbFemale.Location = new System.Drawing.Point(104, 7);
+            this.rbFemale.Name = "rbFemale";
+            this.rbFemale.Size = new System.Drawing.Size(72, 20);
+            this.rbFemale.TabIndex = 1;
+            this.rbFemale.TabStop = true;
+            this.rbFemale.Text = "Female";
+            this.rbFemale.UseVisualStyleBackColor = false;
             // 
-            // radioButton1
+            // rbMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButton1.Location = new System.Drawing.Point(28, 7);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(55, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = false;
+            this.rbMale.AutoSize = true;
+            this.rbMale.BackColor = System.Drawing.Color.Transparent;
+            this.rbMale.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.rbMale.Location = new System.Drawing.Point(28, 7);
+            this.rbMale.Name = "rbMale";
+            this.rbMale.Size = new System.Drawing.Size(55, 20);
+            this.rbMale.TabIndex = 0;
+            this.rbMale.TabStop = true;
+            this.rbMale.Text = "Male";
+            this.rbMale.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -441,25 +401,26 @@
             this.label4.Text = "GENDER";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // txtFN
+            // txtFullName
             // 
-            this.txtFN.BorderRadius = 8;
-            this.txtFN.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFN.DefaultText = "";
-            this.txtFN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtFN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtFN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtFN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtFN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFN.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtFN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtFN.Location = new System.Drawing.Point(13, 94);
-            this.txtFN.Name = "txtFN";
-            this.txtFN.PlaceholderText = "";
-            this.txtFN.SelectedText = "";
-            this.txtFN.Size = new System.Drawing.Size(287, 20);
-            this.txtFN.TabIndex = 4;
+            this.txtFullName.BorderRadius = 8;
+            this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtFullName.DefaultText = "";
+            this.txtFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFullName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtFullName.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtFullName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFullName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtFullName.ForeColor = System.Drawing.Color.White;
+            this.txtFullName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtFullName.Location = new System.Drawing.Point(16, 97);
+            this.txtFullName.Name = "txtFullName";
+            this.txtFullName.PlaceholderText = "";
+            this.txtFullName.SelectedText = "";
+            this.txtFullName.Size = new System.Drawing.Size(287, 20);
+            this.txtFullName.TabIndex = 4;
             // 
             // label3
             // 
@@ -472,25 +433,26 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "FULL NAME";
             // 
-            // txtUID
+            // txtUserID
             // 
-            this.txtUID.BorderRadius = 8;
-            this.txtUID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUID.DefaultText = "";
-            this.txtUID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtUID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtUID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUID.Location = new System.Drawing.Point(13, 53);
-            this.txtUID.Name = "txtUID";
-            this.txtUID.PlaceholderText = "";
-            this.txtUID.SelectedText = "";
-            this.txtUID.Size = new System.Drawing.Size(287, 20);
-            this.txtUID.TabIndex = 2;
+            this.txtUserID.BorderRadius = 8;
+            this.txtUserID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserID.DefaultText = "";
+            this.txtUserID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserID.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtUserID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserID.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtUserID.ForeColor = System.Drawing.Color.White;
+            this.txtUserID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserID.Location = new System.Drawing.Point(13, 53);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.PlaceholderText = "";
+            this.txtUserID.SelectedText = "";
+            this.txtUserID.Size = new System.Drawing.Size(287, 20);
+            this.txtUserID.TabIndex = 2;
             // 
             // label2
             // 
@@ -518,28 +480,30 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 8;
+            this.guna2Panel1.Controls.Add(this.dgvUserTable);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.guna2Panel1.Location = new System.Drawing.Point(13, 65);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(572, 635);
             this.guna2Panel1.TabIndex = 2;
             // 
-            // ButClr
+            // btnClear
             // 
-            this.ButClr.BackColor = System.Drawing.Color.Transparent;
-            this.ButClr.BorderRadius = 8;
-            this.ButClr.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButClr.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButClr.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButClr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButClr.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.ButClr.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ButClr.ForeColor = System.Drawing.Color.White;
-            this.ButClr.Location = new System.Drawing.Point(594, 14);
-            this.ButClr.Name = "ButClr";
-            this.ButClr.Size = new System.Drawing.Size(310, 37);
-            this.ButClr.TabIndex = 1;
-            this.ButClr.Text = "CLEAR";
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.BorderRadius = 8;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnClear.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(594, 14);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(310, 37);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // SerBox
             // 
@@ -563,73 +527,158 @@
             this.SerBox.Size = new System.Drawing.Size(572, 37);
             this.SerBox.TabIndex = 0;
             // 
-            // panel2
+            // dgvUserTable
             // 
-            this.panel2.Controls.Add(this.rbtnGardening);
-            this.panel2.Controls.Add(this.rbtnElectrician);
-            this.panel2.Controls.Add(this.rbtnPlumbing);
-            this.panel2.Controls.Add(this.rbtnCleaning);
-            this.panel2.Location = new System.Drawing.Point(19, 451);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(281, 45);
-            this.panel2.TabIndex = 33;
+            this.dgvUserTable.AllowUserToAddRows = false;
+            this.dgvUserTable.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvUserTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvUserTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUserTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvUserTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUserTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UserID,
+            this.FullName,
+            this.Gender,
+            this.DOB,
+            this.Email,
+            this.PhoneNo,
+            this.Password,
+            this.UserType});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUserTable.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvUserTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvUserTable.GridColor = System.Drawing.Color.White;
+            this.dgvUserTable.Location = new System.Drawing.Point(0, 0);
+            this.dgvUserTable.Name = "dgvUserTable";
+            this.dgvUserTable.ReadOnly = true;
+            this.dgvUserTable.RowHeadersVisible = false;
+            this.dgvUserTable.Size = new System.Drawing.Size(572, 635);
+            this.dgvUserTable.TabIndex = 0;
+            this.dgvUserTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUserTable.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvUserTable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvUserTable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvUserTable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvUserTable.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.dgvUserTable.ThemeStyle.GridColor = System.Drawing.Color.White;
+            this.dgvUserTable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvUserTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvUserTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvUserTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvUserTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUserTable.ThemeStyle.HeaderStyle.Height = 15;
+            this.dgvUserTable.ThemeStyle.ReadOnly = true;
+            this.dgvUserTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvUserTable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvUserTable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvUserTable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvUserTable.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvUserTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvUserTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvUserTable.DoubleClick += new System.EventHandler(this.dgvUserTable_DoubleClick);
             // 
-            // rbtnPlumbing
+            // cmbServiceType
             // 
-            this.rbtnPlumbing.AutoSize = true;
-            this.rbtnPlumbing.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnPlumbing.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnPlumbing.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbtnPlumbing.Location = new System.Drawing.Point(171, 3);
-            this.rbtnPlumbing.Name = "rbtnPlumbing";
-            this.rbtnPlumbing.Size = new System.Drawing.Size(83, 20);
-            this.rbtnPlumbing.TabIndex = 1;
-            this.rbtnPlumbing.TabStop = true;
-            this.rbtnPlumbing.Text = "Plumbing";
-            this.rbtnPlumbing.UseVisualStyleBackColor = false;
-            this.rbtnPlumbing.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            this.cmbServiceType.BackColor = System.Drawing.Color.Transparent;
+            this.cmbServiceType.BorderRadius = 5;
+            this.cmbServiceType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbServiceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServiceType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.cmbServiceType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbServiceType.ForeColor = System.Drawing.Color.White;
+            this.cmbServiceType.ItemHeight = 30;
+            this.cmbServiceType.Items.AddRange(new object[] {
+            "Cleaning",
+            "Plumbing",
+            "Gardening",
+            "Electrician"});
+            this.cmbServiceType.Location = new System.Drawing.Point(13, 408);
+            this.cmbServiceType.Name = "cmbServiceType";
+            this.cmbServiceType.Size = new System.Drawing.Size(287, 36);
+            this.cmbServiceType.TabIndex = 33;
+            this.cmbServiceType.Visible = false;
             // 
-            // rbtnCleaning
+            // UserID
             // 
-            this.rbtnCleaning.AutoSize = true;
-            this.rbtnCleaning.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnCleaning.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnCleaning.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbtnCleaning.Location = new System.Drawing.Point(12, 3);
-            this.rbtnCleaning.Name = "rbtnCleaning";
-            this.rbtnCleaning.Size = new System.Drawing.Size(81, 20);
-            this.rbtnCleaning.TabIndex = 0;
-            this.rbtnCleaning.TabStop = true;
-            this.rbtnCleaning.Text = "Cleaning";
-            this.rbtnCleaning.UseVisualStyleBackColor = false;
+            this.UserID.DataPropertyName = "UserID";
+            this.UserID.FillWeight = 45F;
+            this.UserID.HeaderText = "User ID";
+            this.UserID.Name = "UserID";
+            this.UserID.ReadOnly = true;
             // 
-            // rbtnElectrician
+            // FullName
             // 
-            this.rbtnElectrician.AutoSize = true;
-            this.rbtnElectrician.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnElectrician.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnElectrician.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbtnElectrician.Location = new System.Drawing.Point(12, 25);
-            this.rbtnElectrician.Name = "rbtnElectrician";
-            this.rbtnElectrician.Size = new System.Drawing.Size(90, 20);
-            this.rbtnElectrician.TabIndex = 2;
-            this.rbtnElectrician.TabStop = true;
-            this.rbtnElectrician.Text = "Electrician";
-            this.rbtnElectrician.UseVisualStyleBackColor = false;
+            this.FullName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.FullName.DataPropertyName = "FullName";
+            this.FullName.FillWeight = 46.90355F;
+            this.FullName.HeaderText = "Full Name";
+            this.FullName.Name = "FullName";
+            this.FullName.ReadOnly = true;
             // 
-            // rbtnGardening
+            // Gender
             // 
-            this.rbtnGardening.AutoSize = true;
-            this.rbtnGardening.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnGardening.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnGardening.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.rbtnGardening.Location = new System.Drawing.Point(171, 25);
-            this.rbtnGardening.Name = "rbtnGardening";
-            this.rbtnGardening.Size = new System.Drawing.Size(92, 20);
-            this.rbtnGardening.TabIndex = 3;
-            this.rbtnGardening.TabStop = true;
-            this.rbtnGardening.Text = "Gardening";
-            this.rbtnGardening.UseVisualStyleBackColor = false;
+            this.Gender.DataPropertyName = "Gender";
+            this.Gender.FillWeight = 25F;
+            this.Gender.HeaderText = "Gender";
+            this.Gender.Name = "Gender";
+            this.Gender.ReadOnly = true;
+            // 
+            // DOB
+            // 
+            this.DOB.DataPropertyName = "DOB";
+            this.DOB.FillWeight = 50F;
+            this.DOB.HeaderText = "Date of Birth";
+            this.DOB.Name = "DOB";
+            this.DOB.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.FillWeight = 50F;
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // PhoneNo
+            // 
+            this.PhoneNo.DataPropertyName = "PhoneNo";
+            this.PhoneNo.FillWeight = 46.90355F;
+            this.PhoneNo.HeaderText = "Phone No";
+            this.PhoneNo.Name = "PhoneNo";
+            this.PhoneNo.ReadOnly = true;
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.FillWeight = 30F;
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
+            this.Password.Visible = false;
+            // 
+            // UserType
+            // 
+            this.UserType.DataPropertyName = "TypeName";
+            this.UserType.FillWeight = 45F;
+            this.UserType.HeaderText = "User Type";
+            this.UserType.Name = "UserType";
+            this.UserType.ReadOnly = true;
             // 
             // AdminUser
             // 
@@ -638,13 +687,14 @@
             this.Controls.Add(this.guna2GradientPanel2);
             this.Name = "AdminUser";
             this.Size = new System.Drawing.Size(918, 713);
+            this.Load += new System.EventHandler(this.AdminUser_Load);
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUserTable)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -655,38 +705,39 @@
         private Guna.UI2.WinForms.Guna2TextBox SerBox;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2Button ButClr;
-        private Guna.UI2.WinForms.Guna2TextBox txtUID;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox txtFN;
+        private Guna.UI2.WinForms.Guna2TextBox txtFullName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private Guna.UI2.WinForms.Guna2TextBox txtUN;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2TextBox txtPhn;
+        private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox txtMail;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox txtPass;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2ComboBox txtUT;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpDOB;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox txtUD;
-        private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbUserType;
+        private Guna.UI2.WinForms.Guna2DateTimePicker dtpDate;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserDescription;
         private Guna.UI2.WinForms.Guna2Button ButRemove;
-        private Guna.UI2.WinForms.Guna2Button ButUp;
-        private Guna.UI2.WinForms.Guna2Button ButAdd;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton rbtnPlumbing;
-        private System.Windows.Forms.RadioButton rbtnCleaning;
-        private System.Windows.Forms.RadioButton rbtnGardening;
-        private System.Windows.Forms.RadioButton rbtnElectrician;
+        private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvUserTable;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbServiceType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhoneNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UserType;
     }
 }
