@@ -45,17 +45,17 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReview = new Guna.UI2.WinForms.Guna2Button();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnWorkList = new Guna.UI2.WinForms.Guna2Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnTransactions = new Guna.UI2.WinForms.Guna2Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnServiceT = new Guna.UI2.WinForms.Guna2Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnUserTable = new Guna.UI2.WinForms.Guna2Button();
             this.pnlBTN1 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnServices = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.pnlSideBar.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -285,7 +285,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.guna2Button6);
+            this.panel7.Controls.Add(this.btnReview);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 275);
             this.panel7.Name = "panel7";
@@ -293,27 +293,28 @@
             this.panel7.Size = new System.Drawing.Size(182, 55);
             this.panel7.TabIndex = 5;
             // 
-            // guna2Button6
+            // btnReview
             // 
-            this.guna2Button6.BorderRadius = 8;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button6.TabIndex = 0;
-            this.guna2Button6.Text = "guna2Button6";
+            this.btnReview.BorderRadius = 8;
+            this.btnReview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnReview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnReview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnReview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnReview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnReview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnReview.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnReview.ForeColor = System.Drawing.Color.White;
+            this.btnReview.Location = new System.Drawing.Point(7, 7);
+            this.btnReview.Margin = new System.Windows.Forms.Padding(0);
+            this.btnReview.Name = "btnReview";
+            this.btnReview.Size = new System.Drawing.Size(168, 43);
+            this.btnReview.TabIndex = 0;
+            this.btnReview.Text = "Review";
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.guna2Button5);
+            this.panel6.Controls.Add(this.btnWorkList);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(0, 220);
             this.panel6.Name = "panel6";
@@ -321,27 +322,28 @@
             this.panel6.Size = new System.Drawing.Size(182, 55);
             this.panel6.TabIndex = 4;
             // 
-            // guna2Button5
+            // btnWorkList
             // 
-            this.guna2Button5.BorderRadius = 8;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button5.TabIndex = 0;
-            this.guna2Button5.Text = "guna2Button5";
+            this.btnWorkList.BorderRadius = 8;
+            this.btnWorkList.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnWorkList.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnWorkList.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnWorkList.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnWorkList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnWorkList.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnWorkList.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnWorkList.ForeColor = System.Drawing.Color.White;
+            this.btnWorkList.Location = new System.Drawing.Point(7, 7);
+            this.btnWorkList.Margin = new System.Windows.Forms.Padding(0);
+            this.btnWorkList.Name = "btnWorkList";
+            this.btnWorkList.Size = new System.Drawing.Size(168, 43);
+            this.btnWorkList.TabIndex = 0;
+            this.btnWorkList.Text = "Work List";
+            this.btnWorkList.Click += new System.EventHandler(this.btnWorkList_Click);
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.guna2Button4);
+            this.panel5.Controls.Add(this.btnTransactions);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 165);
             this.panel5.Name = "panel5";
@@ -349,27 +351,28 @@
             this.panel5.Size = new System.Drawing.Size(182, 55);
             this.panel5.TabIndex = 3;
             // 
-            // guna2Button4
+            // btnTransactions
             // 
-            this.guna2Button4.BorderRadius = 8;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button4.TabIndex = 0;
-            this.guna2Button4.Text = "guna2Button4";
+            this.btnTransactions.BorderRadius = 8;
+            this.btnTransactions.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnTransactions.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnTransactions.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnTransactions.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnTransactions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTransactions.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnTransactions.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnTransactions.ForeColor = System.Drawing.Color.White;
+            this.btnTransactions.Location = new System.Drawing.Point(7, 7);
+            this.btnTransactions.Margin = new System.Windows.Forms.Padding(0);
+            this.btnTransactions.Name = "btnTransactions";
+            this.btnTransactions.Size = new System.Drawing.Size(168, 43);
+            this.btnTransactions.TabIndex = 0;
+            this.btnTransactions.Text = "Transactions";
+            this.btnTransactions.Click += new System.EventHandler(this.btnTransactions_Click);
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.guna2Button3);
+            this.panel4.Controls.Add(this.btnServiceT);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 110);
             this.panel4.Name = "panel4";
@@ -377,23 +380,24 @@
             this.panel4.Size = new System.Drawing.Size(182, 55);
             this.panel4.TabIndex = 2;
             // 
-            // guna2Button3
+            // btnServiceT
             // 
-            this.guna2Button3.BorderRadius = 8;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button3.TabIndex = 0;
-            this.guna2Button3.Text = "guna2Button3";
+            this.btnServiceT.BorderRadius = 8;
+            this.btnServiceT.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnServiceT.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnServiceT.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnServiceT.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnServiceT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnServiceT.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnServiceT.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnServiceT.ForeColor = System.Drawing.Color.White;
+            this.btnServiceT.Location = new System.Drawing.Point(7, 7);
+            this.btnServiceT.Margin = new System.Windows.Forms.Padding(0);
+            this.btnServiceT.Name = "btnServiceT";
+            this.btnServiceT.Size = new System.Drawing.Size(168, 43);
+            this.btnServiceT.TabIndex = 0;
+            this.btnServiceT.Text = "Service Table";
+            this.btnServiceT.Click += new System.EventHandler(this.btnServiceT_Click);
             // 
             // panel3
             // 
@@ -426,7 +430,7 @@
             // 
             // pnlBTN1
             // 
-            this.pnlBTN1.Controls.Add(this.guna2Button1);
+            this.pnlBTN1.Controls.Add(this.btnServices);
             this.pnlBTN1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBTN1.Location = new System.Drawing.Point(0, 0);
             this.pnlBTN1.Name = "pnlBTN1";
@@ -434,23 +438,24 @@
             this.pnlBTN1.Size = new System.Drawing.Size(182, 55);
             this.pnlBTN1.TabIndex = 0;
             // 
-            // guna2Button1
+            // btnServices
             // 
-            this.guna2Button1.BorderRadius = 8;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "guna2Button1";
+            this.btnServices.BorderRadius = 8;
+            this.btnServices.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnServices.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnServices.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnServices.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnServices.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnServices.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnServices.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btnServices.ForeColor = System.Drawing.Color.White;
+            this.btnServices.Location = new System.Drawing.Point(7, 7);
+            this.btnServices.Margin = new System.Windows.Forms.Padding(0);
+            this.btnServices.Name = "btnServices";
+            this.btnServices.Size = new System.Drawing.Size(168, 43);
+            this.btnServices.TabIndex = 0;
+            this.btnServices.Text = "Services";
+            this.btnServices.Click += new System.EventHandler(this.btnServices_Click);
             // 
             // MainWindow
             // 
@@ -497,17 +502,17 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlBTN1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnServices;
         private System.Windows.Forms.Panel panel8;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private System.Windows.Forms.Panel panel7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button btnReview;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
+        private Guna.UI2.WinForms.Guna2Button btnWorkList;
         private System.Windows.Forms.Panel panel5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button btnTransactions;
         private System.Windows.Forms.Panel panel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnServiceT;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI2.WinForms.Guna2Button btnUserTable;
         private System.Windows.Forms.Panel panel10;

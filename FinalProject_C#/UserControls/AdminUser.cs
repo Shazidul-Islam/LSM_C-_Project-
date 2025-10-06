@@ -16,6 +16,7 @@ namespace FinalProject_C_.UserControls
         public AdminUser()
         {
             InitializeComponent();
+            this.load_UserTable();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -29,6 +30,7 @@ namespace FinalProject_C_.UserControls
         }
         private void clear()
         {
+            this.dgvUserTable.ClearSelection();
             this.txtUserID.Clear();
             this.txtFullName.Clear();
             this.rbFemale.Checked = false;
@@ -44,19 +46,17 @@ namespace FinalProject_C_.UserControls
         {
             try
             {
-                var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,UT.TypeName from Users as U,UserType as UT where U.UserID=UT.UserID";
+                var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserID=UT.UserID";
                 var DT = MainWindow.dataAccess.ExecuteQueryTable(query);
                 this.dgvUserTable.AutoGenerateColumns = false;
                 this.dgvUserTable.DataSource = DT;
-                this.dgvUserTable.EnableHeadersVisualStyles = false;
-                this.dgvUserTable.RowHeadersVisible = false;
+                
+                
+                
             }
             catch (Exception ex) { MessageBox.Show($"ERROR {ex.Message}"); }
         }
-        private void AdminUser_Load(object sender, EventArgs e)
-        {
-            this.load_UserTable();
-        }
+       
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -158,7 +158,72 @@ namespace FinalProject_C_.UserControls
 
         private void dgvUserTable_DoubleClick(object sender, EventArgs e)
         {
+            this.clear();
+            this.txtUserID.Text = this.dgvUserTable.CurrentRow.Cells["UserId"].Value.ToString();
             this.txtFullName.Text = this.dgvUserTable.CurrentRow.Cells["FullName"].Value.ToString();
+            string gender = this.dgvUserTable.CurrentRow.Cells["Gender"].Value.ToString();
+            if (gender == "Male")
+            {
+                this.rbMale.Checked = true;
+                this.rbFemale.Checked = false;
+            }
+            else if (gender == "Female")
+            {
+                this.rbFemale.Checked = true;
+                this.rbMale.Checked = false;
+            }
+            string UserType = this.dgvUserTable.CurrentRow.Cells["UserType"].Value.ToString();
+            if(UserType=="NORMAL USER")
+            {
+                
+                this.cmbUserType.Text = "USER";
+            }
+            else { this.cmbUserType.Text = "EMPLOYEE";
+                this.cmbServiceType.Visible = true;
+                this.txtUserDescription.Visible = true;
+            }
+                this.txtEmail.Text = this.dgvUserTable.CurrentRow.Cells["Email"].Value.ToString();
+            this.dtpDate.Text = this.dgvUserTable.CurrentRow.Cells["DOB"].Value.ToString();
+            this.txtPhoneNo.Text = this.dgvUserTable.CurrentRow.Cells["PhoneNo"].Value.ToString();
+            this.txtPassword.Text = this.dgvUserTable.CurrentRow.Cells["Password"].Value.ToString();
+            this.cmbServiceType.Text = this.dgvUserTable.CurrentRow.Cells["UserType"].Value.ToString();
+            this.txtUserDescription.Text = this.dgvUserTable.CurrentRow.Cells["UserDescription"].Value.ToString();
+        }
+
+        private void ButRemove_Click(object sender, EventArgs e)
+        {
+            if(this.dgvUserTable.SelectedRows.Count<1)
+            {
+                MessageBox.Show("Please Select A Row First To Delete");
+                return;
+            }
+            DialogResult sure=MessageBox.Show("Are you sure to remove this person?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            if (sure == DialogResult.No)
+            {
+                this.clear();
+                return;
+            }
+
+            var UserID = this.dgvUserTable.CurrentRow.Cells["UserID"].Value.ToString();
+            try
+            {
+                var query = $@"Delete from Users Where UserID='{UserID}'";
+                var query2 = $@"Delete from UserType Where UserID='{UserID}'";
+                var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
+                var validate1 = MainWindow.dataAccess.ExecuteDMLQuery(query2);
+                if (validate == 1 && validate1 == 1)
+                {
+                    MessageBox.Show("User Delete Successful");
+                    this.load_UserTable();
+                    this.clear();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ERROR {ex.Message}");
+            }
+        
         }
     }
 }

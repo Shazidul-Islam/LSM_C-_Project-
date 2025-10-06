@@ -94,6 +94,18 @@
     <Compile Include="UserControls\BookN.Designer.cs">
       <DependentUpon>BookN.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Cards\ReviewCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cards\ReviewCard.Designer.cs">
+      <DependentUpon>ReviewCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Cards\ServiceCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Cards\ServiceCard.Designer.cs">
+      <DependentUpon>ServiceCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\EmployeeAssigned.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\BookN.resx">
       <DependentUpon>BookN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cards\ServiceCard.resx">
+      <DependentUpon>ServiceCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\EmployeeAssigned.resx">
       <DependentUpon>EmployeeAssigned.cs</DependentUpon>
