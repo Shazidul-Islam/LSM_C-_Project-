@@ -18,35 +18,25 @@ namespace FinalProject_C_.UserControls
             InitializeComponent();
             this.load_UserTable();
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void clear()
+        private void clear() 
         {
             this.dgvUserTable.ClearSelection();
+            this.txtSearchUser.Clear();
             this.txtUserID.Clear();
             this.txtFullName.Clear();
             this.rbFemale.Checked = false;
             this.rbMale.Checked = false;
+            this.dtpDate.Value=DateTime.Now;
             this.txtEmail.Clear();
             this.txtPhoneNo.Clear();
             this.txtPassword.Clear();
-            this.cmbUserType.SelectedIndex=-1;
-            this.cmbServiceType.SelectedIndex = -1;
-            this.txtPassword.Clear();
+            this.cmbUserType.SelectedItem=null;
+            this.cmbServiceType.SelectedItem =null;
         }
-        private void load_UserTable()
+        private void load_UserTable(string query = "select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserID=UT.UserID")
         {
             try
             {
-                var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserID=UT.UserID";
                 var DT = MainWindow.dataAccess.ExecuteQueryTable(query);
                 this.dgvUserTable.AutoGenerateColumns = false;
                 this.dgvUserTable.DataSource = DT;
@@ -58,27 +48,25 @@ namespace FinalProject_C_.UserControls
         }
        
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        /*private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (this.txtUserID.Text == "" || this.txtFullName.Text == "" || this.txtEmail.Text == "" || this.txtPhoneNo.Text == "" || this.txtPassword.Text == "" || this.cmbUserType.Text == "")
+            string UserID=txtUserID.Text;
+            string FullName=txtFullName.Text;
+            string Gender = rbMale.Checked ? rbMale.Text : rbFemale.Checked ? rbFemale.Text : "";
+            string Email=txtEmail.Text;
+            string PhoneNo=txtPhoneNo.Text;
+            string Password=txtPassword.Text;
+            string UserType = cmbUserType.SelectedItem == null ? string.Empty : cmbUserType.SelectedItem.ToString();
+            if(string.IsNullOrWhiteSpace(UserID)||
+               string.IsNullOrWhiteSpace(FullName)||
+               string.IsNullOrWhiteSpace(Gender) ||
+               string.IsNullOrWhiteSpace(Email) ||
+               string.IsNullOrWhiteSpace(PhoneNo) ||
+               string.IsNullOrWhiteSpace(Password) ||
+               string.IsNullOrWhiteSpace(UserType))
             {
                 MessageBox.Show("Fill All the Field First");
                 return;
-            }
-            string Gender = "";
-            if (rbMale.Checked)
-            {
-                Gender = "Male";
-
-            }
-            else if (rbFemale.Checked)
-            {
-                Gender = "Female";
-
-            }
-            else
-            {
-                MessageBox.Show("Please Select Gender");
             }
             if (this.cmbUserType.Text == "EMPLOYEE" && this.cmbServiceType.Text == "")
             {
@@ -87,7 +75,6 @@ namespace FinalProject_C_.UserControls
             }
             string ServiceType = this.cmbServiceType.Text;
             if (this.cmbUserType.Text == "USER") { ServiceType = "NORMAL USER"; }
-
 
             try
             {
@@ -108,7 +95,7 @@ namespace FinalProject_C_.UserControls
                 MessageBox.Show($"ERROR {ex.Message}");
             }
 
-        }
+        }*/
         private void cmbUserType_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.cmbUserType.Text == "EMPLOYEE")
@@ -121,34 +108,65 @@ namespace FinalProject_C_.UserControls
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            string UserID = txtUserID.Text;
+            string FullName = txtFullName.Text;
+            string Gender = rbMale.Checked ? rbMale.Text : rbFemale.Checked ? rbFemale.Text : "";
+            string Email = txtEmail.Text;
+            string PhoneNo = txtPhoneNo.Text;
+            string Password = txtPassword.Text;
+            string UserType = cmbUserType.SelectedItem == null ? string.Empty : cmbUserType.SelectedItem.ToString();
 
-            if (this.txtUserID.Text == "" || this.txtFullName.Text == "" || this.txtEmail.Text == "" || this.txtPhoneNo.Text == "" || this.txtPassword.Text == "" || this.cmbUserType.Text == "")
+            if (string.IsNullOrWhiteSpace(UserID) ||
+               string.IsNullOrWhiteSpace(FullName) ||
+               string.IsNullOrWhiteSpace(Gender) ||
+               string.IsNullOrWhiteSpace(Email) ||
+               string.IsNullOrWhiteSpace(PhoneNo) ||
+               string.IsNullOrWhiteSpace(Password) ||
+               string.IsNullOrWhiteSpace(UserType))
             {
                 MessageBox.Show("Fill All the Field First");
                 return;
             }
-            string Gender = "";
-            if (rbMale.Checked)
-            {
-                Gender = "Male";
 
-            }
-            else if (rbFemale.Checked)
-            {
-                Gender = "Female";
-
-            }
-            else
-            {
-                MessageBox.Show("Please Select Gender");
-            }
             if (this.cmbUserType.Text == "EMPLOYEE" && this.cmbServiceType.Text == "")
             {
                 MessageBox.Show("Fill All the Field First");
                 return;
             }
+
             string ServiceType = this.cmbServiceType.Text;
-            if (this.cmbUserType.Text == "USER") { ServiceType = "NORMAL USER"; }
+            if (this.cmbUserType.Text == "USER") { ServiceType = "USER"; }
+
+            try
+            {
+                var UserCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Users where UserID='{this.txtUserID.Text}'");
+                string query ="";
+                string query1 = "";
+                if( UserCheck.Rows.Count==1)
+                {
+                    query = $@"Update Users set FullName = '{this.txtFullName.Text}',Gender = '{Gender}',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}',UserDescription = '{this.txtUserDescription.Text}' where UserID = '{this.txtUserID.Text}'";
+                    query1 = $@"Update UserType set TypeName = '{ServiceType}' where UserID = '{this.txtUserID.Text}'";
+                }
+                else
+                {
+                    query = $@"Insert into Users values ('{this.txtUserID.Text}','{this.txtFullName.Text}','{Gender}','{this.dtpDate.Text}','{this.txtEmail.Text}','{this.txtPhoneNo.Text}','{this.txtPassword.Text}','{this.txtUserDescription.Text}');";
+                    query1 = $@"Insert into UserType values ('{this.txtUserID.Text}','{ServiceType}');";
+                }
+
+                var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
+                var validate1 = MainWindow.dataAccess.ExecuteDMLQuery(query1);
+                if (validate == 1 && validate1 == 1)
+                {
+                    MessageBox.Show("User Information Save Successful");
+                    this.load_UserTable();
+                    this.clear();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ERROR {ex.Message}");
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -182,7 +200,7 @@ namespace FinalProject_C_.UserControls
                 this.cmbServiceType.Visible = true;
                 this.txtUserDescription.Visible = true;
             }
-                this.txtEmail.Text = this.dgvUserTable.CurrentRow.Cells["Email"].Value.ToString();
+            this.txtEmail.Text = this.dgvUserTable.CurrentRow.Cells["Email"].Value.ToString();
             this.dtpDate.Text = this.dgvUserTable.CurrentRow.Cells["DOB"].Value.ToString();
             this.txtPhoneNo.Text = this.dgvUserTable.CurrentRow.Cells["PhoneNo"].Value.ToString();
             this.txtPassword.Text = this.dgvUserTable.CurrentRow.Cells["Password"].Value.ToString();
@@ -224,6 +242,13 @@ namespace FinalProject_C_.UserControls
                 MessageBox.Show($"ERROR {ex.Message}");
             }
         
+        }
+
+        private void txtSearchUser_TextChanged(object sender, EventArgs e)
+        {
+            string query =$@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserID = UT.UserID and (U.UserID like '{this.txtSearchUser.Text}%' or U.FullName like '{this.txtSearchUser.Text}%')";
+            this.load_UserTable(query);
+            this.dgvUserTable.ClearSelection();
         }
     }
 }
