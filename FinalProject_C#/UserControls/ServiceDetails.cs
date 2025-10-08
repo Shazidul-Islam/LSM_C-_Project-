@@ -17,9 +17,12 @@ namespace FinalProject_C_.UserControls
             InitializeComponent();
         }
 
-        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-
+            BookN book = new BookN();
+            book.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(book);
         }
     }
 }
