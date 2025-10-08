@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cmbServiceType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButRemove = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.txtUserDescription = new Guna.UI2.WinForms.Guna2TextBox();
             this.cmbUserType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.dtpDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -57,10 +57,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
-            this.SerBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.dgvUserTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.cmbServiceType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.UserID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +67,8 @@
             this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.UserDescription = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.txtSearchUser = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -82,7 +81,7 @@
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel2);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
             this.guna2GradientPanel2.Controls.Add(this.btnClear);
-            this.guna2GradientPanel2.Controls.Add(this.SerBox);
+            this.guna2GradientPanel2.Controls.Add(this.txtSearchUser);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -101,7 +100,6 @@
             this.guna2Panel2.Controls.Add(this.cmbServiceType);
             this.guna2Panel2.Controls.Add(this.ButRemove);
             this.guna2Panel2.Controls.Add(this.btnUpdate);
-            this.guna2Panel2.Controls.Add(this.btnAdd);
             this.guna2Panel2.Controls.Add(this.txtUserDescription);
             this.guna2Panel2.Controls.Add(this.cmbUserType);
             this.guna2Panel2.Controls.Add(this.dtpDate);
@@ -125,6 +123,29 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(310, 635);
             this.guna2Panel2.TabIndex = 3;
+            // 
+            // cmbServiceType
+            // 
+            this.cmbServiceType.BackColor = System.Drawing.Color.Transparent;
+            this.cmbServiceType.BorderRadius = 5;
+            this.cmbServiceType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbServiceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServiceType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.cmbServiceType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbServiceType.ForeColor = System.Drawing.Color.White;
+            this.cmbServiceType.ItemHeight = 30;
+            this.cmbServiceType.Items.AddRange(new object[] {
+            "Cleaning",
+            "Plumbing",
+            "Gardening",
+            "Electrician"});
+            this.cmbServiceType.Location = new System.Drawing.Point(13, 408);
+            this.cmbServiceType.Name = "cmbServiceType";
+            this.cmbServiceType.Size = new System.Drawing.Size(287, 36);
+            this.cmbServiceType.TabIndex = 33;
+            this.cmbServiceType.Visible = false;
             // 
             // ButRemove
             // 
@@ -157,25 +178,8 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(145, 35);
             this.btnUpdate.TabIndex = 31;
-            this.btnUpdate.Text = "UPDATE";
+            this.btnUpdate.Text = "ADD/UPDATE";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.BorderRadius = 8;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(78, 515);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(145, 35);
-            this.btnAdd.TabIndex = 30;
-            this.btnAdd.Text = "ADD";
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtUserDescription
             // 
@@ -401,7 +405,6 @@
             this.label4.Size = new System.Drawing.Size(62, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "GENDER";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtFullName
             // 
@@ -489,62 +492,23 @@
             this.guna2Panel1.Size = new System.Drawing.Size(572, 635);
             this.guna2Panel1.TabIndex = 2;
             // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.Transparent;
-            this.btnClear.BorderRadius = 8;
-            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnClear.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(594, 14);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(310, 37);
-            this.btnClear.TabIndex = 1;
-            this.btnClear.Text = "CLEAR";
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
-            // SerBox
-            // 
-            this.SerBox.BackColor = System.Drawing.Color.Transparent;
-            this.SerBox.BorderRadius = 8;
-            this.SerBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.SerBox.DefaultText = "";
-            this.SerBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.SerBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.SerBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SerBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.SerBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.SerBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SerBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.SerBox.ForeColor = System.Drawing.Color.Black;
-            this.SerBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SerBox.Location = new System.Drawing.Point(13, 14);
-            this.SerBox.Name = "SerBox";
-            this.SerBox.PlaceholderText = "";
-            this.SerBox.SelectedText = "";
-            this.SerBox.Size = new System.Drawing.Size(572, 37);
-            this.SerBox.TabIndex = 0;
-            // 
             // dgvUserTable
             // 
             this.dgvUserTable.AllowUserToAddRows = false;
             this.dgvUserTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgvUserTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvUserTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvUserTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvUserTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvUserTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvUserTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvUserTable.ColumnHeadersHeight = 15;
+            this.dgvUserTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvUserTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UserID,
             this.FullName,
@@ -555,14 +519,14 @@
             this.Password,
             this.UserType,
             this.UserDescription});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvUserTable.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvUserTable.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvUserTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvUserTable.GridColor = System.Drawing.Color.White;
             this.dgvUserTable.Location = new System.Drawing.Point(0, 0);
@@ -582,7 +546,7 @@
             this.dgvUserTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvUserTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvUserTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvUserTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUserTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvUserTable.ThemeStyle.HeaderStyle.Height = 15;
             this.dgvUserTable.ThemeStyle.ReadOnly = true;
             this.dgvUserTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -593,29 +557,6 @@
             this.dgvUserTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvUserTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvUserTable.DoubleClick += new System.EventHandler(this.dgvUserTable_DoubleClick);
-            // 
-            // cmbServiceType
-            // 
-            this.cmbServiceType.BackColor = System.Drawing.Color.Transparent;
-            this.cmbServiceType.BorderRadius = 5;
-            this.cmbServiceType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbServiceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbServiceType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.cmbServiceType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbServiceType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbServiceType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbServiceType.ForeColor = System.Drawing.Color.White;
-            this.cmbServiceType.ItemHeight = 30;
-            this.cmbServiceType.Items.AddRange(new object[] {
-            "Cleaning",
-            "Plumbing",
-            "Gardening",
-            "Electrician"});
-            this.cmbServiceType.Location = new System.Drawing.Point(13, 408);
-            this.cmbServiceType.Name = "cmbServiceType";
-            this.cmbServiceType.Size = new System.Drawing.Size(287, 36);
-            this.cmbServiceType.TabIndex = 33;
-            this.cmbServiceType.Visible = false;
             // 
             // UserID
             // 
@@ -691,6 +632,47 @@
             this.UserDescription.ReadOnly = true;
             this.UserDescription.Visible = false;
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.BorderRadius = 8;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnClear.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(594, 14);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(310, 37);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // txtSearchUser
+            // 
+            this.txtSearchUser.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchUser.BorderRadius = 8;
+            this.txtSearchUser.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchUser.DefaultText = "";
+            this.txtSearchUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchUser.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchUser.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtSearchUser.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchUser.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearchUser.ForeColor = System.Drawing.Color.Black;
+            this.txtSearchUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchUser.Location = new System.Drawing.Point(13, 14);
+            this.txtSearchUser.Name = "txtSearchUser";
+            this.txtSearchUser.PlaceholderText = "";
+            this.txtSearchUser.SelectedText = "";
+            this.txtSearchUser.Size = new System.Drawing.Size(572, 37);
+            this.txtSearchUser.TabIndex = 0;
+            this.txtSearchUser.TextChanged += new System.EventHandler(this.txtSearchUser_TextChanged);
+            // 
             // AdminUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,7 +695,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private Guna.UI2.WinForms.Guna2TextBox SerBox;
+        private Guna.UI2.WinForms.Guna2TextBox txtSearchUser;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button btnClear;
@@ -739,7 +721,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtUserDescription;
         private Guna.UI2.WinForms.Guna2Button ButRemove;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2DataGridView dgvUserTable;
         private Guna.UI2.WinForms.Guna2ComboBox cmbServiceType;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserID;
