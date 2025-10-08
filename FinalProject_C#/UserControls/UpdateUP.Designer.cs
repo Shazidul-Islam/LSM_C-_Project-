@@ -118,9 +118,10 @@
             // 
             this.dtpDate.BorderRadius = 8;
             this.dtpDate.Checked = true;
+            this.dtpDate.CustomFormat = "yyyy-MM-dd";
             this.dtpDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
             this.dtpDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.dtpDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpDate.Location = new System.Drawing.Point(185, 377);
             this.dtpDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
