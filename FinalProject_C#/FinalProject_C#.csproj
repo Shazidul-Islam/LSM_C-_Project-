@@ -112,6 +112,12 @@
     <Compile Include="UserControls\EmployeeAssigned.Designer.cs">
       <DependentUpon>EmployeeAssigned.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ForgotPass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ForgotPass.Designer.cs">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\LogIn.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,6 +147,12 @@
     </Compile>
     <Compile Include="UserControls\ServiceDetails.Designer.cs">
       <DependentUpon>ServiceDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Sevices.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Sevices.Designer.cs">
+      <DependentUpon>Sevices.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\SignUp.cs">
       <SubType>UserControl</SubType>
@@ -190,6 +202,9 @@
     <EmbeddedResource Include="UserControls\EmployeeAssigned.resx">
       <DependentUpon>EmployeeAssigned.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ForgotPass.resx">
+      <DependentUpon>ForgotPass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ServiceDetails.resx">
       <DependentUpon>ServiceDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Sevices.resx">
+      <DependentUpon>Sevices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
