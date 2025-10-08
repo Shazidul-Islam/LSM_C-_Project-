@@ -35,28 +35,28 @@
             this.lblGender = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.lblBirthday = new System.Windows.Forms.Label();
+            this.lblDOB = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.lblGmail = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lblPhoneNo = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblUserName = new System.Windows.Forms.Label();
+            this.lblUserID = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblUserType = new System.Windows.Forms.Label();
+            this.lblFullName = new System.Windows.Forms.Label();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.lblDes = new System.Windows.Forms.Label();
-            this.PictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.pbUserProfile = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMainPanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,17 +86,17 @@
             this.guna2Panel1.Controls.Add(this.lblGender);
             this.guna2Panel1.Controls.Add(this.label12);
             this.guna2Panel1.Controls.Add(this.label13);
-            this.guna2Panel1.Controls.Add(this.lblBirthday);
+            this.guna2Panel1.Controls.Add(this.lblDOB);
             this.guna2Panel1.Controls.Add(this.label10);
-            this.guna2Panel1.Controls.Add(this.lblGmail);
+            this.guna2Panel1.Controls.Add(this.lblEmail);
             this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.lblPhoneNo);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.lblUserName);
+            this.guna2Panel1.Controls.Add(this.lblUserID);
             this.guna2Panel1.Controls.Add(this.label3);
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Controls.Add(this.label1);
+            this.guna2Panel1.Controls.Add(this.lblUserType);
+            this.guna2Panel1.Controls.Add(this.lblFullName);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.guna2Panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.guna2Panel1.Location = new System.Drawing.Point(330, 60);
@@ -148,17 +148,17 @@
             this.label13.TabIndex = 10;
             this.label13.Text = "Date of Birth  :";
             // 
-            // lblBirthday
+            // lblDOB
             // 
-            this.lblBirthday.AutoSize = true;
-            this.lblBirthday.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthday.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblBirthday.ForeColor = System.Drawing.Color.Gray;
-            this.lblBirthday.Location = new System.Drawing.Point(215, 462);
-            this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(121, 23);
-            this.lblBirthday.TabIndex = 9;
-            this.lblBirthday.Text = "Date of Birth";
+            this.lblDOB.AutoSize = true;
+            this.lblDOB.BackColor = System.Drawing.Color.Transparent;
+            this.lblDOB.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblDOB.ForeColor = System.Drawing.Color.Gray;
+            this.lblDOB.Location = new System.Drawing.Point(215, 462);
+            this.lblDOB.Name = "lblDOB";
+            this.lblDOB.Size = new System.Drawing.Size(121, 23);
+            this.lblDOB.TabIndex = 9;
+            this.lblDOB.Text = "Date of Birth";
             // 
             // label10
             // 
@@ -172,17 +172,17 @@
             this.label10.TabIndex = 7;
             this.label10.Text = "Basic Information";
             // 
-            // lblGmail
+            // lblEmail
             // 
-            this.lblGmail.AutoSize = true;
-            this.lblGmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblGmail.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblGmail.ForeColor = System.Drawing.Color.Gray;
-            this.lblGmail.Location = new System.Drawing.Point(215, 347);
-            this.lblGmail.Name = "lblGmail";
-            this.lblGmail.Size = new System.Drawing.Size(61, 23);
-            this.lblGmail.TabIndex = 8;
-            this.lblGmail.Text = "Gmail";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.Gray;
+            this.lblEmail.Location = new System.Drawing.Point(215, 347);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(58, 23);
+            this.lblEmail.TabIndex = 8;
+            this.lblEmail.Text = "Email";
             // 
             // label8
             // 
@@ -192,9 +192,9 @@
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(52, 347);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 23);
+            this.label8.Size = new System.Drawing.Size(76, 23);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Gmail  :";
+            this.label8.Text = "Email  :";
             // 
             // lblPhoneNo
             // 
@@ -228,23 +228,21 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(52, 258);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 23);
+            this.label5.Size = new System.Drawing.Size(89, 23);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Full Name :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label5.Text = "User ID :";
             // 
-            // lblUserName
+            // lblUserID
             // 
-            this.lblUserName.AutoSize = true;
-            this.lblUserName.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserName.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblUserName.ForeColor = System.Drawing.Color.Gray;
-            this.lblUserName.Location = new System.Drawing.Point(215, 258);
-            this.lblUserName.Name = "lblUserName";
-            this.lblUserName.Size = new System.Drawing.Size(91, 23);
-            this.lblUserName.TabIndex = 3;
-            this.lblUserName.Text = "FullName";
-            this.lblUserName.Click += new System.EventHandler(this.label4_Click);
+            this.lblUserID.AutoSize = true;
+            this.lblUserID.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserID.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblUserID.ForeColor = System.Drawing.Color.Gray;
+            this.lblUserID.Location = new System.Drawing.Point(215, 258);
+            this.lblUserID.Name = "lblUserID";
+            this.lblUserID.Size = new System.Drawing.Size(77, 23);
+            this.lblUserID.TabIndex = 3;
+            this.lblUserID.Text = "User ID";
             // 
             // label3
             // 
@@ -257,29 +255,28 @@
             this.label3.Size = new System.Drawing.Size(61, 23);
             this.label3.TabIndex = 2;
             this.label3.Text = "About";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label2
+            // lblUserType
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(50, 92);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 35);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Admin";
+            this.lblUserType.AutoSize = true;
+            this.lblUserType.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserType.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblUserType.Location = new System.Drawing.Point(50, 92);
+            this.lblUserType.Name = "lblUserType";
+            this.lblUserType.Size = new System.Drawing.Size(100, 35);
+            this.lblUserType.TabIndex = 1;
+            this.lblUserType.Text = "Admin";
             // 
-            // label1
+            // lblFullName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 35);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Jeremay Rose\r\n";
+            this.lblFullName.AutoSize = true;
+            this.lblFullName.BackColor = System.Drawing.Color.Transparent;
+            this.lblFullName.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblFullName.Location = new System.Drawing.Point(50, 42);
+            this.lblFullName.Name = "lblFullName";
+            this.lblFullName.Size = new System.Drawing.Size(205, 35);
+            this.lblFullName.TabIndex = 0;
+            this.lblFullName.Text = "Jeremay Rose\r\n";
             // 
             // guna2PictureBox5
             // 
@@ -296,8 +293,8 @@
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.BorderRadius = 10;
-            this.guna2GradientPanel2.Controls.Add(this.lblDes);
-            this.guna2GradientPanel2.Controls.Add(this.PictureBox);
+            this.guna2GradientPanel2.Controls.Add(this.lblDescription);
+            this.guna2GradientPanel2.Controls.Add(this.pbUserProfile);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(80)))), ((int)(((byte)(59)))));
             this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -306,27 +303,27 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(270, 594);
             this.guna2GradientPanel2.TabIndex = 9;
             // 
-            // lblDes
+            // lblDescription
             // 
-            this.lblDes.AutoSize = true;
-            this.lblDes.BackColor = System.Drawing.Color.Transparent;
-            this.lblDes.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblDes.ForeColor = System.Drawing.Color.White;
-            this.lblDes.Location = new System.Drawing.Point(79, 416);
-            this.lblDes.Name = "lblDes";
-            this.lblDes.Size = new System.Drawing.Size(108, 23);
-            this.lblDes.TabIndex = 13;
-            this.lblDes.Text = "Description";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescription.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(79, 416);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(108, 23);
+            this.lblDescription.TabIndex = 13;
+            this.lblDescription.Text = "Description";
             // 
-            // PictureBox
+            // pbUserProfile
             // 
-            this.PictureBox.BorderRadius = 26;
-            this.PictureBox.ImageRotate = 0F;
-            this.PictureBox.Location = new System.Drawing.Point(38, 137);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(200, 250);
-            this.PictureBox.TabIndex = 1;
-            this.PictureBox.TabStop = false;
+            this.pbUserProfile.BorderRadius = 26;
+            this.pbUserProfile.ImageRotate = 0F;
+            this.pbUserProfile.Location = new System.Drawing.Point(38, 137);
+            this.pbUserProfile.Name = "pbUserProfile";
+            this.pbUserProfile.Size = new System.Drawing.Size(200, 250);
+            this.pbUserProfile.TabIndex = 1;
+            this.pbUserProfile.TabStop = false;
             // 
             // guna2GradientPanel1
             // 
@@ -359,7 +356,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.ResumeLayout(false);
 
@@ -369,25 +366,25 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.Label lblUserType;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblUserID;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblPhoneNo;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lblBirthday;
+        private System.Windows.Forms.Label lblDOB;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblGmail;
+        private System.Windows.Forms.Label lblEmail;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private System.Windows.Forms.Label lblDes;
-        private Guna.UI2.WinForms.Guna2PictureBox PictureBox;
+        private System.Windows.Forms.Label lblDescription;
+        private Guna.UI2.WinForms.Guna2PictureBox pbUserProfile;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.Panel panel1;
     }

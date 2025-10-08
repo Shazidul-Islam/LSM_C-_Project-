@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheArtOfDevHtmlRenderer.Adapters;
 
 namespace FinalProject_C_.UserControls
 {
@@ -17,9 +18,52 @@ namespace FinalProject_C_.UserControls
             InitializeComponent();
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void btnUpdate_Click(object sender, EventArgs e)
         {
+            string FullName = txtFullName.Text;
+            string Email = txtEmail.Text;
+            string PhoneNo = txtPhoneNo.Text;
+            string Password = txtPassword.Text;
+            
+            if (
+               string.IsNullOrWhiteSpace(FullName) ||
+               string.IsNullOrWhiteSpace(Email) ||
+               string.IsNullOrWhiteSpace(PhoneNo) ||
+               string.IsNullOrWhiteSpace(Password)
+               )
 
+            {
+                MessageBox.Show("Fill All the Field First");
+                return;
+            }
+
+            try
+            {
+                var UserCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Users where Password='{this.txtPassword.Text}'");
+                string query = "";
+                query = $@"Update Users set FullName = '{this.txtFullName.Text}',',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}'";
+
+
+                var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
+                if (validate == 1)
+                {
+                    MessageBox.Show("User Information Successfully Updated");
+                    this.clear();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ERROR {ex.Message}");
+            }
+        }
+        private void clear()
+        {
+            this.txtFullName.Clear();
+            this.txtPhoneNo.Clear();
+            this.txtEmail.Clear();
+            this.dtpDate.Value=DateTime.Now;
+            this.txtPassword.Clear();
         }
     }
 }
