@@ -4,9 +4,11 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TheArtOfDevHtmlRenderer.Adapters;
 
 namespace FinalProject_C_.UserControls
 {
@@ -79,7 +81,15 @@ namespace FinalProject_C_.UserControls
 
         private void gdvServiceTable_DoubleClick(object sender, EventArgs e)
         {
-            
+            this.Clear();
+            this.load_ServiceCategoryCommand();
+            this.txtServiceID.Text = this.gdvServiceTable.CurrentRow.Cells["ServiceId"].Value.ToString();
+            this.txtServiceN.Text = this.gdvServiceTable.CurrentRow.Cells["ServiceName"].Value.ToString();
+            this.cmbServiceCN.Text = this.gdvServiceTable.CurrentRow.Cells["CategoryName"].Value.ToString();
+            this.cmbServiceSCN.Text = this.gdvServiceTable.CurrentRow.Cells["SubCategoryName"].Value.ToString();
+            this.txtServiceD.Text = this.gdvServiceTable.CurrentRow.Cells["Description"].Value.ToString();
+            this.txtServiceP.Text = this.gdvServiceTable.CurrentRow.Cells["Price"].Value.ToString();
+            this.txtServiceI.Text = this.gdvServiceTable.CurrentRow.Cells["ServiceImage"].Value.ToString();
         }
 
         private void cmbSeviceCN_SelectedIndexChanged(object sender, EventArgs e)
@@ -91,6 +101,102 @@ namespace FinalProject_C_.UserControls
         private void cmbServiceCN_Click(object sender, EventArgs e)
         {
             this.load_ServiceCategoryCommand();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string ServiceID = txtServiceID.Text;
+            string Name = txtServiceN.Text;
+            string Category = cmbServiceCN.SelectedItem == null ? string.Empty : cmbServiceCN.SelectedItem.ToString();
+            string SubCategory = cmbServiceSCN.SelectedValue == null ? string.Empty : cmbServiceSCN.SelectedValue.ToString(); ;
+            string Description = txtServiceD.Text;
+            string Price = txtServiceP.Text;
+            string Image = txtServiceI.Text;
+
+
+            if (string.IsNullOrWhiteSpace(ServiceID) ||
+               string.IsNullOrWhiteSpace(Name) ||
+               string.IsNullOrWhiteSpace(Category) ||
+               string.IsNullOrWhiteSpace(SubCategory) ||
+               string.IsNullOrWhiteSpace(Description) ||
+               string.IsNullOrWhiteSpace(Price)||
+               string.IsNullOrWhiteSpace(Image))
+            {
+                MessageBox.Show("Fill All the Field First");
+                return;
+            }
+
+            /*if (this.cmbServiceCN.Text == ("Cleaning" || "Gardening" || "Elecric") && this.cmbServiceSCN.Text == "")
+            {
+                MessageBox.Show("Fill All the Field First");
+                return;
+            }*/
+            try
+            {
+                var ServiceCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Service where ServiceID='{ServiceID}'");
+                string query = "";
+                if (ServiceCheck.Rows.Count == 1)
+                {
+                    query = $@"Update Service set Name = '{Name}',Price = '{Price}',Description = '{Description}',Image = '{Image}',SubCategoryID='{SubCategory}' where ServiceID='{ServiceID}'";
+                }
+                else
+                {
+                    query = $@"Insert into Service values ('{ServiceID}','{Name}','{Price}','{Description}','{Image}','{SubCategory}')";
+                }
+
+                var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
+                if (validate == 1)
+                {
+                    MessageBox.Show("User Information Save Successful");
+                    this.load_ServiceTable();
+                    this.Clear();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ERROR {ex.Message}");
+            }
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            if (this.gdvServiceTable.SelectedRows.Count < 1)
+            {
+                MessageBox.Show("Please Select A Row First To Delete");
+                return;
+            }
+            DialogResult sure = MessageBox.Show("Are you sure to remove this Service?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sure == DialogResult.No)
+            {
+                this.Clear();
+                return;
+            }
+
+            var ServiceID = this.gdvServiceTable.CurrentRow.Cells["ServiceID"].Value.ToString();
+            try
+            {
+                var query = $@"Delete from Service Where ServiceID='{ServiceID}'";
+                var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
+                if (validate == 1)
+                {
+                    MessageBox.Show("Service Delete Successful");
+                    this.load_ServiceTable();
+                    this.Clear();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show($"ERROR {ex.Message}");
+            }
+        }
+
+        private void txtSearchBox_TextChanged(object sender, EventArgs e)
+        {
+            String query =$"select S.ServiceID,S.Name,C.CategoryName,SC.SubCategoryName,S.Description,S.Price, S.Image from Service as S, ServiceCategory as C, SubCategory as SC where S.SubCategoryID=SC.SubCategoryID and SC.CategoryID=C.CategoryID and (S.ServiceID like '{this.txtSearchBox.Text}%' or S.Name like '{this.txtSearchBox.Text}%')";
+            this.load_ServiceTable(query);
+            this.gdvServiceTable.ClearSelection();
         }
     }
 }
