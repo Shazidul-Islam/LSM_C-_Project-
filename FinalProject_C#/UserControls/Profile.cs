@@ -15,26 +15,26 @@ namespace FinalProject_C_.UserControls
         public Profile()
         {
             InitializeComponent();
+            string FullName = "Hamidur";
+            string UserType = "User";
+            string UserID = "00-11";
+            string PhoneNo = "0195368238";
+            string Email = "hamidur@gmailc.com";
+            string DOB = "2002-01-02";
+            string Gender = "Male";
+            string Description = "I am Hamidur";
+
+           
+
+            this.lblFullName.Text = FullName;
+            this.lblUserType.Text = UserType;
+            this.lblUserID.Text = UserID;
+            this.lblPhoneNo.Text = PhoneNo;
+            this.lblEmail.Text = Email;
+            this.lblDOB.Text = DOB;
+            this.lblGender.Text = Gender;
+            this.lblDescription.Text = Description;
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2PictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
