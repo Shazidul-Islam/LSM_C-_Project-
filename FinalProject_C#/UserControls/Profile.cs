@@ -36,5 +36,12 @@ namespace FinalProject_C_.UserControls
             this.lblDescription.Text = Description;
         }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            UpdateUP update = new UpdateUP();
+            update.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(update);
+        }
     }
 }

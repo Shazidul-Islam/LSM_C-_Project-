@@ -24,6 +24,7 @@ namespace FinalProject_C_.UserControls
             string Email = txtEmail.Text;
             string PhoneNo = txtPhoneNo.Text;
             string Password = txtPassword.Text;
+            string UserID = "00-01";
             
             if (
                string.IsNullOrWhiteSpace(FullName) ||
@@ -41,7 +42,7 @@ namespace FinalProject_C_.UserControls
             {
                 var UserCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Users where Password='{this.txtPassword.Text}'");
                 string query = "";
-                query = $@"Update Users set FullName = '{this.txtFullName.Text}',',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}'";
+                query = $@"Update Users set FullName = '{this.txtFullName.Text}',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}' and UserID = '{UserID}'";
 
 
                 var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
