@@ -16,5 +16,23 @@ namespace FinalProject_C_.UserControls.Cards
         {
             InitializeComponent();
         }
+
+        private void pnlCard_Click(object sender, EventArgs e)
+        {
+            ServiceDetails servicedetails = new ServiceDetails();
+            servicedetails.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(servicedetails);
+        }
+
+        private void pnlCard_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

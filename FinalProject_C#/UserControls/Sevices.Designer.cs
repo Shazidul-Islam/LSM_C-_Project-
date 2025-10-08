@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.flpService = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
-            // guna2GradientPanel2
+            // flpService
             // 
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
-            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.ShadowDecoration.BorderRadius = 100;
-            this.guna2GradientPanel2.ShadowDecoration.Depth = 1;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(918, 713);
-            this.guna2GradientPanel2.TabIndex = 12;
+            this.flpService.AutoScroll = true;
+            this.flpService.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.flpService.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpService.Location = new System.Drawing.Point(0, 0);
+            this.flpService.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.flpService.Name = "flpService";
+            this.flpService.Size = new System.Drawing.Size(887, 635);
+            this.flpService.TabIndex = 0;
             // 
             // Sevices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.guna2GradientPanel2);
+            this.Controls.Add(this.flpService);
             this.Name = "Sevices";
-            this.Size = new System.Drawing.Size(918, 713);
+            this.Size = new System.Drawing.Size(887, 635);
+            this.Load += new System.EventHandler(this.Sevices_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private System.Windows.Forms.FlowLayoutPanel flpService;
     }
 }
