@@ -12,11 +12,15 @@ namespace FinalProject_C_.UserControls
 {
     public partial class ServiceDetails : UserControl
     {
+
         public ServiceDetails()
         {
             InitializeComponent();
         }
+        public ServiceDetails(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string Price, string Image) : this ()
+        {
 
+        }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             BookN book = new BookN();

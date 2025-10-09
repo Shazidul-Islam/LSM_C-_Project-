@@ -309,7 +309,7 @@
             this.btnReview.Name = "btnReview";
             this.btnReview.Size = new System.Drawing.Size(168, 43);
             this.btnReview.TabIndex = 0;
-            this.btnReview.Text = "Review";
+            this.btnReview.Text = "My Bookings";
             this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
             // panel6

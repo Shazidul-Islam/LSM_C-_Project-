@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject_C_.UserControls
 {
-    public partial class AdminTransaction : UserControl
+    public partial class Worklist : UserControl
     {
-        public AdminTransaction()
+        public Worklist()
         {
             InitializeComponent();
         }

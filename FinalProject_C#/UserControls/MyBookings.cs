@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProject_C_.UserControls
 {
-    public partial class EmployeeAssigned : UserControl
+    public partial class MyBookings : UserControl
     {
-        public EmployeeAssigned()
+        public MyBookings()
         {
             InitializeComponent();
         }

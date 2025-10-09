@@ -48,14 +48,18 @@ namespace FinalProject_C_.UserControls
             {
                 var UserCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Users where Password='{this.txtPassword.Text}'");
                 string query = "";
-                query = $@"Update Users set FullName = '{this.txtFullName.Text}',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}' and UserID = '{MainWindow.loginUser.Rows[0][1].ToString()}'";
+                query = $@"Update Users set FullName = '{this.txtFullName.Text}',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}' and UserID = '{MainWindow.loginUser.Rows[0][0].ToString()}'";
 
 
                 var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
                 if (validate == 1)
                 {
+                    var query1 = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='{MainWindow.loginUser.Rows[0][0].ToString()}'";
+                    var DA = MainWindow.dataAccess.ExecuteQueryTable(query1);
+                    MainWindow.loginUser = DA;
+                    this.lblFullName.Text = MainWindow.loginUser.Rows[0][1].ToString();
+                    MainWindow.ProfileButton.Text = MainWindow.loginUser.Rows[0][1].ToString();
                     MessageBox.Show("User Information Successfully Updated");
-                    this.clear();
                 }
             }
 
@@ -64,13 +68,13 @@ namespace FinalProject_C_.UserControls
                 MessageBox.Show($"ERROR {ex.Message}");
             }
         }
-        private void clear()
+
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            this.txtFullName.Clear();
-            this.txtPhoneNo.Clear();
-            this.txtEmail.Clear();
-            this.dtpDate.Value=DateTime.Now;
-            this.txtPassword.Clear();
+            Profile Back = new Profile();
+            Back.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(Back);
         }
     }
 }
