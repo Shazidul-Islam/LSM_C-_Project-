@@ -16,6 +16,8 @@ namespace FinalProject_C_.UserControls
         public UpdateUP()
         {
             InitializeComponent();
+            this.txtFullName.Text = MainWindow.loginUser.Rows[0][1].ToString();
+            this.lblFullName.Text = MainWindow.loginUser.Rows[0][1].ToString();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

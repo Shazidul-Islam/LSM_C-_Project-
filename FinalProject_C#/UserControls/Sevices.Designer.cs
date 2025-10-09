@@ -30,7 +30,7 @@
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.flpServices = new System.Windows.Forms.FlowLayoutPanel();
-            this.txtSearchService = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,34 +52,30 @@
             this.flpServices.Size = new System.Drawing.Size(887, 571);
             this.flpServices.TabIndex = 0;
             // 
-            // txtSearchService
+            // btnBack
             // 
-            this.txtSearchService.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchService.BorderRadius = 8;
-            this.txtSearchService.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchService.DefaultText = "";
-            this.txtSearchService.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchService.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchService.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSearchService.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchService.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchService.ForeColor = System.Drawing.Color.Black;
-            this.txtSearchService.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchService.Location = new System.Drawing.Point(0, 0);
-            this.txtSearchService.Name = "txtSearchService";
-            this.txtSearchService.PlaceholderText = "";
-            this.txtSearchService.SelectedText = "";
-            this.txtSearchService.Size = new System.Drawing.Size(887, 37);
-            this.txtSearchService.TabIndex = 5;
+            this.btnBack.BorderRadius = 8;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(10, 10);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(135, 36);
+            this.btnBack.TabIndex = 1;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // Sevices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            this.Controls.Add(this.txtSearchService);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Sevices";
             this.Size = new System.Drawing.Size(887, 635);
@@ -93,6 +89,6 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.FlowLayoutPanel flpServices;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchService;
+        private Guna.UI2.WinForms.Guna2GradientButton btnBack;
     }
 }
