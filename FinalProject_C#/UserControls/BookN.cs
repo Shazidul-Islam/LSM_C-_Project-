@@ -16,7 +16,7 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
-        public BookN(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string Price, string Image) : this()
+        public BookN(string ServiceID) : this()
         {
 
         }
