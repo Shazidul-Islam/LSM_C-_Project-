@@ -16,13 +16,16 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+        public BookN(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string Price, string Image) : this()
+        {
 
-        private void label7_Click(object sender, EventArgs e)
+        }
+        private void btnBooking_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnBooking_Click(object sender, EventArgs e)
+        private void TotalCost_TextChanged(object sender, EventArgs e)
         {
 
         }

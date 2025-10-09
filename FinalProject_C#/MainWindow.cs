@@ -102,19 +102,19 @@ namespace FinalProject_C_
 
         private void btnTransactions_Click(object sender, EventArgs e)
         {
-            ucTransaction= new AdminTransaction();
+            ucTransaction= new AllBookingList();
             this.ChangeWindow(ucTransaction);
         }
 
         private void btnWorkList_Click(object sender, EventArgs e)
         {
-            ucWorkList = new EmployeeAssigned();
+            ucWorkList = new Worklist();
             this.ChangeWindow(ucWorkList);
         }
 
         private void btnReview_Click(object sender, EventArgs e)
         {
-            ucReview= new UserReview();
+            ucReview= new MyBookings();
             this.ChangeWindow(ucReview);
         }
     }

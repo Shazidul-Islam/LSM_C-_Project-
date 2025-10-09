@@ -31,25 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServiceDetails));
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblServiceD = new System.Windows.Forms.Label();
-            this.lblServiceCN = new System.Windows.Forms.Label();
-            this.lblServiceName = new System.Windows.Forms.Label();
             this.lblP = new System.Windows.Forms.Label();
             this.lblSD = new System.Windows.Forms.Label();
             this.lblSCN = new System.Windows.Forms.Label();
             this.lblSN = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlMainPanel.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainPanel
@@ -84,63 +81,13 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(918, 713);
             this.guna2GradientPanel2.TabIndex = 9;
             // 
-            // guna2GradientButton1
-            // 
-            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.BorderRadius = 8;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(652, 649);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(217, 53);
-            this.guna2GradientButton1.TabIndex = 8;
-            this.guna2GradientButton1.Text = "Book Now!";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(594, 301);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(313, 329);
-            this.flowLayoutPanel1.TabIndex = 2;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.BackgroundImage")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.InitialImage = null;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(918, 290);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(76, 132);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(0, 0);
-            this.guna2GradientPanel1.TabIndex = 8;
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.lblPrice);
             this.guna2Panel1.Controls.Add(this.lblServiceD);
-            this.guna2Panel1.Controls.Add(this.lblServiceCN);
-            this.guna2Panel1.Controls.Add(this.lblServiceName);
             this.guna2Panel1.Controls.Add(this.lblP);
             this.guna2Panel1.Controls.Add(this.lblSD);
             this.guna2Panel1.Controls.Add(this.lblSCN);
@@ -150,6 +97,18 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(571, 401);
             this.guna2Panel1.TabIndex = 9;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(46, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(347, 30);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Service Sub-Catagory Name";
             // 
             // lblPrice
             // 
@@ -174,30 +133,6 @@
             this.lblServiceD.Size = new System.Drawing.Size(173, 30);
             this.lblServiceD.TabIndex = 17;
             this.lblServiceD.Text = "Coming Soon";
-            // 
-            // lblServiceCN
-            // 
-            this.lblServiceCN.AutoSize = true;
-            this.lblServiceCN.BackColor = System.Drawing.Color.Transparent;
-            this.lblServiceCN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblServiceCN.ForeColor = System.Drawing.Color.Gray;
-            this.lblServiceCN.Location = new System.Drawing.Point(46, 115);
-            this.lblServiceCN.Name = "lblServiceCN";
-            this.lblServiceCN.Size = new System.Drawing.Size(173, 30);
-            this.lblServiceCN.TabIndex = 16;
-            this.lblServiceCN.Text = "Coming Soon";
-            // 
-            // lblServiceName
-            // 
-            this.lblServiceName.AutoSize = true;
-            this.lblServiceName.BackColor = System.Drawing.Color.Transparent;
-            this.lblServiceName.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblServiceName.ForeColor = System.Drawing.Color.Gray;
-            this.lblServiceName.Location = new System.Drawing.Point(46, 43);
-            this.lblServiceName.Name = "lblServiceName";
-            this.lblServiceName.Size = new System.Drawing.Size(173, 30);
-            this.lblServiceName.TabIndex = 15;
-            this.lblServiceName.Text = "Coming Soon";
             // 
             // lblP
             // 
@@ -243,33 +178,56 @@
             this.lblSN.ForeColor = System.Drawing.Color.White;
             this.lblSN.Location = new System.Drawing.Point(46, 13);
             this.lblSN.Name = "lblSN";
-            this.lblSN.Size = new System.Drawing.Size(178, 30);
+            this.lblSN.Size = new System.Drawing.Size(199, 30);
             this.lblSN.TabIndex = 11;
-            this.lblSN.Text = "Service Name";
+            this.lblSN.Text = "Service Name : ";
             // 
-            // label1
+            // guna2GradientButton1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 30);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Service Sub-Catagory Name";
+            this.guna2GradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientButton1.BorderRadius = 8;
+            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(647, 649);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.Size = new System.Drawing.Size(217, 53);
+            this.guna2GradientButton1.TabIndex = 8;
+            this.guna2GradientButton1.Text = "Book Now!";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // label2
+            // flowLayoutPanel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(46, 184);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 30);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Coming Soon";
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(594, 301);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(313, 329);
+            this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.BackgroundImage")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.InitialImage = null;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(918, 290);
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(76, 132);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(0, 0);
+            this.guna2GradientPanel1.TabIndex = 8;
             // 
             // ServiceDetails
             // 
@@ -280,9 +238,9 @@
             this.Size = new System.Drawing.Size(918, 713);
             this.pnlMainPanel.ResumeLayout(false);
             this.guna2GradientPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,13 +256,10 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblServiceD;
-        private System.Windows.Forms.Label lblServiceCN;
-        private System.Windows.Forms.Label lblServiceName;
         private System.Windows.Forms.Label lblP;
         private System.Windows.Forms.Label lblSD;
         private System.Windows.Forms.Label lblSCN;
         private System.Windows.Forms.Label lblSN;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }
 }
