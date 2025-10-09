@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +16,20 @@ namespace FinalProject_C_.UserControls
         public SignUp()
         {
             InitializeComponent();
+            load_ServiceCategoryCommand();
+        }
+
+        private void load_ServiceCategoryCommand()
+        {
+            var query = "select * from UserType where UserTypeID > 2";
+            try
+            {
+                var DT = MainWindow.dataAccess.ExecuteQueryTable(query);
+                this.cmbServiceType.DataSource = DT;
+                this.cmbServiceType.DisplayMember = "TypeName";
+                this.cmbServiceType.ValueMember = "UserTypeID";
+            }
+            catch (Exception ex) { MessageBox.Show($"ERROR {ex.Message}"); }
         }
 
         private void btnSignUpBTOLogin_Click(object sender, EventArgs e)
@@ -27,15 +42,19 @@ namespace FinalProject_C_.UserControls
         
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            if (this.txtUserID.Text==""||this.txtFullName.Text == "" || this.txtEmail.Text == "" || this.txtPhoneNo.Text==""||this.txtPassword.Text==""||this.txtCPassword.Text==""||this.cmbUserType.Text=="")
+            if (this.txtUserID.Text==""||this.txtFullName.Text == "" 
+                || this.txtEmail.Text == "" 
+                || this.txtPhoneNo.Text==""||this.txtPassword.Text==""
+                ||this.txtCPassword.Text==""||this.cmbUserType.Text=="")
             {
                 MessageBox.Show("Fill All the Field First");
                 return;
             }
+
             string Gender = "";
             if (rbMale.Checked)
             {
-                Gender="Male";
+                Gender = "Male";
                 
             }
             else if(rbFemale.Checked)
@@ -47,27 +66,31 @@ namespace FinalProject_C_.UserControls
             {
                 MessageBox.Show("Please Select Gender");
             }
+
             if(this.txtPassword.Text!=this.txtCPassword.Text)
             {
                 MessageBox.Show("Password not Matched with Confirm Password");
                 return;
             }
-            if (this.cmbUserType.Text == "EMPLOYEE" && this.cmbServiceType.Text == "")
+
+            if (this.cmbUserType.Text == "EMPLOYEE" && this.cmbServiceType.Text == "") 
             {
                 MessageBox.Show("Fill All the Field First");
                 return;
             }
-            string ServiceType=this.cmbServiceType.Text;
-            if (this.cmbUserType.Text=="USER"){ ServiceType = "NORMAL USER"; }
+
+            string ServiceTypeID = this.cmbServiceType.SelectedValue.ToString();
+
+            if (this.cmbUserType.Text=="USER") { ServiceTypeID = "02"; }
 
 
             try
             {
-                var query = $@"Insert into Users values ('{this.txtUserID.Text}','{this.txtFullName.Text}','{Gender}','{this.dtpDate.Text}','{this.txtEmail.Text}','{this.txtPhoneNo.Text}','{this.txtPassword.Text}','{this.txtUserDescription.Text}');";
-                var query1 = $@"Insert into UserType values ('{this.txtUserID.Text}','{ServiceType}');";
+                var query = $@"Insert into Users values ('{this.txtUserID.Text}','{this.txtFullName.Text}','{Gender}','{this.dtpDate.Text}','{this.txtEmail.Text}','{this.txtPhoneNo.Text}','{this.txtPassword.Text}','{this.txtUserDescription.Text}','{ServiceTypeID}');";
+
                 var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
-                var validate1 = MainWindow.dataAccess.ExecuteDMLQuery(query1);
-                if(validate==1&&validate1==1)
+
+                if(validate==1)
                 {
                     MessageBox.Show("SignUP Successful");
                 }

@@ -15,7 +15,7 @@ namespace FinalProject_C_.UserControls
         public Profile()
         {
             InitializeComponent();
-            string FullName = "Hamidur";
+            string FullName = MainWindow.loginUser.Rows[0][1].ToString();
             string UserType = "User";
             string UserID = "00-11";
             string PhoneNo = "0195368238";

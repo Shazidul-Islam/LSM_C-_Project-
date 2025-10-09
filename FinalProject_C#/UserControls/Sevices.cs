@@ -23,7 +23,7 @@ namespace FinalProject_C_.UserControls
             for(int i=0; i<=20; i++)
             {
                 ServiceCard serviceCard = new ServiceCard();
-                this.flpService.Controls.Add(serviceCard);
+                this.flpServices.Controls.Add(serviceCard);
             }
         }
     }

@@ -276,7 +276,6 @@
             this.lblLOGIN.TabIndex = 3;
             this.lblLOGIN.Text = "Login";
             this.lblLOGIN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblLOGIN.Click += new System.EventHandler(this.label4_Click);
             // 
             // lblDS
             // 
@@ -301,7 +300,6 @@
             this.lblT.TabIndex = 1;
             this.lblT.Text = "To";
             this.lblT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblT.Click += new System.EventHandler(this.label2_Click);
             // 
             // lblW
             // 

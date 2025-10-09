@@ -25,18 +25,6 @@ namespace FinalProject_C_.UserControls
             MainWindow.MainPanel.Controls.Add(signUp);
         }
 
-        
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             if(this.txtEmail.Text==""||this.txtPassword.Text=="")
@@ -46,16 +34,17 @@ namespace FinalProject_C_.UserControls
             }
             try
             {
-                var query =$@"select * from Users where Email='{this.txtEmail.Text}' and Password='{this.txtPassword.Text}'";
+                var query =$@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and Email='{this.txtEmail.Text}' and Password='{this.txtPassword.Text}'";
                 var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
                 if (DA.Rows.Count == 1)
                 {
                     MainWindow.SideBar.Visible = true;
-
                     MainServiceP Home = new MainServiceP();
                     Home.Dock = DockStyle.Fill;
                     MainWindow.MainPanel.Controls.Clear();
                     MainWindow.MainPanel.Controls.Add(Home);
+                    MainWindow.loginUser = DA;
+                    MainWindow.ProfileButton.Text = DA.Rows[0][1].ToString();
                 }
                 else { MessageBox.Show("Invalid User"); }
             }
@@ -65,6 +54,11 @@ namespace FinalProject_C_.UserControls
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='00-01'";
+            var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
+
+            MainWindow.loginUser = DA;
+            MainWindow.ProfileButton.Text = DA.Rows[0][1].ToString();
 
             MainWindow.SideBar.Visible = true;
 

@@ -8,13 +8,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace FinalProject_C_
 {
     public partial class MainWindow : Form
     {
+        //LogIn User
+        internal static DataTable loginUser {  get; set; }
+
+        //Buttons
+        internal static Guna2Button ProfileButton {  get; set; }
+
+        //Panels
         internal static Panel MainPanel {  get; set; }
         internal static Panel SideBar {  get; set; }
+
+        //UserControls Pages
         internal static UserControl ucLogIn {  get; set; }
         internal static UserControl ucProfile {  get; set; }
         internal static DataAccess dataAccess { get; set; }
@@ -24,12 +34,14 @@ namespace FinalProject_C_
         internal static UserControl ucTransaction { get; set; }
         internal static UserControl ucWorkList { get; set; }
         internal static UserControl ucReview { get; set; }
+        
         public MainWindow()
         {
             InitializeComponent();
             MainPanel = this.pnlMainPanel;
             SideBar = this.pnlSideBar;
             dataAccess = new DataAccess();
+            ProfileButton = this.btnProfile;
         }
 
         private void ChangeWindow(UserControl NextPage)
