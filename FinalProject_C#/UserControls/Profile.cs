@@ -16,13 +16,13 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
             string FullName = MainWindow.loginUser.Rows[0][1].ToString();
-            string UserType = "User";
-            string UserID = "00-11";
-            string PhoneNo = "0195368238";
-            string Email = "hamidur@gmailc.com";
-            string DOB = "2002-01-02";
-            string Gender = "Male";
-            string Description = "I am Hamidur";
+            string UserType = MainWindow.loginUser.Rows[0][8].ToString();
+            string UserID = MainWindow.loginUser.Rows[0][0].ToString();
+            string PhoneNo = MainWindow.loginUser.Rows[0][5].ToString();
+            string Email = MainWindow.loginUser.Rows[0][4].ToString();
+            string DOB = MainWindow.loginUser.Rows[0][3].ToString();
+            string Gender = MainWindow.loginUser.Rows[0][2].ToString();
+            string Description = MainWindow.loginUser.Rows[0][7].ToString();
 
            
 

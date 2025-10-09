@@ -18,6 +18,10 @@ namespace FinalProject_C_.UserControls
             InitializeComponent();
             this.txtFullName.Text = MainWindow.loginUser.Rows[0][1].ToString();
             this.lblFullName.Text = MainWindow.loginUser.Rows[0][1].ToString();
+            this.lblUserType.Text = MainWindow.loginUser.Rows[0][8].ToString();
+            this.txtEmail.Text = MainWindow.loginUser.Rows[0][4].ToString();
+            this.txtPhoneNo.Text = MainWindow.loginUser.Rows[0][5].ToString();
+            this.dtpDate.Text = MainWindow.loginUser.Rows[0][3].ToString();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -26,7 +30,7 @@ namespace FinalProject_C_.UserControls
             string Email = txtEmail.Text;
             string PhoneNo = txtPhoneNo.Text;
             string Password = txtPassword.Text;
-            string UserID = "00-01";
+            string UserID = MainWindow.loginUser.Rows[0][0].ToString();
             
             if (
                string.IsNullOrWhiteSpace(FullName) ||
@@ -44,7 +48,7 @@ namespace FinalProject_C_.UserControls
             {
                 var UserCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Users where Password='{this.txtPassword.Text}'");
                 string query = "";
-                query = $@"Update Users set FullName = '{this.txtFullName.Text}',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}' and UserID = '{UserID}'";
+                query = $@"Update Users set FullName = '{this.txtFullName.Text}',Email = '{this.txtEmail.Text}',DOB = '{this.dtpDate.Text}',PhoneNo = '{this.txtPhoneNo.Text}',Password = '{this.txtPassword.Text}' where Password = '{this.txtPassword.Text}' and UserID = '{MainWindow.loginUser.Rows[0][1].ToString()}'";
 
 
                 var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
