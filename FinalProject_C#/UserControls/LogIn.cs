@@ -39,10 +39,10 @@ namespace FinalProject_C_.UserControls
                 if (DA.Rows.Count == 1)
                 {
                     MainWindow.SideBar.Visible = true;
-                    MainServiceP Home = new MainServiceP();
-                    Home.Dock = DockStyle.Fill;
+                    MainWindow.ucMainServiceP = new MainServiceP();
+                    MainWindow.ucMainServiceP.Dock = DockStyle.Fill;
                     MainWindow.MainPanel.Controls.Clear();
-                    MainWindow.MainPanel.Controls.Add(Home);
+                    MainWindow.MainPanel.Controls.Add(MainWindow.ucMainServiceP);
                     MainWindow.loginUser = DA;
                     MainWindow.ProfileButton.Text = DA.Rows[0][1].ToString();
                 }
@@ -62,10 +62,10 @@ namespace FinalProject_C_.UserControls
 
             MainWindow.SideBar.Visible = true;
 
-            MainServiceP Home = new MainServiceP();
-            Home.Dock = DockStyle.Fill;
+            MainWindow.ucMainServiceP = new MainServiceP();
+            MainWindow.ucMainServiceP.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();
-            MainWindow.MainPanel.Controls.Add(Home);
+            MainWindow.MainPanel.Controls.Add(MainWindow.ucMainServiceP);
         }
     }
 }

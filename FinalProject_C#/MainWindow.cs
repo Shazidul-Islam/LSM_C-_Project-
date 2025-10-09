@@ -34,6 +34,7 @@ namespace FinalProject_C_
         internal static UserControl ucTransaction { get; set; }
         internal static UserControl ucWorkList { get; set; }
         internal static UserControl ucReview { get; set; }
+        internal static UserControl ucMainServiceP { get; set; }
         
         public MainWindow()
         {
