@@ -31,8 +31,20 @@
             this.btnClr = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnComplete = new Guna.UI2.WinForms.Guna2Button();
+            this.lblServiceStatus = new System.Windows.Forms.Label();
+            this.lblEarnings = new System.Windows.Forms.Label();
+            this.lblWorkHour = new System.Windows.Forms.Label();
+            this.lblDT = new System.Windows.Forms.Label();
+            this.lblAdd = new System.Windows.Forms.Label();
+            this.lblClientPhone = new System.Windows.Forms.Label();
+            this.lblClientName = new System.Windows.Forms.Label();
+            this.lblAssignedID = new System.Windows.Forms.Label();
+            this.lblWorkDetails = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Panel2.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,11 +91,146 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 8;
+            this.guna2Panel2.Controls.Add(this.btnComplete);
+            this.guna2Panel2.Controls.Add(this.lblServiceStatus);
+            this.guna2Panel2.Controls.Add(this.lblEarnings);
+            this.guna2Panel2.Controls.Add(this.lblWorkHour);
+            this.guna2Panel2.Controls.Add(this.lblDT);
+            this.guna2Panel2.Controls.Add(this.lblAdd);
+            this.guna2Panel2.Controls.Add(this.lblClientPhone);
+            this.guna2Panel2.Controls.Add(this.lblClientName);
+            this.guna2Panel2.Controls.Add(this.lblAssignedID);
+            this.guna2Panel2.Controls.Add(this.lblWorkDetails);
+            this.guna2Panel2.Controls.Add(this.panel1);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.guna2Panel2.Location = new System.Drawing.Point(599, 66);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(310, 635);
             this.guna2Panel2.TabIndex = 5;
+            // 
+            // btnComplete
+            // 
+            this.btnComplete.BackColor = System.Drawing.Color.Transparent;
+            this.btnComplete.BorderRadius = 8;
+            this.btnComplete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnComplete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnComplete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnComplete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnComplete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnComplete.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnComplete.ForeColor = System.Drawing.Color.White;
+            this.btnComplete.Location = new System.Drawing.Point(12, 575);
+            this.btnComplete.Name = "btnComplete";
+            this.btnComplete.Size = new System.Drawing.Size(284, 35);
+            this.btnComplete.TabIndex = 10;
+            this.btnComplete.Text = "COMPLETE";
+            // 
+            // lblServiceStatus
+            // 
+            this.lblServiceStatus.AutoSize = true;
+            this.lblServiceStatus.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblServiceStatus.ForeColor = System.Drawing.Color.White;
+            this.lblServiceStatus.Location = new System.Drawing.Point(3, 481);
+            this.lblServiceStatus.Name = "lblServiceStatus";
+            this.lblServiceStatus.Size = new System.Drawing.Size(129, 19);
+            this.lblServiceStatus.TabIndex = 9;
+            this.lblServiceStatus.Text = "Service Status : ";
+            // 
+            // lblEarnings
+            // 
+            this.lblEarnings.AutoSize = true;
+            this.lblEarnings.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblEarnings.ForeColor = System.Drawing.Color.White;
+            this.lblEarnings.Location = new System.Drawing.Point(3, 421);
+            this.lblEarnings.Name = "lblEarnings";
+            this.lblEarnings.Size = new System.Drawing.Size(89, 19);
+            this.lblEarnings.TabIndex = 8;
+            this.lblEarnings.Text = "Earnings : ";
+            // 
+            // lblWorkHour
+            // 
+            this.lblWorkHour.AutoSize = true;
+            this.lblWorkHour.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblWorkHour.ForeColor = System.Drawing.Color.White;
+            this.lblWorkHour.Location = new System.Drawing.Point(3, 365);
+            this.lblWorkHour.Name = "lblWorkHour";
+            this.lblWorkHour.Size = new System.Drawing.Size(104, 19);
+            this.lblWorkHour.TabIndex = 7;
+            this.lblWorkHour.Text = "Work Hour : ";
+            // 
+            // lblDT
+            // 
+            this.lblDT.AutoSize = true;
+            this.lblDT.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblDT.ForeColor = System.Drawing.Color.White;
+            this.lblDT.Location = new System.Drawing.Point(3, 303);
+            this.lblDT.Name = "lblDT";
+            this.lblDT.Size = new System.Drawing.Size(129, 19);
+            this.lblDT.TabIndex = 6;
+            this.lblDT.Text = "Date and Time : ";
+            // 
+            // lblAdd
+            // 
+            this.lblAdd.AutoSize = true;
+            this.lblAdd.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblAdd.ForeColor = System.Drawing.Color.White;
+            this.lblAdd.Location = new System.Drawing.Point(3, 247);
+            this.lblAdd.Name = "lblAdd";
+            this.lblAdd.Size = new System.Drawing.Size(84, 19);
+            this.lblAdd.TabIndex = 5;
+            this.lblAdd.Text = "Address : ";
+            // 
+            // lblClientPhone
+            // 
+            this.lblClientPhone.AutoSize = true;
+            this.lblClientPhone.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblClientPhone.ForeColor = System.Drawing.Color.White;
+            this.lblClientPhone.Location = new System.Drawing.Point(3, 193);
+            this.lblClientPhone.Name = "lblClientPhone";
+            this.lblClientPhone.Size = new System.Drawing.Size(117, 19);
+            this.lblClientPhone.TabIndex = 4;
+            this.lblClientPhone.Text = "Client Phone : ";
+            // 
+            // lblClientName
+            // 
+            this.lblClientName.AutoSize = true;
+            this.lblClientName.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblClientName.ForeColor = System.Drawing.Color.White;
+            this.lblClientName.Location = new System.Drawing.Point(3, 136);
+            this.lblClientName.Name = "lblClientName";
+            this.lblClientName.Size = new System.Drawing.Size(112, 19);
+            this.lblClientName.TabIndex = 3;
+            this.lblClientName.Text = "Client Name : ";
+            // 
+            // lblAssignedID
+            // 
+            this.lblAssignedID.AutoSize = true;
+            this.lblAssignedID.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblAssignedID.ForeColor = System.Drawing.Color.White;
+            this.lblAssignedID.Location = new System.Drawing.Point(3, 79);
+            this.lblAssignedID.Name = "lblAssignedID";
+            this.lblAssignedID.Size = new System.Drawing.Size(113, 19);
+            this.lblAssignedID.TabIndex = 2;
+            this.lblAssignedID.Text = "Assigned ID : ";
+            // 
+            // lblWorkDetails
+            // 
+            this.lblWorkDetails.AutoSize = true;
+            this.lblWorkDetails.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblWorkDetails.ForeColor = System.Drawing.Color.White;
+            this.lblWorkDetails.Location = new System.Drawing.Point(91, 10);
+            this.lblWorkDetails.Name = "lblWorkDetails";
+            this.lblWorkDetails.Size = new System.Drawing.Size(136, 19);
+            this.lblWorkDetails.TabIndex = 1;
+            this.lblWorkDetails.Text = "WORK DETAILS";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(112)))), ((int)(((byte)(112)))));
+            this.panel1.Location = new System.Drawing.Point(0, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(310, 2);
+            this.panel1.TabIndex = 0;
             // 
             // guna2Panel1
             // 
@@ -119,6 +266,8 @@
             this.Controls.Add(this.guna2GradientPanel2);
             this.Name = "Worklist";
             this.Size = new System.Drawing.Size(918, 713);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -131,5 +280,16 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblDT;
+        private System.Windows.Forms.Label lblAdd;
+        private System.Windows.Forms.Label lblClientPhone;
+        private System.Windows.Forms.Label lblClientName;
+        private System.Windows.Forms.Label lblAssignedID;
+        private System.Windows.Forms.Label lblWorkDetails;
+        private Guna.UI2.WinForms.Guna2Button btnComplete;
+        private System.Windows.Forms.Label lblServiceStatus;
+        private System.Windows.Forms.Label lblEarnings;
+        private System.Windows.Forms.Label lblWorkHour;
     }
 }
