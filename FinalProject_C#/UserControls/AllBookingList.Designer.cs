@@ -31,6 +31,7 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.lblUserReview = new System.Windows.Forms.Label();
             this.lblRating = new System.Windows.Forms.Label();
             this.lblServiceStatus = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.btnClr = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -103,6 +103,18 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(310, 635);
             this.guna2Panel2.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(14, 509);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(266, 39);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "COMING SOON";
             // 
             // lblUserReview
             // 
@@ -306,17 +318,6 @@
             this.txtSearchBox.SelectedText = "";
             this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
             this.txtSearchBox.TabIndex = 1;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(14, 509);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(266, 39);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "COMING SOON";
             // 
             // AllBookingList
             // 

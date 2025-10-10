@@ -37,6 +37,7 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlSUB = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnLogIn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
@@ -46,7 +47,7 @@
             this.lblDS = new System.Windows.Forms.Label();
             this.lblT = new System.Windows.Forms.Label();
             this.lblW = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnLabel = new System.Windows.Forms.Label();
             this.pnlMainPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
@@ -149,6 +150,7 @@
             // 
             this.pnlSUB.BackColor = System.Drawing.Color.Transparent;
             this.pnlSUB.BorderRadius = 15;
+            this.pnlSUB.Controls.Add(this.btnLabel);
             this.pnlSUB.Controls.Add(this.guna2GradientButton1);
             this.pnlSUB.Controls.Add(this.btnSignUp);
             this.pnlSUB.Controls.Add(this.btnLogIn);
@@ -169,6 +171,25 @@
             this.pnlSUB.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(20);
             this.pnlSUB.Size = new System.Drawing.Size(684, 508);
             this.pnlSUB.TabIndex = 0;
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.BorderRadius = 8;
+            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(67, 397);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.Size = new System.Drawing.Size(135, 65);
+            this.guna2GradientButton1.TabIndex = 9;
+            this.guna2GradientButton1.Text = "sorsori dhuke jao";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // btnSignUp
             // 
@@ -312,24 +333,17 @@
             this.lblW.TabIndex = 0;
             this.lblW.Text = "Welcome";
             // 
-            // guna2GradientButton1
+            // btnLabel
             // 
-            this.guna2GradientButton1.BorderRadius = 8;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(67, 397);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(135, 65);
-            this.guna2GradientButton1.TabIndex = 9;
-            this.guna2GradientButton1.Text = "sorsori dhuke jao";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.btnLabel.AutoSize = true;
+            this.btnLabel.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnLabel.ForeColor = System.Drawing.Color.White;
+            this.btnLabel.Location = new System.Drawing.Point(231, 460);
+            this.btnLabel.Name = "btnLabel";
+            this.btnLabel.Size = new System.Drawing.Size(86, 13);
+            this.btnLabel.TabIndex = 10;
+            this.btnLabel.Text = "Forgot Password!";
+            this.btnLabel.Click += new System.EventHandler(this.btnLabel_Click);
             // 
             // LogIn
             // 
@@ -372,5 +386,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private System.Windows.Forms.Label btnLabel;
     }
 }

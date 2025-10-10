@@ -64,6 +64,7 @@
             this.btnClr.Size = new System.Drawing.Size(310, 37);
             this.btnClr.TabIndex = 4;
             this.btnClr.Text = "CLEAR";
+            this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
             // 
             // txtSearchBox
             // 

@@ -32,13 +32,12 @@
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblSubCategoryN = new System.Windows.Forms.Label();
             this.lblServiceD = new System.Windows.Forms.Label();
-            this.lblP = new System.Windows.Forms.Label();
-            this.lblSD = new System.Windows.Forms.Label();
-            this.lblSCN = new System.Windows.Forms.Label();
-            this.lblSN = new System.Windows.Forms.Label();
+            this.lblPrice = new System.Windows.Forms.Label();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.lblCategoryN = new System.Windows.Forms.Label();
+            this.lblServiceN = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -85,42 +84,29 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.lblPrice);
+            this.guna2Panel1.Controls.Add(this.lblSubCategoryN);
             this.guna2Panel1.Controls.Add(this.lblServiceD);
-            this.guna2Panel1.Controls.Add(this.lblP);
-            this.guna2Panel1.Controls.Add(this.lblSD);
-            this.guna2Panel1.Controls.Add(this.lblSCN);
-            this.guna2Panel1.Controls.Add(this.lblSN);
+            this.guna2Panel1.Controls.Add(this.lblPrice);
+            this.guna2Panel1.Controls.Add(this.lblDescription);
+            this.guna2Panel1.Controls.Add(this.lblCategoryN);
+            this.guna2Panel1.Controls.Add(this.lblServiceN);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.guna2Panel1.Location = new System.Drawing.Point(11, 301);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(571, 401);
             this.guna2Panel1.TabIndex = 9;
             // 
-            // label1
+            // lblSubCategoryN
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(46, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 30);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Service Sub-Catagory Name";
-            // 
-            // lblPrice
-            // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrice.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblPrice.ForeColor = System.Drawing.Color.Gray;
-            this.lblPrice.Location = new System.Drawing.Point(46, 336);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(173, 30);
-            this.lblPrice.TabIndex = 18;
-            this.lblPrice.Text = "Coming Soon";
+            this.lblSubCategoryN.AutoSize = true;
+            this.lblSubCategoryN.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubCategoryN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblSubCategoryN.ForeColor = System.Drawing.Color.White;
+            this.lblSubCategoryN.Location = new System.Drawing.Point(46, 164);
+            this.lblSubCategoryN.Name = "lblSubCategoryN";
+            this.lblSubCategoryN.Size = new System.Drawing.Size(270, 30);
+            this.lblSubCategoryN.TabIndex = 19;
+            this.lblSubCategoryN.Text = "Sub-Catagory Name : ";
             // 
             // lblServiceD
             // 
@@ -130,57 +116,56 @@
             this.lblServiceD.ForeColor = System.Drawing.Color.Gray;
             this.lblServiceD.Location = new System.Drawing.Point(46, 249);
             this.lblServiceD.Name = "lblServiceD";
-            this.lblServiceD.Size = new System.Drawing.Size(173, 30);
+            this.lblServiceD.Size = new System.Drawing.Size(0, 30);
             this.lblServiceD.TabIndex = 17;
-            this.lblServiceD.Text = "Coming Soon";
             // 
-            // lblP
+            // lblPrice
             // 
-            this.lblP.AutoSize = true;
-            this.lblP.BackColor = System.Drawing.Color.Transparent;
-            this.lblP.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblP.ForeColor = System.Drawing.Color.White;
-            this.lblP.Location = new System.Drawing.Point(46, 306);
-            this.lblP.Name = "lblP";
-            this.lblP.Size = new System.Drawing.Size(82, 30);
-            this.lblP.TabIndex = 14;
-            this.lblP.Text = "Price:";
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblPrice.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblPrice.ForeColor = System.Drawing.Color.White;
+            this.lblPrice.Location = new System.Drawing.Point(46, 322);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(96, 30);
+            this.lblPrice.TabIndex = 14;
+            this.lblPrice.Text = "Price : ";
             // 
-            // lblSD
+            // lblDescription
             // 
-            this.lblSD.AutoSize = true;
-            this.lblSD.BackColor = System.Drawing.Color.Transparent;
-            this.lblSD.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSD.ForeColor = System.Drawing.Color.White;
-            this.lblSD.Location = new System.Drawing.Point(46, 219);
-            this.lblSD.Name = "lblSD";
-            this.lblSD.Size = new System.Drawing.Size(248, 30);
-            this.lblSD.TabIndex = 13;
-            this.lblSD.Text = "Service Description";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescription.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Location = new System.Drawing.Point(46, 218);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(171, 30);
+            this.lblDescription.TabIndex = 13;
+            this.lblDescription.Text = "Description : ";
             // 
-            // lblSCN
+            // lblCategoryN
             // 
-            this.lblSCN.AutoSize = true;
-            this.lblSCN.BackColor = System.Drawing.Color.Transparent;
-            this.lblSCN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSCN.ForeColor = System.Drawing.Color.White;
-            this.lblSCN.Location = new System.Drawing.Point(46, 85);
-            this.lblSCN.Name = "lblSCN";
-            this.lblSCN.Size = new System.Drawing.Size(292, 30);
-            this.lblSCN.TabIndex = 12;
-            this.lblSCN.Text = "Service Catagory Name";
+            this.lblCategoryN.AutoSize = true;
+            this.lblCategoryN.BackColor = System.Drawing.Color.Transparent;
+            this.lblCategoryN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblCategoryN.ForeColor = System.Drawing.Color.White;
+            this.lblCategoryN.Location = new System.Drawing.Point(46, 112);
+            this.lblCategoryN.Name = "lblCategoryN";
+            this.lblCategoryN.Size = new System.Drawing.Size(215, 30);
+            this.lblCategoryN.TabIndex = 12;
+            this.lblCategoryN.Text = "Catagory Name : ";
             // 
-            // lblSN
+            // lblServiceN
             // 
-            this.lblSN.AutoSize = true;
-            this.lblSN.BackColor = System.Drawing.Color.Transparent;
-            this.lblSN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSN.ForeColor = System.Drawing.Color.White;
-            this.lblSN.Location = new System.Drawing.Point(46, 13);
-            this.lblSN.Name = "lblSN";
-            this.lblSN.Size = new System.Drawing.Size(199, 30);
-            this.lblSN.TabIndex = 11;
-            this.lblSN.Text = "Service Name : ";
+            this.lblServiceN.AutoSize = true;
+            this.lblServiceN.BackColor = System.Drawing.Color.Transparent;
+            this.lblServiceN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblServiceN.ForeColor = System.Drawing.Color.White;
+            this.lblServiceN.Location = new System.Drawing.Point(46, 64);
+            this.lblServiceN.Name = "lblServiceN";
+            this.lblServiceN.Size = new System.Drawing.Size(199, 30);
+            this.lblServiceN.TabIndex = 11;
+            this.lblServiceN.Text = "Service Name : ";
             // 
             // guna2GradientButton1
             // 
@@ -254,12 +239,11 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblServiceD;
-        private System.Windows.Forms.Label lblP;
-        private System.Windows.Forms.Label lblSD;
-        private System.Windows.Forms.Label lblSCN;
-        private System.Windows.Forms.Label lblSN;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblPrice;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Label lblCategoryN;
+        private System.Windows.Forms.Label lblServiceN;
+        private System.Windows.Forms.Label lblSubCategoryN;
     }
 }
