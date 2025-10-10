@@ -17,27 +17,12 @@ namespace FinalProject_C_.UserControls
             InitializeComponent();
         }
 
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void guna2Panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }
 
-        private void lblAddReview_Click(object sender, EventArgs e)
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

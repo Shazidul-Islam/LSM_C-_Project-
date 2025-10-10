@@ -19,7 +19,11 @@ namespace FinalProject_C_.UserControls
         }
         public ServiceDetails(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string Price, string Image) : this ()
         {
-            this.lblServiceName.Text=Name
+            this.lblServiceN.Text = Name;
+            this.lblCategoryN.Text += CategoryName;
+            this.lblSubCategoryN.Text += SubCategoryName;
+            this.lblDescription.Text += Description;
+            this.lblPrice.Text += Price;
         }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {

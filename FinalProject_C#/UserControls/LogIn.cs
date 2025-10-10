@@ -67,5 +67,13 @@ namespace FinalProject_C_.UserControls
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(MainWindow.ucMainServiceP);
         }
+
+        private void btnLabel_Click(object sender, EventArgs e)
+        {
+            ForgotPass forgot = new ForgotPass();
+            forgot.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(forgot);
+        }
     }
 }

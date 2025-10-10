@@ -16,7 +16,21 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
         }
+        private void Clear()
+        {
+            this.lblAssignedID.Text = string.Empty;
+            this.lblClientName.Text = string.Empty;
+            this.lblClientPhone.Text = string.Empty;
+            this.lblAdd.Text = string.Empty;    
+            this.lblDT.Text = string.Empty;
+            this.lblWorkHour.Text = string.Empty;
+            this.lblEarnings.Text = string.Empty;
+            this.lblServiceStatus.Text = string.Empty;
+        }
 
-
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            this.Clear();
+        }
     }
 }
