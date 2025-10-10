@@ -43,5 +43,10 @@ namespace FinalProject_C_.UserControls
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(update);
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
