@@ -49,14 +49,12 @@ namespace FinalProject_C_.UserControls.Cards
             MainWindow.MainPanel.Controls.Add(servicedetails);
         }
 
-        private void pnlCard_Paint(object sender, PaintEventArgs e)
+        private void btnBookNow_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
+            BookN book = new BookN(this.ServiceID);
+            book.Dock = DockStyle.Fill;
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(book);
         }
     }
 }

@@ -63,9 +63,6 @@ namespace FinalProject_C_.UserControls
                 var DT = MainWindow.dataAccess.ExecuteQueryTable(query);
                 this.gdvServiceTable.AutoGenerateColumns = false;
                 this.gdvServiceTable.DataSource = DT;
-            
-
-
             }
             catch (Exception ex) { MessageBox.Show($"ERROR {ex.Message}"); }
         }

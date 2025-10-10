@@ -39,7 +39,7 @@
             this.lblCategoryN = new System.Windows.Forms.Label();
             this.lblServiceN = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpReviews = new System.Windows.Forms.FlowLayoutPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlMainPanel.SuspendLayout();
@@ -67,7 +67,7 @@
             // 
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
             this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton1);
-            this.guna2GradientPanel2.Controls.Add(this.flowLayoutPanel1);
+            this.guna2GradientPanel2.Controls.Add(this.flpReviews);
             this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox1);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
@@ -98,13 +98,12 @@
             // 
             // lblSubCategoryN
             // 
-            this.lblSubCategoryN.AutoSize = true;
             this.lblSubCategoryN.BackColor = System.Drawing.Color.Transparent;
-            this.lblSubCategoryN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblSubCategoryN.ForeColor = System.Drawing.Color.White;
+            this.lblSubCategoryN.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblSubCategoryN.ForeColor = System.Drawing.Color.DarkGray;
             this.lblSubCategoryN.Location = new System.Drawing.Point(46, 164);
             this.lblSubCategoryN.Name = "lblSubCategoryN";
-            this.lblSubCategoryN.Size = new System.Drawing.Size(270, 30);
+            this.lblSubCategoryN.Size = new System.Drawing.Size(473, 30);
             this.lblSubCategoryN.TabIndex = 19;
             this.lblSubCategoryN.Text = "Sub-Catagory Name : ";
             // 
@@ -125,7 +124,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(46, 322);
+            this.lblPrice.Location = new System.Drawing.Point(47, 339);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(96, 30);
             this.lblPrice.TabIndex = 14;
@@ -133,25 +132,23 @@
             // 
             // lblDescription
             // 
-            this.lblDescription.AutoSize = true;
             this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblDescription.ForeColor = System.Drawing.Color.White;
+            this.lblDescription.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.Color.DarkGray;
             this.lblDescription.Location = new System.Drawing.Point(46, 218);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(171, 30);
+            this.lblDescription.Size = new System.Drawing.Size(473, 104);
             this.lblDescription.TabIndex = 13;
             this.lblDescription.Text = "Description : ";
             // 
             // lblCategoryN
             // 
-            this.lblCategoryN.AutoSize = true;
             this.lblCategoryN.BackColor = System.Drawing.Color.Transparent;
-            this.lblCategoryN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblCategoryN.ForeColor = System.Drawing.Color.White;
+            this.lblCategoryN.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblCategoryN.ForeColor = System.Drawing.Color.DarkGray;
             this.lblCategoryN.Location = new System.Drawing.Point(46, 112);
             this.lblCategoryN.Name = "lblCategoryN";
-            this.lblCategoryN.Size = new System.Drawing.Size(215, 30);
+            this.lblCategoryN.Size = new System.Drawing.Size(473, 30);
             this.lblCategoryN.TabIndex = 12;
             this.lblCategoryN.Text = "Catagory Name : ";
             // 
@@ -159,11 +156,11 @@
             // 
             this.lblServiceN.AutoSize = true;
             this.lblServiceN.BackColor = System.Drawing.Color.Transparent;
-            this.lblServiceN.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblServiceN.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblServiceN.ForeColor = System.Drawing.Color.White;
-            this.lblServiceN.Location = new System.Drawing.Point(46, 64);
+            this.lblServiceN.Location = new System.Drawing.Point(45, 43);
             this.lblServiceN.Name = "lblServiceN";
-            this.lblServiceN.Size = new System.Drawing.Size(199, 30);
+            this.lblServiceN.Size = new System.Drawing.Size(239, 35);
             this.lblServiceN.TabIndex = 11;
             this.lblServiceN.Text = "Service Name : ";
             // 
@@ -180,20 +177,20 @@
             this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
             this.guna2GradientButton1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(647, 649);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(594, 649);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(217, 53);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(313, 53);
             this.guna2GradientButton1.TabIndex = 8;
             this.guna2GradientButton1.Text = "Book Now!";
             this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // flowLayoutPanel1
+            // flpReviews
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(594, 301);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(313, 329);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.flpReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.flpReviews.Location = new System.Drawing.Point(594, 301);
+            this.flpReviews.Name = "flpReviews";
+            this.flpReviews.Size = new System.Drawing.Size(313, 329);
+            this.flpReviews.TabIndex = 2;
             // 
             // guna2PictureBox1
             // 
@@ -236,7 +233,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpReviews;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label lblServiceD;

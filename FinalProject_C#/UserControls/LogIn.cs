@@ -54,7 +54,7 @@ namespace FinalProject_C_.UserControls
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='00-01'";
+            var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='U-0001'";
             var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
 
             MainWindow.loginUser = DA;

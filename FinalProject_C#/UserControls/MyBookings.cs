@@ -15,16 +15,74 @@ namespace FinalProject_C_.UserControls
         public MyBookings()
         {
             InitializeComponent();
+            LoadDataTable();
         }
 
-        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        internal void LoadDataTable()
         {
-
+            var Query = $@"select B.BookingID,
+                                A.ServiceID, 
+                                S.Name,
+                                U.FullName,
+                                A.AssignedID, 
+                                SC.SubCategoryName,
+                                U.PhoneNo,
+                                A.WorkAddress,
+                                A.WorkStartTime,
+                                A.WorkHours,
+                                BS.StatusName,
+                                (S.Price*A.WorkHours) as Cost
+                        from Service as S,
+                                Assigned as A,
+                                Users as U ,
+                                SubCategory as SC,
+                                Booking as B,
+                                BookingStatus as BS
+                        where S.ServiceID = A.ServiceID and
+                                A.EmployeeID = U.UserID and
+                                SC.SubCategoryID = S.SubCategoryID and
+                                A.BookingID = B.BookingID and
+                                B.StatusID = BS.StatusID;";
+            try
+            {
+                var DT = MainWindow.dataAccess.ExecuteQueryTable(Query);
+                this.gdvBookingsTable.DataSource = DT;
+            }
+            catch (Exception ex) { MessageBox.Show("Error : "+ ex.Message); }
         }
 
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
+        private void Clear()
         {
+            this.lblBookingID.Text = "Booking ID : ";
+            this.lblServiceName.Text = "Service Name : ";
+            this.lblAssignedID.Text = "Assigned ID : ";
+            this.lblCategoryName.Text = "Category Name : ";
+            this.lblWorkerPhone.Text = "Worker Phone : ";
+            this.lblAddress.Text = "Address : ";
+            this.lblDateandTime.Text = "Date and Time : ";
+            this.lblWorkHours.Text = "Work Hours : ";
+            this.lblPaymentStatus.Text = "Payment Status : ";
+            this.lblTotalCost.Text = "Total Cost : ";
+        }
 
+        private void gdvBookingsTable_DoubleClick(object sender, EventArgs e)
+        {
+            Clear();
+            this.lblBookingID.Text += this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString();
+            this.lblServiceName.Text += this.gdvBookingsTable.CurrentRow.Cells[3].Value.ToString();
+            this.lblAssignedID.Text += this.gdvBookingsTable.CurrentRow.Cells[4].Value.ToString();
+            this.lblCategoryName.Text += this.gdvBookingsTable.CurrentRow.Cells[5].Value.ToString();
+            this.lblWorkerPhone.Text += this.gdvBookingsTable.CurrentRow.Cells[6].Value.ToString();
+            this.lblAddress.Text += this.gdvBookingsTable.CurrentRow.Cells[7].Value.ToString();
+            this.lblDateandTime.Text += this.gdvBookingsTable.CurrentRow.Cells[8].Value.ToString();
+            this.lblWorkHours.Text += this.gdvBookingsTable.CurrentRow.Cells[9].Value.ToString();
+            this.lblPaymentStatus.Text += this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString();
+            this.lblTotalCost.Text += this.gdvBookingsTable.CurrentRow.Cells[11].Value.ToString();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.Clear();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace FinalProject_C_.UserControls
 {
     public partial class ServiceDetails : UserControl
     {
-
+        internal string ServiceID {  get; set; } 
         public ServiceDetails()
         {
             InitializeComponent();
@@ -24,10 +24,11 @@ namespace FinalProject_C_.UserControls
             this.lblSubCategoryN.Text += SubCategoryName;
             this.lblDescription.Text += Description;
             this.lblPrice.Text += Price;
+            this.ServiceID = ServiceID;
         }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            BookN book = new BookN();
+            BookN book = new BookN(this.ServiceID);
             book.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(book);

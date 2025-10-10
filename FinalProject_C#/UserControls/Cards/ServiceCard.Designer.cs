@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlCard = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnBack = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBookNow = new Guna.UI2.WinForms.Guna2Button();
             this.lblPrice = new System.Windows.Forms.Label();
             this.lblCategory = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,7 +43,7 @@
             // 
             // pnlCard
             // 
-            this.pnlCard.Controls.Add(this.btnBack);
+            this.pnlCard.Controls.Add(this.btnBookNow);
             this.pnlCard.Controls.Add(this.lblPrice);
             this.pnlCard.Controls.Add(this.lblCategory);
             this.pnlCard.Controls.Add(this.panel1);
@@ -57,25 +57,24 @@
             this.pnlCard.Size = new System.Drawing.Size(225, 125);
             this.pnlCard.TabIndex = 0;
             this.pnlCard.Click += new System.EventHandler(this.pnlCard_Click);
-            this.pnlCard.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCard_Paint);
             // 
-            // btnBack
+            // btnBookNow
             // 
-            this.btnBack.BackColor = System.Drawing.Color.Transparent;
-            this.btnBack.BorderRadius = 4;
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.btnBack.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(142, 101);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(65, 21);
-            this.btnBack.TabIndex = 7;
-            this.btnBack.Text = "Book";
-            this.btnBack.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnBookNow.BackColor = System.Drawing.Color.Transparent;
+            this.btnBookNow.BorderRadius = 4;
+            this.btnBookNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBookNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBookNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBookNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBookNow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
+            this.btnBookNow.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnBookNow.ForeColor = System.Drawing.Color.White;
+            this.btnBookNow.Location = new System.Drawing.Point(134, 98);
+            this.btnBookNow.Name = "btnBookNow";
+            this.btnBookNow.Size = new System.Drawing.Size(88, 21);
+            this.btnBookNow.TabIndex = 7;
+            this.btnBookNow.Text = "Book Now";
+            this.btnBookNow.Click += new System.EventHandler(this.btnBookNow_Click);
             // 
             // lblPrice
             // 
@@ -83,7 +82,7 @@
             this.lblPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblPrice.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblPrice.ForeColor = System.Drawing.Color.White;
-            this.lblPrice.Location = new System.Drawing.Point(128, 79);
+            this.lblPrice.Location = new System.Drawing.Point(131, 79);
             this.lblPrice.Name = "lblPrice";
             this.lblPrice.Size = new System.Drawing.Size(44, 15);
             this.lblPrice.TabIndex = 5;
@@ -117,9 +116,9 @@
             this.lblServiceN.BackColor = System.Drawing.Color.Transparent;
             this.lblServiceN.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblServiceN.ForeColor = System.Drawing.Color.White;
-            this.lblServiceN.Location = new System.Drawing.Point(3, 75);
+            this.lblServiceN.Location = new System.Drawing.Point(3, 79);
             this.lblServiceN.Name = "lblServiceN";
-            this.lblServiceN.Size = new System.Drawing.Size(119, 32);
+            this.lblServiceN.Size = new System.Drawing.Size(119, 28);
             this.lblServiceN.TabIndex = 1;
             this.lblServiceN.Text = "Service Name";
             this.lblServiceN.Click += new System.EventHandler(this.pnlCard_Click);
@@ -161,7 +160,7 @@
         private System.Windows.Forms.Label lblServiceN;
         private Guna.UI2.WinForms.Guna2PictureBox pbSeviceImage;
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button btnBack;
+        private Guna.UI2.WinForms.Guna2Button btnBookNow;
         private System.Windows.Forms.Label lblPrice;
         private System.Windows.Forms.Label lblCategory;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
