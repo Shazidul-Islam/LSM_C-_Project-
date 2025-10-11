@@ -34,6 +34,8 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblClientID = new System.Windows.Forms.Label();
+            this.lblBookingID = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.lblUserReview = new System.Windows.Forms.Label();
             this.lblRating = new System.Windows.Forms.Label();
@@ -48,12 +50,9 @@
             this.lblServiceID = new System.Windows.Forms.Label();
             this.lblAssignedID = new System.Windows.Forms.Label();
             this.lblBookingDetails = new System.Windows.Forms.Label();
-            this.btnClr = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.gdvBookingsTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.lblBookingID = new System.Windows.Forms.Label();
-            this.lblClientID = new System.Windows.Forms.Label();
             this.colBookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAssignedID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,6 +64,7 @@
             this.colWorkHour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colBookingS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTotalCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -75,7 +75,7 @@
             // 
             this.guna2GradientPanel2.Controls.Add(this.panel1);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel2);
-            this.guna2GradientPanel2.Controls.Add(this.btnClr);
+            this.guna2GradientPanel2.Controls.Add(this.btnClear);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
             this.guna2GradientPanel2.Controls.Add(this.txtSearchBox);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -123,6 +123,28 @@
             this.guna2Panel2.Size = new System.Drawing.Size(310, 635);
             this.guna2Panel2.TabIndex = 5;
             // 
+            // lblClientID
+            // 
+            this.lblClientID.AutoSize = true;
+            this.lblClientID.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblClientID.ForeColor = System.Drawing.Color.White;
+            this.lblClientID.Location = new System.Drawing.Point(6, 212);
+            this.lblClientID.Name = "lblClientID";
+            this.lblClientID.Size = new System.Drawing.Size(87, 19);
+            this.lblClientID.TabIndex = 18;
+            this.lblClientID.Text = "Client ID : ";
+            // 
+            // lblBookingID
+            // 
+            this.lblBookingID.AutoSize = true;
+            this.lblBookingID.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblBookingID.ForeColor = System.Drawing.Color.White;
+            this.lblBookingID.Location = new System.Drawing.Point(6, 52);
+            this.lblBookingID.Name = "lblBookingID";
+            this.lblBookingID.Size = new System.Drawing.Size(105, 19);
+            this.lblBookingID.TabIndex = 17;
+            this.lblBookingID.Text = "Booking ID : ";
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -162,7 +184,7 @@
             this.lblTotalCost.AutoSize = true;
             this.lblTotalCost.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblTotalCost.ForeColor = System.Drawing.Color.White;
-            this.lblTotalCost.Location = new System.Drawing.Point(5, 404);
+            this.lblTotalCost.Location = new System.Drawing.Point(5, 411);
             this.lblTotalCost.Name = "lblTotalCost";
             this.lblTotalCost.Size = new System.Drawing.Size(94, 19);
             this.lblTotalCost.TabIndex = 12;
@@ -173,7 +195,7 @@
             this.lblBookingStatus.AutoSize = true;
             this.lblBookingStatus.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblBookingStatus.ForeColor = System.Drawing.Color.White;
-            this.lblBookingStatus.Location = new System.Drawing.Point(5, 372);
+            this.lblBookingStatus.Location = new System.Drawing.Point(5, 382);
             this.lblBookingStatus.Name = "lblBookingStatus";
             this.lblBookingStatus.Size = new System.Drawing.Size(133, 19);
             this.lblBookingStatus.TabIndex = 11;
@@ -184,7 +206,7 @@
             this.lblWorkHour.AutoSize = true;
             this.lblWorkHour.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblWorkHour.ForeColor = System.Drawing.Color.White;
-            this.lblWorkHour.Location = new System.Drawing.Point(5, 340);
+            this.lblWorkHour.Location = new System.Drawing.Point(5, 354);
             this.lblWorkHour.Name = "lblWorkHour";
             this.lblWorkHour.Size = new System.Drawing.Size(104, 19);
             this.lblWorkHour.TabIndex = 10;
@@ -192,23 +214,21 @@
             // 
             // lblDT
             // 
-            this.lblDT.AutoSize = true;
             this.lblDT.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblDT.ForeColor = System.Drawing.Color.White;
-            this.lblDT.Location = new System.Drawing.Point(5, 308);
+            this.lblDT.Location = new System.Drawing.Point(5, 315);
             this.lblDT.Name = "lblDT";
-            this.lblDT.Size = new System.Drawing.Size(129, 19);
+            this.lblDT.Size = new System.Drawing.Size(305, 39);
             this.lblDT.TabIndex = 9;
             this.lblDT.Text = "Date and Time : ";
             // 
             // lblAddress
             // 
-            this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.White;
             this.lblAddress.Location = new System.Drawing.Point(5, 276);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(128, 19);
+            this.lblAddress.Size = new System.Drawing.Size(305, 39);
             this.lblAddress.TabIndex = 8;
             this.lblAddress.Text = "Work Address : ";
             // 
@@ -232,7 +252,7 @@
             this.lblCatagoryName.Name = "lblCatagoryName";
             this.lblCatagoryName.Size = new System.Drawing.Size(138, 19);
             this.lblCatagoryName.TabIndex = 6;
-            this.lblCatagoryName.Text = "Catagory Name : ";
+            this.lblCatagoryName.Text = "Category Name : ";
             // 
             // lblServiceName
             // 
@@ -278,22 +298,23 @@
             this.lblBookingDetails.TabIndex = 2;
             this.lblBookingDetails.Text = "BOOKING DETAILS";
             // 
-            // btnClr
+            // btnClear
             // 
-            this.btnClr.BackColor = System.Drawing.Color.Transparent;
-            this.btnClr.BorderRadius = 8;
-            this.btnClr.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnClr.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnClr.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnClr.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnClr.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnClr.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.btnClr.ForeColor = System.Drawing.Color.White;
-            this.btnClr.Location = new System.Drawing.Point(594, 14);
-            this.btnClr.Name = "btnClr";
-            this.btnClr.Size = new System.Drawing.Size(310, 37);
-            this.btnClr.TabIndex = 4;
-            this.btnClr.Text = "CLEAR";
+            this.btnClear.BackColor = System.Drawing.Color.Transparent;
+            this.btnClear.BorderRadius = 8;
+            this.btnClear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClear.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnClear.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnClear.ForeColor = System.Drawing.Color.White;
+            this.btnClear.Location = new System.Drawing.Point(594, 14);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(310, 37);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "CLEAR";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // guna2Panel1
             // 
@@ -305,28 +326,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(572, 635);
             this.guna2Panel1.TabIndex = 3;
-            // 
-            // txtSearchBox
-            // 
-            this.txtSearchBox.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchBox.BorderRadius = 8;
-            this.txtSearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchBox.DefaultText = "";
-            this.txtSearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchBox.ForeColor = System.Drawing.Color.Black;
-            this.txtSearchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBox.Location = new System.Drawing.Point(13, 14);
-            this.txtSearchBox.Name = "txtSearchBox";
-            this.txtSearchBox.PlaceholderText = "";
-            this.txtSearchBox.SelectedText = "";
-            this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
-            this.txtSearchBox.TabIndex = 1;
             // 
             // gdvBookingsTable
             // 
@@ -395,28 +394,6 @@
             this.gdvBookingsTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gdvBookingsTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gdvBookingsTable.DoubleClick += new System.EventHandler(this.gdvBookingsTable_DoubleClick);
-            // 
-            // lblBookingID
-            // 
-            this.lblBookingID.AutoSize = true;
-            this.lblBookingID.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblBookingID.ForeColor = System.Drawing.Color.White;
-            this.lblBookingID.Location = new System.Drawing.Point(6, 52);
-            this.lblBookingID.Name = "lblBookingID";
-            this.lblBookingID.Size = new System.Drawing.Size(105, 19);
-            this.lblBookingID.TabIndex = 17;
-            this.lblBookingID.Text = "Booking ID : ";
-            // 
-            // lblClientID
-            // 
-            this.lblClientID.AutoSize = true;
-            this.lblClientID.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblClientID.ForeColor = System.Drawing.Color.White;
-            this.lblClientID.Location = new System.Drawing.Point(6, 212);
-            this.lblClientID.Name = "lblClientID";
-            this.lblClientID.Size = new System.Drawing.Size(87, 19);
-            this.lblClientID.TabIndex = 18;
-            this.lblClientID.Text = "Client ID : ";
             // 
             // colBookingID
             // 
@@ -499,6 +476,28 @@
             this.colTotalCost.Name = "colTotalCost";
             this.colTotalCost.ReadOnly = true;
             // 
+            // txtSearchBox
+            // 
+            this.txtSearchBox.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchBox.BorderRadius = 8;
+            this.txtSearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchBox.DefaultText = "";
+            this.txtSearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtSearchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearchBox.ForeColor = System.Drawing.Color.Black;
+            this.txtSearchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBox.Location = new System.Drawing.Point(13, 14);
+            this.txtSearchBox.Name = "txtSearchBox";
+            this.txtSearchBox.PlaceholderText = "";
+            this.txtSearchBox.SelectedText = "";
+            this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
+            this.txtSearchBox.TabIndex = 1;
+            // 
             // AllBookingList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -519,7 +518,7 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button btnClr;
+        private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchBox;
         private System.Windows.Forms.Label lblBookingDetails;

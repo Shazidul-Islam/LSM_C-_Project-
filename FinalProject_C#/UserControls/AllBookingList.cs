@@ -54,24 +54,41 @@ namespace FinalProject_C_.UserControls
 
         private void Clear()
         {
-            this.lblAssignedID.Text = string.Empty;
-            this.lblBookingID.Text = string.Empty;
-            this.lblServiceID.Text = string.Empty;
-            this.lblServiceName.Text = string.Empty;
-            this.lblCatagoryName.Text = string.Empty;
-            this.lblEmployeID.Text = string.Empty;
-            this.lblAddress.Text = string.Empty;
-            this.lblDT.Text = string.Empty;
-            this.lblWorkHour.Text = string.Empty;
-            this.lblBookingStatus.Text = string.Empty;
-            this.lblTotalCost.Text = string.Empty;
-            this.lblRating.Text = string.Empty;
-            this.lblUserReview.Text = string.Empty; 
+            this.lblBookingID.Text = "Booking ID : ";
+            this.lblAssignedID.Text = "Assigned ID : ";
+            this.lblServiceID.Text = "Service ID : ";
+            this.lblServiceName.Text = "Service Name : ";
+            this.lblCatagoryName.Text = "Category Name : ";
+            this.lblEmployeID.Text = "Employee ID : ";
+            this.lblAddress.Text = "Work Address : ";
+            this.lblDT.Text = "Date and Time : ";
+            this.lblWorkHour.Text = "Work Hour : ";
+            this.lblBookingStatus.Text = "Booking Status : ";
+            this.lblTotalCost.Text = "Total Cose : ";
+            this.lblRating.Text = "Rating : ";
+            this.lblUserReview.Text = "User Review : "; 
         }
 
         private void gdvBookingsTable_DoubleClick(object sender, EventArgs e)
         {
+            Clear();
             this.lblBookingID.Text += this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString();
+            this.lblAssignedID.Text += this.gdvBookingsTable.CurrentRow.Cells[1].Value.ToString();
+            this.lblServiceID.Text += this.gdvBookingsTable.CurrentRow.Cells[2].Value.ToString();
+            this.lblServiceName.Text += this.gdvBookingsTable.CurrentRow.Cells[2].Value.ToString();
+            this.lblCatagoryName.Text += this.gdvBookingsTable.CurrentRow.Cells[3].Value.ToString();
+            this.lblClientID.Text += this.gdvBookingsTable.CurrentRow.Cells[4].Value.ToString();
+            this.lblEmployeID.Text += this.gdvBookingsTable.CurrentRow.Cells[5].Value.ToString();
+            this.lblAddress.Text += this.gdvBookingsTable.CurrentRow.Cells[6].Value.ToString();
+            this.lblDT.Text += this.gdvBookingsTable.CurrentRow.Cells[7].Value.ToString();
+            this.lblWorkHour.Text += this.gdvBookingsTable.CurrentRow.Cells[8].Value.ToString();
+            this.lblBookingStatus.Text += this.gdvBookingsTable.CurrentRow.Cells[9].Value.ToString();
+            this.lblTotalCost.Text += this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.Clear();
         }
     }
 }
