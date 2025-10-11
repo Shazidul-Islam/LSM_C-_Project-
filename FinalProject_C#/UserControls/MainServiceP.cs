@@ -22,7 +22,7 @@ namespace FinalProject_C_.UserControls
             ServicesPanel = this.pnlServicesP;
         }
 
-        private void LoadServices()
+        internal static void LoadServices()
         {
             Sevices services = new Sevices();
             services.Dock = DockStyle.Fill;

@@ -43,7 +43,8 @@ namespace FinalProject_C_.UserControls
                                 A.EmployeeID = U.UserID and
                                 SC.SubCategoryID = S.SubCategoryID and
                                 A.BookingID = B.BookingID and
-                                B.StatusID = BS.StatusID;";
+                                B.StatusID = BS.StatusID and
+                                A.ClientID ='{MainWindow.loginUser.Rows[0][0].ToString()}';";
             try
             {
                 var DT = MainWindow.dataAccess.ExecuteQueryTable(Query);

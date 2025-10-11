@@ -45,6 +45,11 @@ namespace FinalProject_C_.UserControls.Cards
         }
         private void pnlCard_Click(object sender, EventArgs e)
         {
+            goServicedetails();
+        }
+
+        private void goServicedetails()
+        {
             ServiceDetails servicedetails = new ServiceDetails(this.ServiceID, this.ServiceName, this.CategoryName, this.SubCategoryName, this.Description, this.Price, this.Image, this.SubCID);
             servicedetails.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();

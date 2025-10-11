@@ -21,8 +21,8 @@ namespace FinalProject_C_.UserControls
         internal static string Price { get; set; }
         internal static string TotalCost { get; set; }
         internal static string SubCategoryID { get; set; }
-
         internal static UserControl SDetailPage { get; set; }
+        internal Boolean TrackDetailP { get; set; } = false;
 
         public BookN()
         {
@@ -104,9 +104,14 @@ namespace FinalProject_C_.UserControls
             this.pnlMainPanel.Controls.Add(MainWindow.ucSevices);
             MainWindow.ucSevices.Show();
 
-            SDetailPage.Dock = DockStyle.Fill;
-            this.pnlMainPanel.Controls.Clear();
-            this.pnlMainPanel.Controls.Add(SDetailPage);
+            if (this.TrackDetailP)
+            {
+                SDetailPage.Dock = DockStyle.Fill;
+                this.pnlMainPanel.Controls.Clear();
+                this.pnlMainPanel.Controls.Add(SDetailPage);
+                return;
+            }
+            MainServiceP.LoadServices();
         }
 
         private void txtHours_TextChanged(object sender, EventArgs e)

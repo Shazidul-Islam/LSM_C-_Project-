@@ -18,6 +18,7 @@ namespace FinalProject_C_.UserControls
         public ServiceDetails()
         {
             InitializeComponent();
+            BookN.SDetailPage = this;
         }
         public ServiceDetails(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string price, string Image ,string SubCID) : this ()
         {
@@ -33,7 +34,7 @@ namespace FinalProject_C_.UserControls
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             BookN book = new BookN(this.ServiceID,this.SubCategoryID ,this.Price);
-            BookN.SDetailPage = this;
+            book.TrackDetailP = true;
             book.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(book);

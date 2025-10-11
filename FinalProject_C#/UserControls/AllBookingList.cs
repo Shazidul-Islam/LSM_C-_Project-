@@ -15,28 +15,63 @@ namespace FinalProject_C_.UserControls
         public AllBookingList()
         {
             InitializeComponent();
+            loadTable();
         }
+
+        private void loadTable()
+        {
+            var Query = $@"select  B.BookingID,
+                                A.AssignedID,
+                                S.Name,
+                                SC.SubCategoryName,
+                                U.UserID as userID,
+                                EU.UserID as EmID,
+                                A.WorkAddress,
+                                A.WorkStartTime,
+                                A.WorkHours,
+                                BS.StatusName,
+                                (S.Price*A.WorkHours) as Cost
+                        from Service as S,
+                                Assigned as A,
+                                Users as EU ,
+                                SubCategory as SC,
+                                Booking as B,
+                                BookingStatus as BS,
+                                Users as U
+                        where S.ServiceID = A.ServiceID and
+                                A.EmployeeID = EU.UserID and
+                                A.ClientID = U.UserID and
+                                SC.SubCategoryID = S.SubCategoryID and
+                                A.BookingID = B.BookingID and
+                                B.StatusID = BS.StatusID;";
+            try
+            {
+                var DT = MainWindow.dataAccess.ExecuteQueryTable(Query);
+                this.gdvBookingsTable.DataSource = DT;
+            }
+            catch (Exception ex) { MessageBox.Show("Error : " + ex.Message); }
+        }
+
         private void Clear()
         {
             this.lblAssignedID.Text = string.Empty;
+            this.lblBookingID.Text = string.Empty;
             this.lblServiceID.Text = string.Empty;
             this.lblServiceName.Text = string.Empty;
             this.lblCatagoryName.Text = string.Empty;
-            this.lblEmployeePhone.Text = string.Empty;
+            this.lblEmployeID.Text = string.Empty;
             this.lblAddress.Text = string.Empty;
             this.lblDT.Text = string.Empty;
             this.lblWorkHour.Text = string.Empty;
-            this.lblPaymentStatus.Text = string.Empty;
+            this.lblBookingStatus.Text = string.Empty;
             this.lblTotalCost.Text = string.Empty;
-            this.lblServiceStatus.Text = string.Empty;
-            this.lblServiceStatus.Text = string.Empty;
             this.lblRating.Text = string.Empty;
             this.lblUserReview.Text = string.Empty; 
         }
 
-        private void btnClr_Click(object sender, EventArgs e)
+        private void gdvBookingsTable_DoubleClick(object sender, EventArgs e)
         {
-            this.Clear();
+            this.lblBookingID.Text += this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString();
         }
     }
 }

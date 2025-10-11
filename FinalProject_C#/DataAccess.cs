@@ -42,7 +42,7 @@ namespace FinalProject_C_
 
         public DataAccess()
         {
-            this.Sqlcon = new SqlConnection(@"Data Source=ProjectR\sqlexpress;Initial Catalog=ProjectLCAL_C#;Integrated Security=True;");
+            this.Sqlcon = new SqlConnection(@"Data Source=BATMAN\sqlexpress;Initial Catalog=ProjectLCAL_C#;Integrated Security=True;");
             Sqlcon.Open();
         }
 
