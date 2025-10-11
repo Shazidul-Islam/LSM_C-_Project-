@@ -20,6 +20,7 @@ namespace FinalProject_C_.UserControls.Cards
         string ServiceName { get; set; }
         string CategoryName { get; set; }
         string SubCategoryName { get; set; }
+        string SubCID { get; set; }
         string Description { get; set; }
         string Price { get; set; }
         string Image { get; set; }
@@ -28,7 +29,7 @@ namespace FinalProject_C_.UserControls.Cards
             InitializeComponent();
         }
 
-        public ServiceCard(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string Price, string Image) : this ()
+        public ServiceCard(string ServiceID, string Name, string CategoryName, string SubCategoryName, string Description, string Price, string Image ,string SubCID) : this ()
         {
             this.ServiceID= ServiceID;
             this.ServiceName= Name;
@@ -37,13 +38,14 @@ namespace FinalProject_C_.UserControls.Cards
             this.Description= Description;
             this.Price = Price;
             this.Image = Image;
+            this.SubCID = SubCID;
             this.lblServiceN.Text = Name;
             this.lblCategory.Text += CategoryName;
             this.lblPrice.Text += Price+" Tk";
         }
         private void pnlCard_Click(object sender, EventArgs e)
         {
-            ServiceDetails servicedetails = new ServiceDetails(ServiceID, ServiceName, CategoryName, SubCategoryName, Description, Price, Image);
+            ServiceDetails servicedetails = new ServiceDetails(this.ServiceID, this.ServiceName, this.CategoryName, this.SubCategoryName, this.Description, this.Price, this.Image, this.SubCID);
             servicedetails.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(servicedetails);
@@ -51,7 +53,7 @@ namespace FinalProject_C_.UserControls.Cards
 
         private void btnBookNow_Click(object sender, EventArgs e)
         {
-            BookN book = new BookN(this.ServiceID);
+            BookN book = new BookN(this.ServiceID , this.SubCID , this.Price);
             book.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(book);

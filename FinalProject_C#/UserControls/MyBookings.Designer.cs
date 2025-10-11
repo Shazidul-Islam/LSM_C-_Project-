@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnClr = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -42,9 +42,9 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel17 = new System.Windows.Forms.Panel();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnPayNow = new Guna.UI2.WinForms.Guna2Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddReview = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -173,9 +173,9 @@
             this.guna2Panel3.Controls.Add(this.panel16);
             this.guna2Panel3.Controls.Add(this.panel17);
             this.guna2Panel3.Controls.Add(this.guna2ComboBox1);
-            this.guna2Panel3.Controls.Add(this.guna2Button2);
+            this.guna2Panel3.Controls.Add(this.btnPayNow);
             this.guna2Panel3.Controls.Add(this.panel14);
-            this.guna2Panel3.Controls.Add(this.btnUpdate);
+            this.guna2Panel3.Controls.Add(this.btnAddReview);
             this.guna2Panel3.Controls.Add(this.guna2TextBox2);
             this.guna2Panel3.Controls.Add(this.label15);
             this.guna2Panel3.Controls.Add(this.label14);
@@ -228,7 +228,7 @@
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel17.Location = new System.Drawing.Point(0, 456);
+            this.panel17.Location = new System.Drawing.Point(0, 458);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(310, 1);
             this.panel17.TabIndex = 17;
@@ -244,26 +244,28 @@
             this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(95, 469);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(97, 469);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(201, 36);
             this.guna2ComboBox1.TabIndex = 34;
             // 
-            // guna2Button2
+            // btnPayNow
             // 
-            this.guna2Button2.BorderRadius = 8;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(223, 344);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(73, 24);
-            this.guna2Button2.TabIndex = 33;
-            this.guna2Button2.Text = "Pay now";
+            this.btnPayNow.BorderRadius = 8;
+            this.btnPayNow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnPayNow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnPayNow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnPayNow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnPayNow.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnPayNow.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnPayNow.ForeColor = System.Drawing.Color.White;
+            this.btnPayNow.Location = new System.Drawing.Point(223, 344);
+            this.btnPayNow.Name = "btnPayNow";
+            this.btnPayNow.Size = new System.Drawing.Size(73, 24);
+            this.btnPayNow.TabIndex = 33;
+            this.btnPayNow.Text = "Pay now";
+            this.btnPayNow.Visible = false;
+            this.btnPayNow.Click += new System.EventHandler(this.btnPayNow_Click);
             // 
             // panel14
             // 
@@ -273,21 +275,22 @@
             this.panel14.Size = new System.Drawing.Size(310, 1);
             this.panel14.TabIndex = 15;
             // 
-            // btnUpdate
+            // btnAddReview
             // 
-            this.btnUpdate.BorderRadius = 8;
-            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(11, 588);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(294, 44);
-            this.btnUpdate.TabIndex = 32;
-            this.btnUpdate.Text = "ADD";
+            this.btnAddReview.BorderRadius = 8;
+            this.btnAddReview.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddReview.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddReview.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddReview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddReview.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(74)))));
+            this.btnAddReview.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddReview.ForeColor = System.Drawing.Color.White;
+            this.btnAddReview.Location = new System.Drawing.Point(12, 595);
+            this.btnAddReview.Name = "btnAddReview";
+            this.btnAddReview.Size = new System.Drawing.Size(286, 31);
+            this.btnAddReview.TabIndex = 32;
+            this.btnAddReview.Text = "ADD";
+            this.btnAddReview.Visible = false;
             // 
             // guna2TextBox2
             // 
@@ -301,11 +304,11 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(11, 534);
+            this.guna2TextBox2.Location = new System.Drawing.Point(13, 541);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(294, 48);
+            this.guna2TextBox2.Size = new System.Drawing.Size(285, 48);
             this.guna2TextBox2.TabIndex = 19;
             // 
             // label15
@@ -313,7 +316,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label15.Location = new System.Drawing.Point(5, 508);
+            this.label15.Location = new System.Drawing.Point(8, 515);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(122, 23);
             this.label15.TabIndex = 18;
@@ -324,7 +327,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(5, 475);
+            this.label14.Location = new System.Drawing.Point(8, 475);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(84, 23);
             this.label14.TabIndex = 17;
@@ -335,7 +338,7 @@
             this.lblAddReview.AutoSize = true;
             this.lblAddReview.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAddReview.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAddReview.Location = new System.Drawing.Point(91, 430);
+            this.lblAddReview.Location = new System.Drawing.Point(98, 430);
             this.lblAddReview.Name = "lblAddReview";
             this.lblAddReview.Size = new System.Drawing.Size(115, 23);
             this.lblAddReview.TabIndex = 16;
@@ -360,7 +363,7 @@
             this.lblPaymentStatus.Name = "lblPaymentStatus";
             this.lblPaymentStatus.Size = new System.Drawing.Size(207, 23);
             this.lblPaymentStatus.TabIndex = 9;
-            this.lblPaymentStatus.Text = "Payment Status : ";
+            this.lblPaymentStatus.Text = "Service Status : ";
             this.lblPaymentStatus.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblWorkHours
@@ -434,7 +437,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label13.Location = new System.Drawing.Point(85, 11);
+            this.label13.Location = new System.Drawing.Point(82, 15);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(146, 23);
             this.label13.TabIndex = 0;
@@ -473,17 +476,17 @@
             // 
             this.gdvBookingsTable.AllowUserToAddRows = false;
             this.gdvBookingsTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.gdvBookingsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gdvBookingsTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gdvBookingsTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvBookingsTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gdvBookingsTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gdvBookingsTable.ColumnHeadersHeight = 28;
             this.gdvBookingsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gdvBookingsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -499,14 +502,14 @@
             this.colWorkHour,
             this.colTotalCost,
             this.colCost});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gdvBookingsTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gdvBookingsTable.DefaultCellStyle = dataGridViewCellStyle6;
             this.gdvBookingsTable.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gdvBookingsTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gdvBookingsTable.Location = new System.Drawing.Point(0, 0);
@@ -679,9 +682,9 @@
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.Panel panel17;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btnPayNow;
         private System.Windows.Forms.Panel panel14;
-        private Guna.UI2.WinForms.Guna2Button btnUpdate;
+        private Guna.UI2.WinForms.Guna2Button btnAddReview;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;

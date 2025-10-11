@@ -15,6 +15,12 @@ namespace FinalProject_C_.UserControls
         public Payment()
         {
             InitializeComponent();
+            this.lblTotalCost.Text += BookN.TotalCost;
+        }
+
+        internal void HidePayLaterB()
+        {
+            this.btnPayLater.Visible = false;
         }
 
         internal void InsertInDataBasePayLater()

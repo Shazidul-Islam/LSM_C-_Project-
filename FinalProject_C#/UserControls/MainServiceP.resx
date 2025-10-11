@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2Panel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlElectric.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAR8AAAHCCAYAAADW9828AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAA/7JJREFUeF7svQV4VVe6Pn7nf8fuWMc6FbRIgIS4u8s5cXc3YiRYcHeCW3B3h1K0
+        DQAACw0B7QfALAAA/7JJREFUeF7svQV4VVe6Pn7nf8fuWMc6FbRIgIS4u8s5cXc3YiRYcHeCW3B3h1K0
         LbSFthR3J0DdWyAE2pl5/8/77bPS3dOE0pl7b2fuL3me9eyTc7asvda33vV+sr71H3+Jd0ZLaSktpaX8
         b5Yn4xxy/sP8y5bSUlpKS/mfLi3g01JaSkv5UUoL+LSUltJSfpTSAj4tpaW0lB+ltIBPS2kpLeVHKS3g
         01JaSkv5UUoL+LSUltJSfpTSAj4tpaW0lB+ltIBPS2kpLeVHKS3g01JaSkv5UUoL+LSUltJSfpTSAj4t
@@ -3680,10 +3680,10 @@
         JqYWGGPs/wGaab2eriq0eAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Panel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlGardening.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAR8AAAHCCAYAAADW9828AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAA/7JJREFUeF7s/VewbOl5HQgWQIIgAMJ7RxSAMvfe49L7ndubzNyZudN7d7x31/vy
+        DQAACw0B7QfALAAA/7JJREFUeF7s/VewbOl5HQgWQIIgAMJ7RxSAMvfe49L7ndubzNyZudN7d7x31/vy
         BVTBEKDoRFJqShxR6umJaM10aELRmrdRR8+bItR66X6aiZjHafPaL2tifVkHPDi8FyjYAtTn4Y9r0u3c
         uff3f9/61lrfM5+tR6afa8RxuS7X5bpcv871zGXwuVyX63K9F+sy+Fyuy3W53pN1GXwu1+W6XO/Jugw+
         l+tyXa73ZF0Gn8t1uS7Xe7Iug8/lulyX6z1Zl8Hncl2uy/WerMvgc7ku1+V6T9Zl8Llcl+tyvSfrMvhc
@@ -9311,10 +9311,10 @@
         Ov0/KdIYHQrAutAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pnlClening.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASAAAAHDCAYAAACEU8esAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAA/7JJREFUeF7svXV0XGeWtyv39HSnOzEzk2zLJMvMzCyTbItlZmaUGWRmZluymFWM
+        DQAACw0B7QfALAAA/7JJREFUeF7svXV0XGeWtyv39HSnOzEzk2zLJMvMzCyTbItlZmaUGWRmZluymFWM
         KqHZcbDTnaQDBrHszNz7z3PXfktya9ROOj0zd5L5PmmtvapUVedU1YHn/PZv7/ctlzqTul+rM6U7FVER
         FVER/4Nx1UX+KgBUERVREb9AVACoIiqiIn6xqABQRVRERfxiUQGgiqiIivjFogJAFVERFfGLRQWAKqIi
         KuIXiwoAVURFVMQvFhUAqoiKqIhfLCoAVBEVURG/WFQAqCIqoiJ+sagAUEVUREX8YlEBoIqoiIr4xaIC

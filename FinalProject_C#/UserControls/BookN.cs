@@ -18,17 +18,24 @@ namespace FinalProject_C_.UserControls
         internal static string Address { get; set; }
         internal static string PhoneNo { get; set; }
         internal static string ServiceID { get; set; }
+        internal static string Price { get; set; }
         internal static string TotalCost { get; set; }
+        internal static string SubCategoryID { get; set; }
+
+        internal static UserControl SDetailPage { get; set; }
+
         public BookN()
         {
             InitializeComponent();
-            loadEmployee();
         }
 
-        public BookN(string serviceID) : this()
+        public BookN(string serviceID , string SCategoryID , string price) : this()
         {
             this.lblServiceID.Text += serviceID;
             ServiceID = serviceID;
+            SubCategoryID = SCategoryID;
+            Price = price;
+            loadEmployee();
         }
 
         private void btnConfirmBooking_Click(object sender, EventArgs e)
@@ -57,9 +64,29 @@ namespace FinalProject_C_.UserControls
 
         internal void loadEmployee()
         {
+            
+
             try
             {
-                var query = $"select U.UserID, U.FullName, U.UserTypeID ,UT.TypeName from Users as U , UserType as UT where U.UserTypeID > 2 and u.UserTypeID = ut.UserTypeID";
+                int EmployeeTypeID = 0;
+                if (SubCategoryID == "P-02")
+                {
+                    EmployeeTypeID = 4;
+                }
+                else if (SubCategoryID == "P-01")
+                {
+                    EmployeeTypeID = 3;
+                }
+                else if (SubCategoryID == "P-03" || SubCategoryID == "P-04")
+                {
+                    EmployeeTypeID = 5;
+                }
+                else if (SubCategoryID == "P-05" || SubCategoryID == "P-06")
+                {
+                    EmployeeTypeID = 6;
+                }
+
+                var query = $"select U.UserID, U.FullName, U.UserTypeID ,UT.TypeName from Users as U , UserType as UT where U.UserTypeID = {EmployeeTypeID} and u.UserTypeID = ut.UserTypeID";
                 var DT = MainWindow.dataAccess.ExecuteQueryTable(query);
 
                 this.cmbEmployee.DataSource = DT;
@@ -67,6 +94,29 @@ namespace FinalProject_C_.UserControls
                 this.cmbEmployee.ValueMember = "UserID";
             }
             catch(Exception e) { MessageBox.Show("Error : " + e.Message); }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            MainWindow.ucSevices = new MainServiceP();
+            MainWindow.ucSevices.Dock = DockStyle.Fill;
+            this.pnlMainPanel.Controls.Clear();
+            this.pnlMainPanel.Controls.Add(MainWindow.ucSevices);
+            MainWindow.ucSevices.Show();
+
+            SDetailPage.Dock = DockStyle.Fill;
+            this.pnlMainPanel.Controls.Clear();
+            this.pnlMainPanel.Controls.Add(SDetailPage);
+        }
+
+        private void txtHours_TextChanged(object sender, EventArgs e)
+        {
+            if(txtHours.Text != "")
+            {
+                TotalCost = (Convert.ToInt32(Price) * Convert.ToInt32(txtHours.Text)).ToString();
+            }
+            else { TotalCost = ""; }
+            this.lblTotalCost.Text = "Your Total cost : " + TotalCost;
         }
     }
 }

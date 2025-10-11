@@ -30,7 +30,7 @@
         {
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblTotalCost = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label10 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             // guna2GradientPanel3
             // 
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel3.Controls.Add(this.label12);
+            this.guna2GradientPanel3.Controls.Add(this.lblTotalCost);
             this.guna2GradientPanel3.Controls.Add(this.label11);
             this.guna2GradientPanel3.Controls.Add(this.guna2Panel2);
             this.guna2GradientPanel3.Controls.Add(this.guna2Panel4);
@@ -98,16 +98,16 @@
             this.guna2GradientPanel3.Size = new System.Drawing.Size(458, 589);
             this.guna2GradientPanel3.TabIndex = 1;
             // 
-            // label12
+            // lblTotalCost
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(52, 521);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(139, 28);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Total cost : ";
+            this.lblTotalCost.AutoSize = true;
+            this.lblTotalCost.Font = new System.Drawing.Font("Arial", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblTotalCost.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTotalCost.Location = new System.Drawing.Point(52, 521);
+            this.lblTotalCost.Name = "lblTotalCost";
+            this.lblTotalCost.Size = new System.Drawing.Size(139, 28);
+            this.lblTotalCost.TabIndex = 12;
+            this.lblTotalCost.Text = "Total cost : ";
             // 
             // label11
             // 
@@ -454,7 +454,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox gunapicNagad;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblTotalCost;
         private Guna.UI2.WinForms.Guna2GradientButton btnEnter;
         private Guna.UI2.WinForms.Guna2GradientButton btnPayLater;
     }

@@ -35,6 +35,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblServiceID = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbEmployee = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnConfirmBooking = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -51,7 +53,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblServiceID = new System.Windows.Forms.Label();
             this.pnlMainPanel.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -123,6 +124,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BorderRadius = 10;
+            this.guna2Panel1.Controls.Add(this.btnBack);
             this.guna2Panel1.Controls.Add(this.lblServiceID);
             this.guna2Panel1.Controls.Add(this.label14);
             this.guna2Panel1.Controls.Add(this.cmbEmployee);
@@ -145,6 +147,36 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(414, 577);
             this.guna2Panel1.TabIndex = 0;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BorderRadius = 8;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.btnBack.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.btnBack.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(32, 522);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(125, 36);
+            this.btnBack.TabIndex = 23;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // lblServiceID
+            // 
+            this.lblServiceID.AutoSize = true;
+            this.lblServiceID.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblServiceID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblServiceID.Location = new System.Drawing.Point(64, 434);
+            this.lblServiceID.Name = "lblServiceID";
+            this.lblServiceID.Size = new System.Drawing.Size(107, 21);
+            this.lblServiceID.TabIndex = 22;
+            this.lblServiceID.Text = "Service ID : ";
             // 
             // label14
             // 
@@ -185,7 +217,7 @@
             this.btnConfirmBooking.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
             this.btnConfirmBooking.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.btnConfirmBooking.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmBooking.Location = new System.Drawing.Point(105, 516);
+            this.btnConfirmBooking.Location = new System.Drawing.Point(182, 522);
             this.btnConfirmBooking.Name = "btnConfirmBooking";
             this.btnConfirmBooking.Size = new System.Drawing.Size(204, 36);
             this.btnConfirmBooking.TabIndex = 16;
@@ -292,6 +324,7 @@
             this.txtHours.SelectedText = "";
             this.txtHours.Size = new System.Drawing.Size(224, 29);
             this.txtHours.TabIndex = 6;
+            this.txtHours.TextChanged += new System.EventHandler(this.txtHours_TextChanged);
             // 
             // label5
             // 
@@ -366,17 +399,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "When Would You Like  DOORBELL";
             // 
-            // lblServiceID
-            // 
-            this.lblServiceID.AutoSize = true;
-            this.lblServiceID.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblServiceID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblServiceID.Location = new System.Drawing.Point(64, 434);
-            this.lblServiceID.Name = "lblServiceID";
-            this.lblServiceID.Size = new System.Drawing.Size(107, 21);
-            this.lblServiceID.TabIndex = 22;
-            this.lblServiceID.Text = "Service ID : ";
-            // 
             // BookN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -419,5 +441,6 @@
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2ComboBox cmbEmployee;
         private System.Windows.Forms.Label lblServiceID;
+        private Guna.UI2.WinForms.Guna2GradientButton btnBack;
     }
 }

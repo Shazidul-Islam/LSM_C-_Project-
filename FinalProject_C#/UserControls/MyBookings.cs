@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -61,8 +62,9 @@ namespace FinalProject_C_.UserControls
             this.lblAddress.Text = "Address : ";
             this.lblDateandTime.Text = "Date and Time : ";
             this.lblWorkHours.Text = "Work Hours : ";
-            this.lblPaymentStatus.Text = "Payment Status : ";
+            this.lblPaymentStatus.Text = "Service Status : ";
             this.lblTotalCost.Text = "Total Cost : ";
+            this.btnPayNow.Visible = false;
         }
 
         private void gdvBookingsTable_DoubleClick(object sender, EventArgs e)
@@ -78,11 +80,32 @@ namespace FinalProject_C_.UserControls
             this.lblWorkHours.Text += this.gdvBookingsTable.CurrentRow.Cells[9].Value.ToString();
             this.lblPaymentStatus.Text += this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString();
             this.lblTotalCost.Text += this.gdvBookingsTable.CurrentRow.Cells[11].Value.ToString();
+
+            if (this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString() == "Pending")
+            {
+                this.btnPayNow.Visible = true;
+            }
+            if (this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString() == "Complete")
+            {
+                this.btnAddReview.Visible = true;
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
             this.Clear();
+        }
+
+        private void btnPayNow_Click(object sender, EventArgs e)
+        {
+            BookN.TotalCost = this.gdvBookingsTable.CurrentRow.Cells[11].Value.ToString();
+
+
+            Payment payment = new Payment();
+            payment.Dock = DockStyle.Fill;
+            payment.HidePayLaterB();
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(payment);
         }
     }
 }

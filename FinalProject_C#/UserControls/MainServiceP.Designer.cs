@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainServiceP));
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pnlServicesP = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtSearchService = new Guna.UI2.WinForms.Guna2TextBox();
+            this.pnlServicesP = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pnlElectric = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlGardening = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlClening = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlMainPanel.SuspendLayout();
             this.pnlServicesP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -56,51 +56,6 @@
             this.pnlMainPanel.Size = new System.Drawing.Size(918, 713);
             this.pnlMainPanel.TabIndex = 5;
             // 
-            // pnlServicesP
-            // 
-            this.pnlServicesP.BackColor = System.Drawing.Color.Transparent;
-            this.pnlServicesP.Controls.Add(this.guna2PictureBox1);
-            this.pnlServicesP.Controls.Add(this.guna2Panel4);
-            this.pnlServicesP.Controls.Add(this.guna2Panel3);
-            this.pnlServicesP.Controls.Add(this.guna2Panel2);
-            this.pnlServicesP.Location = new System.Drawing.Point(16, 53);
-            this.pnlServicesP.Name = "pnlServicesP";
-            this.pnlServicesP.Size = new System.Drawing.Size(887, 635);
-            this.pnlServicesP.TabIndex = 11;
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel2.BackgroundImage")));
-            this.guna2Panel2.Location = new System.Drawing.Point(5, 172);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(286, 449);
-            this.guna2Panel2.TabIndex = 0;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel3.BackgroundImage")));
-            this.guna2Panel3.Location = new System.Drawing.Point(300, 173);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(286, 449);
-            this.guna2Panel3.TabIndex = 1;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel4.BackgroundImage")));
-            this.guna2Panel4.Location = new System.Drawing.Point(596, 174);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(286, 449);
-            this.guna2Panel4.TabIndex = 2;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(887, 165);
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // txtSearchService
             // 
             this.txtSearchService.BackColor = System.Drawing.Color.Transparent;
@@ -116,13 +71,63 @@
             this.txtSearchService.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSearchService.ForeColor = System.Drawing.Color.Black;
             this.txtSearchService.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchService.Location = new System.Drawing.Point(16, 3);
+            this.txtSearchService.Location = new System.Drawing.Point(16, 13);
             this.txtSearchService.Name = "txtSearchService";
             this.txtSearchService.PlaceholderText = "";
             this.txtSearchService.SelectedText = "";
             this.txtSearchService.Size = new System.Drawing.Size(887, 37);
             this.txtSearchService.TabIndex = 4;
+            this.txtSearchService.TextChanged += new System.EventHandler(this.txtSearchService_TextChanged);
             this.txtSearchService.Click += new System.EventHandler(this.txtSearchService_Click);
+            // 
+            // pnlServicesP
+            // 
+            this.pnlServicesP.BackColor = System.Drawing.Color.Transparent;
+            this.pnlServicesP.Controls.Add(this.guna2PictureBox1);
+            this.pnlServicesP.Controls.Add(this.pnlElectric);
+            this.pnlServicesP.Controls.Add(this.pnlGardening);
+            this.pnlServicesP.Controls.Add(this.pnlClening);
+            this.pnlServicesP.Location = new System.Drawing.Point(16, 63);
+            this.pnlServicesP.Name = "pnlServicesP";
+            this.pnlServicesP.Size = new System.Drawing.Size(887, 635);
+            this.pnlServicesP.TabIndex = 11;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(887, 165);
+            this.guna2PictureBox1.TabIndex = 3;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // pnlElectric
+            // 
+            this.pnlElectric.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlElectric.BackgroundImage")));
+            this.pnlElectric.Location = new System.Drawing.Point(596, 183);
+            this.pnlElectric.Name = "pnlElectric";
+            this.pnlElectric.Size = new System.Drawing.Size(286, 449);
+            this.pnlElectric.TabIndex = 2;
+            this.pnlElectric.Click += new System.EventHandler(this.pnlElectric_Click);
+            // 
+            // pnlGardening
+            // 
+            this.pnlGardening.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlGardening.BackgroundImage")));
+            this.pnlGardening.Location = new System.Drawing.Point(300, 183);
+            this.pnlGardening.Name = "pnlGardening";
+            this.pnlGardening.Size = new System.Drawing.Size(286, 449);
+            this.pnlGardening.TabIndex = 1;
+            this.pnlGardening.Click += new System.EventHandler(this.pnlGardening_Click);
+            // 
+            // pnlClening
+            // 
+            this.pnlClening.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClening.BackgroundImage")));
+            this.pnlClening.Location = new System.Drawing.Point(5, 183);
+            this.pnlClening.Name = "pnlClening";
+            this.pnlClening.Size = new System.Drawing.Size(286, 449);
+            this.pnlClening.TabIndex = 0;
+            this.pnlClening.Click += new System.EventHandler(this.pnlClening_Click);
             // 
             // MainServiceP
             // 
@@ -142,9 +147,9 @@
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
         private Guna.UI2.WinForms.Guna2Panel pnlServicesP;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel pnlElectric;
+        private Guna.UI2.WinForms.Guna2Panel pnlGardening;
+        private Guna.UI2.WinForms.Guna2Panel pnlClening;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearchService;
     }
