@@ -48,5 +48,10 @@ namespace FinalProject_C_.UserControls
             }
             catch (Exception ex) { MessageBox.Show("Error : " + ex.Message); }
         }
+
+        private void btlBBBack_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

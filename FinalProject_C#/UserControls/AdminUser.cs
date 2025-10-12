@@ -100,6 +100,12 @@ namespace FinalProject_C_.UserControls
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            if (this.txtUserID.Text == "U-0001")
+            {
+                MessageBox.Show("This user can not be updated");
+                return;
+            }
+
             string UserID = txtUserID.Text;
             string FullName = txtFullName.Text;
             string Gender = rbMale.Checked ? rbMale.Text : rbFemale.Checked ? rbFemale.Text : "";
@@ -202,7 +208,13 @@ namespace FinalProject_C_.UserControls
 
         private void ButRemove_Click(object sender, EventArgs e)
         {
-            if(this.dgvUserTable.SelectedRows.Count<1)
+            if (this.dgvUserTable.CurrentRow.Cells["UserID"].Value.ToString() == "U-0001")
+            {
+                MessageBox.Show("This user can not be updated");
+                return;
+            }
+
+            if (this.dgvUserTable.SelectedRows.Count<1)
             {
                 MessageBox.Show("Please Select A Row First To Delete");
                 return;

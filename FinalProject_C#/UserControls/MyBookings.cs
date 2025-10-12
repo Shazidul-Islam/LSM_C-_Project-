@@ -65,7 +65,10 @@ namespace FinalProject_C_.UserControls
             this.lblWorkHours.Text = "Work Hours : ";
             this.lblPaymentStatus.Text = "Service Status : ";
             this.lblTotalCost.Text = "Total Cost : ";
+            this.cmbRating.SelectedIndex = -1;
+            this.txtCommentBox.Text = "";
             this.btnPayNow.Visible = false;
+            this.btnAddReview.Visible = false;
         }
 
         private void gdvBookingsTable_DoubleClick(object sender, EventArgs e)
@@ -90,6 +93,42 @@ namespace FinalProject_C_.UserControls
             {
                 this.btnAddReview.Visible = true;
             }
+
+            this.LoadReviewCombobox();
+            this.cmbRating.SelectedIndex = -1;
+            LoadReview();
+        }
+
+        private void LoadReview()
+        {
+            var query = $"select * from FeedBack where BookingID = '{this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString()}'";
+            try
+            {
+                var data = MainWindow.dataAccess.ExecuteQueryTable(query);
+                if (data.Rows.Count == 1)
+                {
+                    this.cmbRating.SelectedValue = data.Rows[0][2].ToString();
+                    this.txtCommentBox.Text = data.Rows[0][1].ToString();
+                    this.btnAddReview.Visible = false;
+                }
+            }
+            catch { }
+        }
+
+        private void LoadReviewCombobox()
+        {
+            var Query = "Select * from Rating";
+            try
+            {
+                var dt = MainWindow.dataAccess.ExecuteQueryTable(Query);
+                this.cmbRating.DataSource = dt;
+                this.cmbRating.DisplayMember = "RatingName";
+                this.cmbRating.ValueMember = "RatingID";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -108,6 +147,28 @@ namespace FinalProject_C_.UserControls
             payment.BookingID = this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString();
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(payment);
+        }
+
+        private void btnAddReview_Click(object sender, EventArgs e)
+        {
+            if (cmbRating.SelectedIndex == -1 || this.txtCommentBox.Text == "" )
+            {
+                MessageBox.Show("please add rating and write something in comment");
+                return;
+            }
+
+            var query = $@"insert into FeedBack (Comment,Rating,BookingID,ReviewerName,ServiceID) 
+                            Values('{this.txtCommentBox.Text}',
+                            '{this.cmbRating.SelectedValue.ToString()}',
+                            '{this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString()}',
+                            '{MainWindow.loginUser.Rows[0][1].ToString()}',
+                            '{this.gdvBookingsTable.CurrentRow.Cells[1].Value.ToString()}')";
+            try
+            {
+                MainWindow.dataAccess.ExecuteDMLQuery(query);
+                this.Clear();
+            }
+            catch(Exception ex) { MessageBox.Show(ex.Message); }
         }
     }
 }

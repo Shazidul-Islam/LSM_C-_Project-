@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
+using System.Runtime.CompilerServices;
 
 namespace FinalProject_C_
 {
@@ -23,6 +24,14 @@ namespace FinalProject_C_
         //Panels
         internal static Panel MainPanel {  get; set; }
         internal static Panel SideBar {  get; set; }
+
+        //SidePanelsButtons
+        internal static Panel BTNPANEL1 { get; set; }
+        internal static Panel BTNPANEL2 { get; set; }
+        internal static Panel BTNPANEL3 { get; set; }
+        internal static Panel BTNPANEL4 { get; set; }
+        internal static Panel BTNPANEL5 { get; set; }
+        internal static Panel BTNPANEL6 { get; set; }
 
         //UserControls Pages
         internal static UserControl ucLogIn {  get; set; }
@@ -43,6 +52,13 @@ namespace FinalProject_C_
             SideBar = this.pnlSideBar;
             dataAccess = new DataAccess();
             ProfileButton = this.btnProfile;
+
+            BTNPANEL1 = this.pnlBTN1;
+            BTNPANEL2 = this.pnlBTN2;
+            BTNPANEL3 = this.pnlBTN3;
+            BTNPANEL4 = this.pnlBTN4;
+            BTNPANEL5 = this.pnlBTN5;
+            BTNPANEL6 = this.pnlBTN6;
         }
 
         private void ChangeWindow(UserControl NextPage)
@@ -74,6 +90,13 @@ namespace FinalProject_C_
             MainWindow.SideBar.Visible = false;
             ucLogIn = new LogIn();
             this.ChangeWindow(ucLogIn);
+
+            BTNPANEL1.Visible = true;
+            BTNPANEL2.Visible = true;
+            BTNPANEL3.Visible = true;
+            BTNPANEL4.Visible = true;
+            BTNPANEL5.Visible = true;
+            BTNPANEL6.Visible = true;
         }
 
         private void btnProfile_Click(object sender, EventArgs e)

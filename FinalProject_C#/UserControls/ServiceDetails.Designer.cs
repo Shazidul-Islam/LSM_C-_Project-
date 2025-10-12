@@ -43,6 +43,7 @@
             this.flpReviews = new System.Windows.Forms.FlowLayoutPanel();
             this.ptbServicePic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnlMainPanel.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -66,6 +67,7 @@
             // 
             // guna2GradientPanel2
             // 
+            this.guna2GradientPanel2.Controls.Add(this.label1);
             this.guna2GradientPanel2.Controls.Add(this.btnBack);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
             this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton1);
@@ -208,10 +210,11 @@
             // 
             // flpReviews
             // 
+            this.flpReviews.AutoScroll = true;
             this.flpReviews.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            this.flpReviews.Location = new System.Drawing.Point(594, 301);
+            this.flpReviews.Location = new System.Drawing.Point(594, 344);
             this.flpReviews.Name = "flpReviews";
-            this.flpReviews.Size = new System.Drawing.Size(313, 329);
+            this.flpReviews.Size = new System.Drawing.Size(313, 286);
             this.flpReviews.TabIndex = 2;
             // 
             // ptbServicePic
@@ -232,6 +235,18 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(0, 0);
             this.guna2GradientPanel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.label1.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(594, 306);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(313, 35);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Reviews";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ServiceDetails
             // 
@@ -265,5 +280,6 @@
         private System.Windows.Forms.Label lblServiceN;
         private System.Windows.Forms.Label lblSubCategoryN;
         private Guna.UI2.WinForms.Guna2GradientButton btnBack;
+        private System.Windows.Forms.Label label1;
     }
 }

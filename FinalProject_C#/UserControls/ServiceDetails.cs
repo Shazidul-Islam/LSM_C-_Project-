@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FinalProject_C_.UserControls.Cards;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -36,7 +37,32 @@ namespace FinalProject_C_.UserControls
                 this.ptbServicePic.Image = System.Drawing.Image.FromFile(Image);
             }
             catch { }
+
+            LoadReviews();
         }
+
+        private void LoadReviews()
+        {
+            var query = $"select * from FeedBack where ServiceID = '{this.ServiceID}'";
+
+            try
+            {
+                var data = MainWindow.dataAccess.ExecuteQueryTable(query);
+                if (data.Rows.Count > 0) 
+                {
+                    for (int i = 0; i < data.Rows.Count; i++)
+                    {
+                        ReviewCard r = new ReviewCard(data.Rows[0][4].ToString(), data.Rows[0][2].ToString(), data.Rows[0][1].ToString());
+                        this.flpReviews.Controls.Add(r);
+                    }
+                }
+                
+            }
+            catch { }
+
+            
+        }
+
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             BookN book = new BookN(this.ServiceID,this.SubCategoryID ,this.Price);

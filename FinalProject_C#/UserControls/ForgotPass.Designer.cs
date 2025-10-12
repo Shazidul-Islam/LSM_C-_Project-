@@ -136,6 +136,7 @@
             this.btlBBBack.Size = new System.Drawing.Size(111, 39);
             this.btlBBBack.TabIndex = 12;
             this.btlBBBack.Text = "Back";
+            this.btlBBBack.Click += new System.EventHandler(this.btlBBBack_Click);
             // 
             // txtCPassword
             // 

@@ -410,7 +410,7 @@
             // 
             this.txtFullName.BorderRadius = 8;
             this.txtFullName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFullName.DefaultText = "KUTTA SAMSU";
+            this.txtFullName.DefaultText = "";
             this.txtFullName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txtFullName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txtFullName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));

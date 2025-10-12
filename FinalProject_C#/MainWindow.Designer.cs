@@ -42,17 +42,15 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.pnlBTN6 = new System.Windows.Forms.Panel();
             this.btnReview = new Guna.UI2.WinForms.Guna2Button();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.pnlBTN5 = new System.Windows.Forms.Panel();
             this.btnWorkList = new Guna.UI2.WinForms.Guna2Button();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.pnlBTN4 = new System.Windows.Forms.Panel();
             this.btnTransactions = new Guna.UI2.WinForms.Guna2Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnlBTN3 = new System.Windows.Forms.Panel();
             this.btnServiceT = new Guna.UI2.WinForms.Guna2Button();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlBTN2 = new System.Windows.Forms.Panel();
             this.btnUserTable = new Guna.UI2.WinForms.Guna2Button();
             this.pnlBTN1 = new System.Windows.Forms.Panel();
             this.btnServices = new Guna.UI2.WinForms.Guna2Button();
@@ -62,12 +60,11 @@
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlBTN6.SuspendLayout();
+            this.pnlBTN5.SuspendLayout();
+            this.pnlBTN4.SuspendLayout();
+            this.pnlBTN3.SuspendLayout();
+            this.pnlBTN2.SuspendLayout();
             this.pnlBTN1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -241,12 +238,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.pnlBTN6);
+            this.panel1.Controls.Add(this.pnlBTN5);
+            this.panel1.Controls.Add(this.pnlBTN4);
+            this.panel1.Controls.Add(this.pnlBTN3);
+            this.panel1.Controls.Add(this.pnlBTN2);
             this.panel1.Controls.Add(this.pnlBTN1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -255,43 +251,15 @@
             this.panel1.Size = new System.Drawing.Size(182, 598);
             this.panel1.TabIndex = 0;
             // 
-            // panel8
+            // pnlBTN6
             // 
-            this.panel8.Controls.Add(this.guna2Button7);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 330);
-            this.panel8.Name = "panel8";
-            this.panel8.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel8.Size = new System.Drawing.Size(182, 55);
-            this.panel8.TabIndex = 6;
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.BorderRadius = 8;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(175)))), ((int)(((byte)(104)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(7, 7);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(168, 43);
-            this.guna2Button7.TabIndex = 0;
-            this.guna2Button7.Text = "guna2Button7";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btnReview);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 275);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel7.Size = new System.Drawing.Size(182, 55);
-            this.panel7.TabIndex = 5;
+            this.pnlBTN6.Controls.Add(this.btnReview);
+            this.pnlBTN6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBTN6.Location = new System.Drawing.Point(0, 275);
+            this.pnlBTN6.Name = "pnlBTN6";
+            this.pnlBTN6.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
+            this.pnlBTN6.Size = new System.Drawing.Size(182, 55);
+            this.pnlBTN6.TabIndex = 5;
             // 
             // btnReview
             // 
@@ -312,15 +280,15 @@
             this.btnReview.Text = "My Bookings";
             this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
             // 
-            // panel6
+            // pnlBTN5
             // 
-            this.panel6.Controls.Add(this.btnWorkList);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 220);
-            this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel6.Size = new System.Drawing.Size(182, 55);
-            this.panel6.TabIndex = 4;
+            this.pnlBTN5.Controls.Add(this.btnWorkList);
+            this.pnlBTN5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBTN5.Location = new System.Drawing.Point(0, 220);
+            this.pnlBTN5.Name = "pnlBTN5";
+            this.pnlBTN5.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
+            this.pnlBTN5.Size = new System.Drawing.Size(182, 55);
+            this.pnlBTN5.TabIndex = 4;
             // 
             // btnWorkList
             // 
@@ -341,15 +309,15 @@
             this.btnWorkList.Text = "Work List";
             this.btnWorkList.Click += new System.EventHandler(this.btnWorkList_Click);
             // 
-            // panel5
+            // pnlBTN4
             // 
-            this.panel5.Controls.Add(this.btnTransactions);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 165);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel5.Size = new System.Drawing.Size(182, 55);
-            this.panel5.TabIndex = 3;
+            this.pnlBTN4.Controls.Add(this.btnTransactions);
+            this.pnlBTN4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBTN4.Location = new System.Drawing.Point(0, 165);
+            this.pnlBTN4.Name = "pnlBTN4";
+            this.pnlBTN4.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
+            this.pnlBTN4.Size = new System.Drawing.Size(182, 55);
+            this.pnlBTN4.TabIndex = 3;
             // 
             // btnTransactions
             // 
@@ -370,15 +338,15 @@
             this.btnTransactions.Text = "Transactions";
             this.btnTransactions.Click += new System.EventHandler(this.btnTransactions_Click);
             // 
-            // panel4
+            // pnlBTN3
             // 
-            this.panel4.Controls.Add(this.btnServiceT);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 110);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel4.Size = new System.Drawing.Size(182, 55);
-            this.panel4.TabIndex = 2;
+            this.pnlBTN3.Controls.Add(this.btnServiceT);
+            this.pnlBTN3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBTN3.Location = new System.Drawing.Point(0, 110);
+            this.pnlBTN3.Name = "pnlBTN3";
+            this.pnlBTN3.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
+            this.pnlBTN3.Size = new System.Drawing.Size(182, 55);
+            this.pnlBTN3.TabIndex = 2;
             // 
             // btnServiceT
             // 
@@ -399,15 +367,15 @@
             this.btnServiceT.Text = "Service Table";
             this.btnServiceT.Click += new System.EventHandler(this.btnServiceT_Click);
             // 
-            // panel3
+            // pnlBTN2
             // 
-            this.panel3.Controls.Add(this.btnUserTable);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 55);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
-            this.panel3.Size = new System.Drawing.Size(182, 55);
-            this.panel3.TabIndex = 1;
+            this.pnlBTN2.Controls.Add(this.btnUserTable);
+            this.pnlBTN2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBTN2.Location = new System.Drawing.Point(0, 55);
+            this.pnlBTN2.Name = "pnlBTN2";
+            this.pnlBTN2.Padding = new System.Windows.Forms.Padding(7, 7, 7, 5);
+            this.pnlBTN2.Size = new System.Drawing.Size(182, 55);
+            this.pnlBTN2.TabIndex = 1;
             // 
             // btnUserTable
             // 
@@ -478,12 +446,11 @@
             this.panel10.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
+            this.pnlBTN6.ResumeLayout(false);
+            this.pnlBTN5.ResumeLayout(false);
+            this.pnlBTN4.ResumeLayout(false);
+            this.pnlBTN3.ResumeLayout(false);
+            this.pnlBTN2.ResumeLayout(false);
             this.pnlBTN1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -503,17 +470,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnlBTN1;
         private Guna.UI2.WinForms.Guna2Button btnServices;
-        private System.Windows.Forms.Panel panel8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel pnlBTN6;
         private Guna.UI2.WinForms.Guna2Button btnReview;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel pnlBTN5;
         private Guna.UI2.WinForms.Guna2Button btnWorkList;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel pnlBTN4;
         private Guna.UI2.WinForms.Guna2Button btnTransactions;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnlBTN3;
         private Guna.UI2.WinForms.Guna2Button btnServiceT;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlBTN2;
         private Guna.UI2.WinForms.Guna2Button btnUserTable;
         private System.Windows.Forms.Panel panel10;
         private Guna.UI2.WinForms.Guna2Button btnProfile;

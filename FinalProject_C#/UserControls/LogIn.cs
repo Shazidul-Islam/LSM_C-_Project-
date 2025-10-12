@@ -45,11 +45,34 @@ namespace FinalProject_C_.UserControls
                     MainWindow.MainPanel.Controls.Add(MainWindow.ucMainServiceP);
                     MainWindow.loginUser = DA;
                     MainWindow.ProfileButton.Text = DA.Rows[0][1].ToString();
+
+                    this.ButtonVisible();
                 }
                 else { MessageBox.Show("Invalid User"); }
             }
             catch (Exception ex){ MessageBox.Show($"ERROR {ex.Message}"); }
            
+        }
+
+        internal void ButtonVisible()
+        {
+            if (MainWindow.loginUser.Rows[0][8].ToString() == "Admin")
+            {
+                MainWindow.BTNPANEL5.Visible = false;
+            }
+            else if (MainWindow.loginUser.Rows[0][8].ToString() == "User")
+            {
+                MainWindow.BTNPANEL2.Visible = false;
+                MainWindow.BTNPANEL3.Visible = false;
+                MainWindow.BTNPANEL4.Visible = false;
+                MainWindow.BTNPANEL5.Visible = false;
+            }
+            else
+            {
+                MainWindow.BTNPANEL2.Visible = false;
+                MainWindow.BTNPANEL3.Visible = false;
+                MainWindow.BTNPANEL4.Visible = false;
+            }
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
