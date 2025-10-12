@@ -46,9 +46,12 @@
             this.lblWorkDetails = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.dgvDataTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.BookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AssignedID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SerCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ClientPhone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,10 +59,13 @@
             this.WorkHour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Earnings = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ServiceStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDataTable)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClr
@@ -106,6 +112,9 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BorderRadius = 8;
+            this.guna2Panel2.Controls.Add(this.label3);
+            this.guna2Panel2.Controls.Add(this.label2);
+            this.guna2Panel2.Controls.Add(this.label1);
             this.guna2Panel2.Controls.Add(this.btnComplete);
             this.guna2Panel2.Controls.Add(this.lblServiceStatus);
             this.guna2Panel2.Controls.Add(this.lblEarnings);
@@ -139,13 +148,14 @@
             this.btnComplete.Size = new System.Drawing.Size(284, 35);
             this.btnComplete.TabIndex = 10;
             this.btnComplete.Text = "COMPLETE";
+            this.btnComplete.Visible = false;
             // 
             // lblServiceStatus
             // 
             this.lblServiceStatus.AutoSize = true;
             this.lblServiceStatus.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblServiceStatus.ForeColor = System.Drawing.Color.White;
-            this.lblServiceStatus.Location = new System.Drawing.Point(3, 481);
+            this.lblServiceStatus.Location = new System.Drawing.Point(20, 488);
             this.lblServiceStatus.Name = "lblServiceStatus";
             this.lblServiceStatus.Size = new System.Drawing.Size(129, 19);
             this.lblServiceStatus.TabIndex = 9;
@@ -156,7 +166,7 @@
             this.lblEarnings.AutoSize = true;
             this.lblEarnings.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblEarnings.ForeColor = System.Drawing.Color.White;
-            this.lblEarnings.Location = new System.Drawing.Point(3, 421);
+            this.lblEarnings.Location = new System.Drawing.Point(20, 446);
             this.lblEarnings.Name = "lblEarnings";
             this.lblEarnings.Size = new System.Drawing.Size(89, 19);
             this.lblEarnings.TabIndex = 8;
@@ -167,7 +177,7 @@
             this.lblWorkHour.AutoSize = true;
             this.lblWorkHour.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblWorkHour.ForeColor = System.Drawing.Color.White;
-            this.lblWorkHour.Location = new System.Drawing.Point(3, 365);
+            this.lblWorkHour.Location = new System.Drawing.Point(20, 404);
             this.lblWorkHour.Name = "lblWorkHour";
             this.lblWorkHour.Size = new System.Drawing.Size(104, 19);
             this.lblWorkHour.TabIndex = 7;
@@ -178,7 +188,7 @@
             this.lblDT.AutoSize = true;
             this.lblDT.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblDT.ForeColor = System.Drawing.Color.White;
-            this.lblDT.Location = new System.Drawing.Point(3, 303);
+            this.lblDT.Location = new System.Drawing.Point(20, 362);
             this.lblDT.Name = "lblDT";
             this.lblDT.Size = new System.Drawing.Size(129, 19);
             this.lblDT.TabIndex = 6;
@@ -189,7 +199,7 @@
             this.lblAdd.AutoSize = true;
             this.lblAdd.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAdd.ForeColor = System.Drawing.Color.White;
-            this.lblAdd.Location = new System.Drawing.Point(3, 247);
+            this.lblAdd.Location = new System.Drawing.Point(20, 320);
             this.lblAdd.Name = "lblAdd";
             this.lblAdd.Size = new System.Drawing.Size(84, 19);
             this.lblAdd.TabIndex = 5;
@@ -200,7 +210,7 @@
             this.lblClientPhone.AutoSize = true;
             this.lblClientPhone.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblClientPhone.ForeColor = System.Drawing.Color.White;
-            this.lblClientPhone.Location = new System.Drawing.Point(3, 193);
+            this.lblClientPhone.Location = new System.Drawing.Point(20, 278);
             this.lblClientPhone.Name = "lblClientPhone";
             this.lblClientPhone.Size = new System.Drawing.Size(117, 19);
             this.lblClientPhone.TabIndex = 4;
@@ -211,7 +221,7 @@
             this.lblClientName.AutoSize = true;
             this.lblClientName.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblClientName.ForeColor = System.Drawing.Color.White;
-            this.lblClientName.Location = new System.Drawing.Point(3, 136);
+            this.lblClientName.Location = new System.Drawing.Point(20, 236);
             this.lblClientName.Name = "lblClientName";
             this.lblClientName.Size = new System.Drawing.Size(112, 19);
             this.lblClientName.TabIndex = 3;
@@ -222,7 +232,7 @@
             this.lblAssignedID.AutoSize = true;
             this.lblAssignedID.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
             this.lblAssignedID.ForeColor = System.Drawing.Color.White;
-            this.lblAssignedID.Location = new System.Drawing.Point(3, 79);
+            this.lblAssignedID.Location = new System.Drawing.Point(20, 110);
             this.lblAssignedID.Name = "lblAssignedID";
             this.lblAssignedID.Size = new System.Drawing.Size(113, 19);
             this.lblAssignedID.TabIndex = 2;
@@ -251,12 +261,80 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BorderRadius = 8;
-            this.guna2Panel1.Controls.Add(this.guna2DataGridView1);
+            this.guna2Panel1.Controls.Add(this.dgvDataTable);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
             this.guna2Panel1.Location = new System.Drawing.Point(13, 65);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(572, 635);
             this.guna2Panel1.TabIndex = 3;
+            // 
+            // dgvDataTable
+            // 
+            this.dgvDataTable.AllowUserToAddRows = false;
+            this.dgvDataTable.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvDataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDataTable.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDataTable.ColumnHeadersHeight = 41;
+            this.dgvDataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvDataTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BookingID,
+            this.AssignedID,
+            this.ServiceName,
+            this.SerCategory,
+            this.ClientName,
+            this.ClientPhone,
+            this.Address,
+            this.DateandTime,
+            this.WorkHour,
+            this.Earnings,
+            this.ServiceStatus});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDataTable.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDataTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvDataTable.Location = new System.Drawing.Point(0, 0);
+            this.dgvDataTable.Name = "dgvDataTable";
+            this.dgvDataTable.ReadOnly = true;
+            this.dgvDataTable.RowHeadersVisible = false;
+            this.dgvDataTable.Size = new System.Drawing.Size(572, 635);
+            this.dgvDataTable.TabIndex = 0;
+            this.dgvDataTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvDataTable.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dgvDataTable.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dgvDataTable.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dgvDataTable.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dgvDataTable.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.dgvDataTable.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvDataTable.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dgvDataTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvDataTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDataTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvDataTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dgvDataTable.ThemeStyle.HeaderStyle.Height = 41;
+            this.dgvDataTable.ThemeStyle.ReadOnly = true;
+            this.dgvDataTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvDataTable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dgvDataTable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvDataTable.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDataTable.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvDataTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvDataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvDataTable.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDataTable_CellDoubleClick);
             // 
             // guna2GradientPanel2
             // 
@@ -275,68 +353,12 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(918, 713);
             this.guna2GradientPanel2.TabIndex = 16;
             // 
-            // guna2DataGridView1
+            // BookingID
             // 
-            this.guna2DataGridView1.AllowUserToAddRows = false;
-            this.guna2DataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.guna2DataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.AssignedID,
-            this.ClientName,
-            this.ClientPhone,
-            this.Address,
-            this.DateandTime,
-            this.WorkHour,
-            this.Earnings,
-            this.ServiceStatus});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.ReadOnly = true;
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(572, 635);
-            this.guna2DataGridView1.TabIndex = 0;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 41;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = true;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.BookingID.DataPropertyName = "BookingID";
+            this.BookingID.HeaderText = "Booking ID";
+            this.BookingID.Name = "BookingID";
+            this.BookingID.ReadOnly = true;
             // 
             // AssignedID
             // 
@@ -344,49 +366,107 @@
             this.AssignedID.HeaderText = "Assigned ID";
             this.AssignedID.Name = "AssignedID";
             this.AssignedID.ReadOnly = true;
+            this.AssignedID.Visible = false;
+            // 
+            // ServiceName
+            // 
+            this.ServiceName.DataPropertyName = "Name";
+            this.ServiceName.HeaderText = "ServiceName";
+            this.ServiceName.Name = "ServiceName";
+            this.ServiceName.ReadOnly = true;
+            this.ServiceName.Visible = false;
+            // 
+            // SerCategory
+            // 
+            this.SerCategory.DataPropertyName = "SubCategoryName";
+            this.SerCategory.HeaderText = "ServiceCategory";
+            this.SerCategory.Name = "SerCategory";
+            this.SerCategory.ReadOnly = true;
             // 
             // ClientName
             // 
-            this.ClientName.DataPropertyName = "UserName";
+            this.ClientName.DataPropertyName = "FullName";
             this.ClientName.HeaderText = "Client Name";
             this.ClientName.Name = "ClientName";
             this.ClientName.ReadOnly = true;
+            this.ClientName.Visible = false;
             // 
             // ClientPhone
             // 
+            this.ClientPhone.DataPropertyName = "PhoneNo";
             this.ClientPhone.HeaderText = "Client Phone";
             this.ClientPhone.Name = "ClientPhone";
             this.ClientPhone.ReadOnly = true;
             // 
             // Address
             // 
+            this.Address.DataPropertyName = "WorkAddress";
             this.Address.HeaderText = "Address";
             this.Address.Name = "Address";
             this.Address.ReadOnly = true;
+            this.Address.Visible = false;
             // 
             // DateandTime
             // 
+            this.DateandTime.DataPropertyName = "WorkStartTime";
             this.DateandTime.HeaderText = "Date And Time";
             this.DateandTime.Name = "DateandTime";
             this.DateandTime.ReadOnly = true;
             // 
             // WorkHour
             // 
+            this.WorkHour.DataPropertyName = "WorkHours";
             this.WorkHour.HeaderText = "Work Hour";
             this.WorkHour.Name = "WorkHour";
             this.WorkHour.ReadOnly = true;
+            this.WorkHour.Visible = false;
             // 
             // Earnings
             // 
+            this.Earnings.DataPropertyName = "Cost";
             this.Earnings.HeaderText = "Earnings";
             this.Earnings.Name = "Earnings";
             this.Earnings.ReadOnly = true;
             // 
             // ServiceStatus
             // 
+            this.ServiceStatus.DataPropertyName = "StatusName";
             this.ServiceStatus.HeaderText = "Service Status";
             this.ServiceStatus.Name = "ServiceStatus";
             this.ServiceStatus.ReadOnly = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(20, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 19);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Booking ID : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(20, 152);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 19);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Service Name : ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(20, 194);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 19);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Category : ";
             // 
             // Worklist
             // 
@@ -398,8 +478,8 @@
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDataTable)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,8 +502,11 @@
         private System.Windows.Forms.Label lblServiceStatus;
         private System.Windows.Forms.Label lblEarnings;
         private System.Windows.Forms.Label lblWorkHour;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvDataTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookingID;
         private System.Windows.Forms.DataGridViewTextBoxColumn AssignedID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ServiceName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SerCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClientName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ClientPhone;
         private System.Windows.Forms.DataGridViewTextBoxColumn Address;
@@ -431,5 +514,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn WorkHour;
         private System.Windows.Forms.DataGridViewTextBoxColumn Earnings;
         private System.Windows.Forms.DataGridViewTextBoxColumn ServiceStatus;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

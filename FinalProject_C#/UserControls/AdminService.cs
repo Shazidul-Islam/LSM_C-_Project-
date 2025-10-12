@@ -18,11 +18,38 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
             this.load_ServiceTable();
+
+            this.txtServiceID.Text = GenerateNextUserId();
         }
+
+        internal static string GenerateNextUserId()
+        {
+            var Query = $"Select MAX(ServiceID) from Service";
+            String ServiceID = "S-001";
+            try
+            {
+                var DT = MainWindow.dataAccess.ExecuteQueryTable(Query);
+
+                if (DT.Rows.Count < 1) return ServiceID;
+
+                string lastServiceId = DT.Rows[0][0].ToString();
+
+                string numericPart = lastServiceId.Substring(2);
+                int number = int.Parse(numericPart);
+                number++;
+                string newServiceId = $"S-{number:D3}";
+                return newServiceId;
+
+            }
+            catch (Exception ex) { MessageBox.Show($"ERROR {ex.Message}"); }
+
+            return ServiceID;
+        }
+
         private void Clear()
         {
             this.gdvServiceTable.ClearSelection();
-            this.txtServiceID.Clear();
+            this.txtServiceID.Text = GenerateNextUserId();
             this.txtServiceN.Clear();
             this.cmbServiceCN.SelectedItem=null;
             this.cmbServiceSCN.SelectedIndex=-1; 

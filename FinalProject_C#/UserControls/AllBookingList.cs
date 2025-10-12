@@ -22,6 +22,7 @@ namespace FinalProject_C_.UserControls
         {
             var Query = $@"select  B.BookingID,
                                 A.AssignedID,
+                                S.ServiceID,
                                 S.Name,
                                 SC.SubCategoryName,
                                 U.UserID as userID,
@@ -75,15 +76,15 @@ namespace FinalProject_C_.UserControls
             this.lblBookingID.Text += this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString();
             this.lblAssignedID.Text += this.gdvBookingsTable.CurrentRow.Cells[1].Value.ToString();
             this.lblServiceID.Text += this.gdvBookingsTable.CurrentRow.Cells[2].Value.ToString();
-            this.lblServiceName.Text += this.gdvBookingsTable.CurrentRow.Cells[2].Value.ToString();
-            this.lblCatagoryName.Text += this.gdvBookingsTable.CurrentRow.Cells[3].Value.ToString();
-            this.lblClientID.Text += this.gdvBookingsTable.CurrentRow.Cells[4].Value.ToString();
-            this.lblEmployeID.Text += this.gdvBookingsTable.CurrentRow.Cells[5].Value.ToString();
-            this.lblAddress.Text += this.gdvBookingsTable.CurrentRow.Cells[6].Value.ToString();
-            this.lblDT.Text += this.gdvBookingsTable.CurrentRow.Cells[7].Value.ToString();
-            this.lblWorkHour.Text += this.gdvBookingsTable.CurrentRow.Cells[8].Value.ToString();
-            this.lblBookingStatus.Text += this.gdvBookingsTable.CurrentRow.Cells[9].Value.ToString();
-            this.lblTotalCost.Text += this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString();
+            this.lblServiceName.Text += this.gdvBookingsTable.CurrentRow.Cells[3].Value.ToString();
+            this.lblCatagoryName.Text += this.gdvBookingsTable.CurrentRow.Cells[4].Value.ToString();
+            this.lblClientID.Text += this.gdvBookingsTable.CurrentRow.Cells[5].Value.ToString();
+            this.lblEmployeID.Text += this.gdvBookingsTable.CurrentRow.Cells[6].Value.ToString();
+            this.lblAddress.Text += this.gdvBookingsTable.CurrentRow.Cells[7].Value.ToString();
+            this.lblDT.Text += this.gdvBookingsTable.CurrentRow.Cells[8].Value.ToString();
+            this.lblWorkHour.Text += this.gdvBookingsTable.CurrentRow.Cells[9].Value.ToString();
+            this.lblBookingStatus.Text += this.gdvBookingsTable.CurrentRow.Cells[10].Value.ToString();
+            this.lblTotalCost.Text += this.gdvBookingsTable.CurrentRow.Cells[11].Value.ToString();
         }
 
         private void btnClear_Click(object sender, EventArgs e)

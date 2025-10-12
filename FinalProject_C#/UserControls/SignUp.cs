@@ -17,6 +17,7 @@ namespace FinalProject_C_.UserControls
         {
             InitializeComponent();
             load_ServiceCategoryCommand();
+            this.txtUserID.Text = AdminUser.GenerateNextUserId();
         }
 
         private void load_ServiceCategoryCommand()

@@ -35,6 +35,8 @@
             this.lblLGS = new System.Windows.Forms.Label();
             this.gpbPIC = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlFM = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.cmbServiceType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rbFemale = new System.Windows.Forms.RadioButton();
             this.rbMale = new System.Windows.Forms.RadioButton();
@@ -49,8 +51,6 @@
             this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cmbServiceType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.btnBack = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnlMainPanel.SuspendLayout();
             this.pnlSUBPN.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gpbPIC)).BeginInit();
@@ -140,6 +140,47 @@
             this.pnlFM.Name = "pnlFM";
             this.pnlFM.Size = new System.Drawing.Size(414, 562);
             this.pnlFM.TabIndex = 9;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BorderRadius = 8;
+            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.btnBack.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.btnBack.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(49, 507);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(135, 36);
+            this.btnBack.TabIndex = 28;
+            this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // cmbServiceType
+            // 
+            this.cmbServiceType.BackColor = System.Drawing.Color.Transparent;
+            this.cmbServiceType.BorderRadius = 5;
+            this.cmbServiceType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbServiceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbServiceType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbServiceType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbServiceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbServiceType.ItemHeight = 30;
+            this.cmbServiceType.Items.AddRange(new object[] {
+            "Cleaning",
+            "Plumbing",
+            "Gardening",
+            "Electrician"});
+            this.cmbServiceType.Location = new System.Drawing.Point(19, 402);
+            this.cmbServiceType.Name = "cmbServiceType";
+            this.cmbServiceType.Size = new System.Drawing.Size(380, 36);
+            this.cmbServiceType.TabIndex = 27;
+            this.cmbServiceType.Visible = false;
             // 
             // panel1
             // 
@@ -402,51 +443,11 @@
             this.txtUserID.Name = "txtUserID";
             this.txtUserID.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtUserID.PlaceholderText = "UserID";
+            this.txtUserID.ReadOnly = true;
             this.txtUserID.SelectedText = "";
             this.txtUserID.Size = new System.Drawing.Size(380, 35);
             this.txtUserID.TabIndex = 6;
             this.txtUserID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // cmbServiceType
-            // 
-            this.cmbServiceType.BackColor = System.Drawing.Color.Transparent;
-            this.cmbServiceType.BorderRadius = 5;
-            this.cmbServiceType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbServiceType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbServiceType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbServiceType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbServiceType.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbServiceType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbServiceType.ItemHeight = 30;
-            this.cmbServiceType.Items.AddRange(new object[] {
-            "Cleaning",
-            "Plumbing",
-            "Gardening",
-            "Electrician"});
-            this.cmbServiceType.Location = new System.Drawing.Point(19, 402);
-            this.cmbServiceType.Name = "cmbServiceType";
-            this.cmbServiceType.Size = new System.Drawing.Size(380, 36);
-            this.cmbServiceType.TabIndex = 27;
-            this.cmbServiceType.Visible = false;
-            // 
-            // btnBack
-            // 
-            this.btnBack.BorderRadius = 8;
-            this.btnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBack.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.btnBack.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.btnBack.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnBack.ForeColor = System.Drawing.Color.White;
-            this.btnBack.Location = new System.Drawing.Point(49, 507);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(135, 36);
-            this.btnBack.TabIndex = 28;
-            this.btnBack.Text = "Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // SignUp
             // 

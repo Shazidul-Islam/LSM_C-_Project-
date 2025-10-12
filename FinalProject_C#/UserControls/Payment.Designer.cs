@@ -32,20 +32,18 @@
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.lblTotalCost = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlSelectCard = new Guna.UI2.WinForms.Guna2Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.gunapicCard = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlSelectNagad = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.gunapicNagad = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlSelectBkash = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.gunaPicBkash = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnPayLater = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnEnter = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnConfirmPayment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gunaPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.gunaGmail = new Guna.UI2.WinForms.Guna2TextBox();
@@ -54,15 +52,17 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunapicCard)).BeginInit();
-            this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunapicNagad)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
+            this.pnlSelectCard.SuspendLayout();
+            this.pnlSelectNagad.SuspendLayout();
+            this.pnlSelectBkash.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPicBkash)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -85,9 +85,9 @@
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel3.Controls.Add(this.lblTotalCost);
             this.guna2GradientPanel3.Controls.Add(this.label11);
-            this.guna2GradientPanel3.Controls.Add(this.guna2Panel2);
-            this.guna2GradientPanel3.Controls.Add(this.guna2Panel4);
-            this.guna2GradientPanel3.Controls.Add(this.guna2Panel1);
+            this.guna2GradientPanel3.Controls.Add(this.pnlSelectCard);
+            this.guna2GradientPanel3.Controls.Add(this.pnlSelectNagad);
+            this.guna2GradientPanel3.Controls.Add(this.pnlSelectBkash);
             this.guna2GradientPanel3.Controls.Add(this.label7);
             this.guna2GradientPanel3.Controls.Add(this.label6);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
@@ -120,95 +120,89 @@
             this.label11.TabIndex = 11;
             this.label11.Text = "Payment datalis";
             // 
-            // guna2Panel2
+            // pnlSelectCard
             // 
-            this.guna2Panel2.BorderRadius = 8;
-            this.guna2Panel2.Controls.Add(this.label10);
-            this.guna2Panel2.Controls.Add(this.gunapicCard);
-            this.guna2Panel2.Location = new System.Drawing.Point(322, 229);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(113, 159);
-            this.guna2Panel2.TabIndex = 10;
+            this.pnlSelectCard.BorderColor = System.Drawing.Color.Green;
+            this.pnlSelectCard.BorderRadius = 8;
+            this.pnlSelectCard.Controls.Add(this.guna2PictureBox2);
+            this.pnlSelectCard.Controls.Add(this.label10);
+            this.pnlSelectCard.FillColor = System.Drawing.Color.White;
+            this.pnlSelectCard.Location = new System.Drawing.Point(322, 229);
+            this.pnlSelectCard.Name = "pnlSelectCard";
+            this.pnlSelectCard.Size = new System.Drawing.Size(113, 159);
+            this.pnlSelectCard.TabIndex = 10;
+            this.pnlSelectCard.Click += new System.EventHandler(this.pnlSelectCard_Click);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(25, 124);
+            this.label10.Location = new System.Drawing.Point(30, 124);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 23);
             this.label10.TabIndex = 1;
             this.label10.Text = "Card";
+            this.label10.Click += new System.EventHandler(this.pnlSelectCard_Click);
             // 
-            // gunapicCard
+            // pnlSelectNagad
             // 
-            this.gunapicCard.BorderRadius = 8;
-            this.gunapicCard.ImageRotate = 0F;
-            this.gunapicCard.Location = new System.Drawing.Point(0, 0);
-            this.gunapicCard.Name = "gunapicCard";
-            this.gunapicCard.Size = new System.Drawing.Size(113, 111);
-            this.gunapicCard.TabIndex = 0;
-            this.gunapicCard.TabStop = false;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BorderRadius = 8;
-            this.guna2Panel4.Controls.Add(this.label9);
-            this.guna2Panel4.Controls.Add(this.gunapicNagad);
-            this.guna2Panel4.Location = new System.Drawing.Point(179, 229);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(113, 159);
-            this.guna2Panel4.TabIndex = 10;
+            this.pnlSelectNagad.BorderColor = System.Drawing.Color.Green;
+            this.pnlSelectNagad.BorderRadius = 8;
+            this.pnlSelectNagad.Controls.Add(this.guna2PictureBox1);
+            this.pnlSelectNagad.Controls.Add(this.label9);
+            this.pnlSelectNagad.FillColor = System.Drawing.Color.White;
+            this.pnlSelectNagad.Location = new System.Drawing.Point(179, 229);
+            this.pnlSelectNagad.Name = "pnlSelectNagad";
+            this.pnlSelectNagad.Size = new System.Drawing.Size(113, 159);
+            this.pnlSelectNagad.TabIndex = 10;
+            this.pnlSelectNagad.Click += new System.EventHandler(this.pnlSelectNagad_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(25, 124);
+            this.label9.Location = new System.Drawing.Point(23, 124);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 23);
             this.label9.TabIndex = 1;
             this.label9.Text = "Nagad";
+            this.label9.Click += new System.EventHandler(this.pnlSelectNagad_Click);
             // 
-            // gunapicNagad
+            // pnlSelectBkash
             // 
-            this.gunapicNagad.BorderRadius = 8;
-            this.gunapicNagad.ImageRotate = 0F;
-            this.gunapicNagad.Location = new System.Drawing.Point(0, 0);
-            this.gunapicNagad.Name = "gunapicNagad";
-            this.gunapicNagad.Size = new System.Drawing.Size(113, 111);
-            this.gunapicNagad.TabIndex = 0;
-            this.gunapicNagad.TabStop = false;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BorderRadius = 8;
-            this.guna2Panel1.Controls.Add(this.label8);
-            this.guna2Panel1.Controls.Add(this.gunaPicBkash);
-            this.guna2Panel1.Location = new System.Drawing.Point(28, 229);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(113, 159);
-            this.guna2Panel1.TabIndex = 9;
+            this.pnlSelectBkash.BorderColor = System.Drawing.Color.Green;
+            this.pnlSelectBkash.BorderRadius = 8;
+            this.pnlSelectBkash.Controls.Add(this.label8);
+            this.pnlSelectBkash.Controls.Add(this.gunaPicBkash);
+            this.pnlSelectBkash.FillColor = System.Drawing.Color.White;
+            this.pnlSelectBkash.Location = new System.Drawing.Point(28, 229);
+            this.pnlSelectBkash.Name = "pnlSelectBkash";
+            this.pnlSelectBkash.Size = new System.Drawing.Size(113, 159);
+            this.pnlSelectBkash.TabIndex = 9;
+            this.pnlSelectBkash.Click += new System.EventHandler(this.pnlSelectBkash_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(25, 124);
+            this.label8.Location = new System.Drawing.Point(24, 124);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(64, 23);
             this.label8.TabIndex = 1;
             this.label8.Text = "Bkash";
+            this.label8.Click += new System.EventHandler(this.pnlSelectBkash_Click);
             // 
             // gunaPicBkash
             // 
             this.gunaPicBkash.BorderRadius = 8;
+            this.gunaPicBkash.FillColor = System.Drawing.Color.Black;
             this.gunaPicBkash.ImageRotate = 0F;
-            this.gunaPicBkash.Location = new System.Drawing.Point(0, 0);
+            this.gunaPicBkash.Location = new System.Drawing.Point(7, 7);
             this.gunaPicBkash.Name = "gunaPicBkash";
-            this.gunaPicBkash.Size = new System.Drawing.Size(113, 111);
+            this.gunaPicBkash.Size = new System.Drawing.Size(99, 98);
             this.gunaPicBkash.TabIndex = 0;
             this.gunaPicBkash.TabStop = false;
+            this.gunaPicBkash.Click += new System.EventHandler(this.pnlSelectBkash_Click);
             // 
             // label7
             // 
@@ -236,7 +230,7 @@
             // 
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel1.Controls.Add(this.btnPayLater);
-            this.guna2GradientPanel1.Controls.Add(this.btnEnter);
+            this.guna2GradientPanel1.Controls.Add(this.btnConfirmPayment);
             this.guna2GradientPanel1.Controls.Add(this.gunaPass);
             this.guna2GradientPanel1.Controls.Add(this.label5);
             this.guna2GradientPanel1.Controls.Add(this.gunaGmail);
@@ -273,24 +267,25 @@
             this.btnPayLater.Text = "Pay Later";
             this.btnPayLater.Click += new System.EventHandler(this.btnPayLater_Click);
             // 
-            // btnEnter
+            // btnConfirmPayment
             // 
-            this.btnEnter.BackColor = System.Drawing.Color.Transparent;
-            this.btnEnter.BorderRadius = 8;
-            this.btnEnter.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnEnter.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnEnter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEnter.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnEnter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnEnter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.btnEnter.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.btnEnter.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnEnter.ForeColor = System.Drawing.Color.White;
-            this.btnEnter.Location = new System.Drawing.Point(29, 521);
-            this.btnEnter.Name = "btnEnter";
-            this.btnEnter.Size = new System.Drawing.Size(135, 36);
-            this.btnEnter.TabIndex = 32;
-            this.btnEnter.Text = "Confirm ";
+            this.btnConfirmPayment.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirmPayment.BorderRadius = 8;
+            this.btnConfirmPayment.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirmPayment.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnConfirmPayment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfirmPayment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnConfirmPayment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnConfirmPayment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.btnConfirmPayment.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.btnConfirmPayment.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnConfirmPayment.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmPayment.Location = new System.Drawing.Point(29, 521);
+            this.btnConfirmPayment.Name = "btnConfirmPayment";
+            this.btnConfirmPayment.Size = new System.Drawing.Size(186, 36);
+            this.btnConfirmPayment.TabIndex = 32;
+            this.btnConfirmPayment.Text = "Confirm Payment";
+            this.btnConfirmPayment.Click += new System.EventHandler(this.btnConfirmPayment_Click);
             // 
             // gunaPass
             // 
@@ -404,6 +399,30 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ENTER YOUR";
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 8;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(7, 7);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(99, 98);
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.pnlSelectNagad_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BorderRadius = 8;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Black;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(7, 7);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(99, 98);
+            this.guna2PictureBox2.TabIndex = 2;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.pnlSelectCard_Click);
+            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -414,17 +433,17 @@
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunapicCard)).EndInit();
-            this.guna2Panel4.ResumeLayout(false);
-            this.guna2Panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunapicNagad)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.pnlSelectCard.ResumeLayout(false);
+            this.pnlSelectCard.PerformLayout();
+            this.pnlSelectNagad.ResumeLayout(false);
+            this.pnlSelectNagad.PerformLayout();
+            this.pnlSelectBkash.ResumeLayout(false);
+            this.pnlSelectBkash.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPicBkash)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -443,19 +462,19 @@
         private Guna.UI2.WinForms.Guna2TextBox gunaGmail;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox gunaEnterphnNum;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel pnlSelectBkash;
         private Guna.UI2.WinForms.Guna2PictureBox gunaPicBkash;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel pnlSelectCard;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2PictureBox gunapicCard;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
+        private Guna.UI2.WinForms.Guna2Panel pnlSelectNagad;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2PictureBox gunapicNagad;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblTotalCost;
-        private Guna.UI2.WinForms.Guna2GradientButton btnEnter;
+        private Guna.UI2.WinForms.Guna2GradientButton btnConfirmPayment;
         private Guna.UI2.WinForms.Guna2GradientButton btnPayLater;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,34 @@ namespace FinalProject_C_.UserControls
             InitializeComponent();
             this.load_UserTable();
             load_ServiceCategoryCommand();
+
+            this.txtUserID.Text = GenerateNextUserId();
         }
+
+        internal static string GenerateNextUserId()
+        {
+            var Query = $"Select MAX(UserID) from Users";
+            String UserID = "U-0001";
+            try
+            {
+                var DT = MainWindow.dataAccess.ExecuteQueryTable(Query);
+                
+                if (DT.Rows.Count<1) return UserID;
+
+                string lastUserId = DT.Rows[0][0].ToString();
+
+                string numericPart = lastUserId.Substring(2);
+                int number = int.Parse(numericPart);
+                number++;
+                string newUserId = $"U-{number:D4}";
+                return newUserId;
+
+            }
+            catch (Exception ex) { MessageBox.Show($"ERROR {ex.Message}"); }
+
+            return UserID;
+        }
+
 
         private void load_ServiceCategoryCommand()
         {
@@ -35,9 +63,10 @@ namespace FinalProject_C_.UserControls
 
         private void clear() 
         {
+            this.txtUserID.Text = GenerateNextUserId();
+
             this.dgvUserTable.ClearSelection();
             this.txtSearchUser.Clear();
-            this.txtUserID.Clear();
             this.txtFullName.Clear();
             this.rbFemale.Checked = false;
             this.rbMale.Checked = false;

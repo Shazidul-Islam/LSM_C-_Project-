@@ -53,8 +53,10 @@
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gdvBookingsTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.colBookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAssignedID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colServiceID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colServiceName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCategory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colClientID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +66,6 @@
             this.colWorkHour = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colBookingS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTotalCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
@@ -347,6 +348,7 @@
             this.gdvBookingsTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colBookingID,
             this.colAssignedID,
+            this.colServiceID,
             this.colServiceName,
             this.colCategory,
             this.colClientID,
@@ -395,6 +397,28 @@
             this.gdvBookingsTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gdvBookingsTable.DoubleClick += new System.EventHandler(this.gdvBookingsTable_DoubleClick);
             // 
+            // txtSearchBox
+            // 
+            this.txtSearchBox.BackColor = System.Drawing.Color.Transparent;
+            this.txtSearchBox.BorderRadius = 8;
+            this.txtSearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtSearchBox.DefaultText = "";
+            this.txtSearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtSearchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtSearchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtSearchBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.txtSearchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtSearchBox.ForeColor = System.Drawing.Color.Black;
+            this.txtSearchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtSearchBox.Location = new System.Drawing.Point(13, 14);
+            this.txtSearchBox.Name = "txtSearchBox";
+            this.txtSearchBox.PlaceholderText = "";
+            this.txtSearchBox.SelectedText = "";
+            this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
+            this.txtSearchBox.TabIndex = 1;
+            // 
             // colBookingID
             // 
             this.colBookingID.DataPropertyName = "BookingID";
@@ -409,6 +433,14 @@
             this.colAssignedID.Name = "colAssignedID";
             this.colAssignedID.ReadOnly = true;
             this.colAssignedID.Visible = false;
+            // 
+            // colServiceID
+            // 
+            this.colServiceID.DataPropertyName = "ServiceID";
+            this.colServiceID.HeaderText = "Service ID";
+            this.colServiceID.Name = "colServiceID";
+            this.colServiceID.ReadOnly = true;
+            this.colServiceID.Visible = false;
             // 
             // colServiceName
             // 
@@ -476,28 +508,6 @@
             this.colTotalCost.Name = "colTotalCost";
             this.colTotalCost.ReadOnly = true;
             // 
-            // txtSearchBox
-            // 
-            this.txtSearchBox.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchBox.BorderRadius = 8;
-            this.txtSearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchBox.DefaultText = "";
-            this.txtSearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchBox.ForeColor = System.Drawing.Color.Black;
-            this.txtSearchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBox.Location = new System.Drawing.Point(13, 14);
-            this.txtSearchBox.Name = "txtSearchBox";
-            this.txtSearchBox.PlaceholderText = "";
-            this.txtSearchBox.SelectedText = "";
-            this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
-            this.txtSearchBox.TabIndex = 1;
-            // 
             // AllBookingList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -541,6 +551,7 @@
         private System.Windows.Forms.Label lblClientID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colBookingID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colAssignedID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colServiceID;
         private System.Windows.Forms.DataGridViewTextBoxColumn colServiceName;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCategory;
         private System.Windows.Forms.DataGridViewTextBoxColumn colClientID;

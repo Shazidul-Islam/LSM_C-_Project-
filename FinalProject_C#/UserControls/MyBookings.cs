@@ -105,6 +105,7 @@ namespace FinalProject_C_.UserControls
             Payment payment = new Payment();
             payment.Dock = DockStyle.Fill;
             payment.HidePayLaterB();
+            payment.BookingID = this.gdvBookingsTable.CurrentRow.Cells[0].Value.ToString();
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(payment);
         }
