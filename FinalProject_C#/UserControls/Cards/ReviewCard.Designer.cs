@@ -28,10 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.lblUserName = new System.Windows.Forms.Label();
+            this.lblComment = new System.Windows.Forms.Label();
+            this.pnlRating1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlRating2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlRating3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlRating4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlRating5 = new Guna.UI2.WinForms.Guna2Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(7, 6);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(58, 67);
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // lblUserName
+            // 
+            this.lblUserName.AutoSize = true;
+            this.lblUserName.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblUserName.ForeColor = System.Drawing.Color.White;
+            this.lblUserName.Location = new System.Drawing.Point(71, 6);
+            this.lblUserName.Name = "lblUserName";
+            this.lblUserName.Size = new System.Drawing.Size(67, 13);
+            this.lblUserName.TabIndex = 1;
+            this.lblUserName.Text = "User Name : ";
+            // 
+            // lblComment
+            // 
+            this.lblComment.AutoSize = true;
+            this.lblComment.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.lblComment.ForeColor = System.Drawing.Color.White;
+            this.lblComment.Location = new System.Drawing.Point(71, 51);
+            this.lblComment.Name = "lblComment";
+            this.lblComment.Size = new System.Drawing.Size(62, 13);
+            this.lblComment.TabIndex = 2;
+            this.lblComment.Text = "Comment : ";
+            // 
+            // pnlRating1
+            // 
+            this.pnlRating1.BackColor = System.Drawing.Color.Olive;
+            this.pnlRating1.Location = new System.Drawing.Point(74, 29);
+            this.pnlRating1.Name = "pnlRating1";
+            this.pnlRating1.Size = new System.Drawing.Size(13, 14);
+            this.pnlRating1.TabIndex = 3;
+            // 
+            // pnlRating2
+            // 
+            this.pnlRating2.BackColor = System.Drawing.Color.Olive;
+            this.pnlRating2.Location = new System.Drawing.Point(93, 29);
+            this.pnlRating2.Name = "pnlRating2";
+            this.pnlRating2.Size = new System.Drawing.Size(13, 14);
+            this.pnlRating2.TabIndex = 4;
+            // 
+            // pnlRating3
+            // 
+            this.pnlRating3.BackColor = System.Drawing.Color.Olive;
+            this.pnlRating3.Location = new System.Drawing.Point(112, 29);
+            this.pnlRating3.Name = "pnlRating3";
+            this.pnlRating3.Size = new System.Drawing.Size(13, 14);
+            this.pnlRating3.TabIndex = 5;
+            // 
+            // pnlRating4
+            // 
+            this.pnlRating4.BackColor = System.Drawing.Color.Olive;
+            this.pnlRating4.Location = new System.Drawing.Point(131, 29);
+            this.pnlRating4.Name = "pnlRating4";
+            this.pnlRating4.Size = new System.Drawing.Size(13, 14);
+            this.pnlRating4.TabIndex = 6;
+            // 
+            // pnlRating5
+            // 
+            this.pnlRating5.BackColor = System.Drawing.Color.Olive;
+            this.pnlRating5.Location = new System.Drawing.Point(150, 29);
+            this.pnlRating5.Name = "pnlRating5";
+            this.pnlRating5.Size = new System.Drawing.Size(13, 14);
+            this.pnlRating5.TabIndex = 7;
+            // 
+            // ReviewCard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
+            this.Controls.Add(this.pnlRating5);
+            this.Controls.Add(this.pnlRating4);
+            this.Controls.Add(this.pnlRating3);
+            this.Controls.Add(this.pnlRating2);
+            this.Controls.Add(this.pnlRating1);
+            this.Controls.Add(this.lblComment);
+            this.Controls.Add(this.lblUserName);
+            this.Controls.Add(this.guna2PictureBox1);
+            this.Name = "ReviewCard";
+            this.Size = new System.Drawing.Size(287, 79);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label lblUserName;
+        private System.Windows.Forms.Label lblComment;
+        private Guna.UI2.WinForms.Guna2Panel pnlRating1;
+        private Guna.UI2.WinForms.Guna2Panel pnlRating2;
+        private Guna.UI2.WinForms.Guna2Panel pnlRating3;
+        private Guna.UI2.WinForms.Guna2Panel pnlRating4;
+        private Guna.UI2.WinForms.Guna2Panel pnlRating5;
     }
 }

@@ -196,6 +196,9 @@
     <EmbeddedResource Include="UserControls\BookN.resx">
       <DependentUpon>BookN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Cards\ReviewCard.resx">
+      <DependentUpon>ReviewCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Cards\ServiceCard.resx">
       <DependentUpon>ServiceCard.cs</DependentUpon>
     </EmbeddedResource>
