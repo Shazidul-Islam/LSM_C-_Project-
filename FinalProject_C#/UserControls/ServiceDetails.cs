@@ -30,6 +30,12 @@ namespace FinalProject_C_.UserControls
             this.lblPrice.Text += Price;
             this.ServiceID = ServiceID;
             this.SubCategoryID = SubCID;
+
+            try
+            {
+                this.ptbServicePic.Image = System.Drawing.Image.FromFile(Image);
+            }
+            catch { }
         }
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {

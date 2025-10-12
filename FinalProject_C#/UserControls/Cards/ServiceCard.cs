@@ -42,6 +42,11 @@ namespace FinalProject_C_.UserControls.Cards
             this.lblServiceN.Text = Name;
             this.lblCategory.Text += CategoryName;
             this.lblPrice.Text += Price+" Tk";
+            try
+            {
+                this.pbSeviceImage.Image = System.Drawing.Image.FromFile(this.Image);
+            }
+            catch { }
         }
         private void pnlCard_Click(object sender, EventArgs e)
         {

@@ -85,9 +85,33 @@ namespace FinalProject_C_.UserControls
             this.lblWorkHour.Text += this.dgvDataTable.CurrentRow.Cells[8].Value.ToString();
             this.lblEarnings.Text += this.dgvDataTable.CurrentRow.Cells[9].Value.ToString();
             this.lblServiceStatus.Text += this.dgvDataTable.CurrentRow.Cells[10].Value.ToString();
+
             if (this.dgvDataTable.CurrentRow.Cells[10].Value.ToString() == "Confirm")
             {
                 this.btnComplete.Visible = true;
+            }
+        }
+
+        private void btnComplete_Click(object sender, EventArgs e)
+        {
+            var query = $"Update Booking set StatusID = 3 where BookingID = {this.dgvDataTable.CurrentRow.Cells[0].Value.ToString()};";
+
+            DialogResult sure = MessageBox.Show("Are you sure This service is complete?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (sure == DialogResult.No)
+            {
+                return;
+            }
+
+
+            try
+            {
+                MainWindow.dataAccess.ExecuteDMLQuery(query);
+                this.LoadDataTable();
+                this.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error : " + ex.Message);
             }
         }
     }

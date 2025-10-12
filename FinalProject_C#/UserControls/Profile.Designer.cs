@@ -49,15 +49,14 @@
             this.lblFullName = new System.Windows.Forms.Label();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.lblDescription = new System.Windows.Forms.Label();
-            this.pbUserProfile = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbProfileImage = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlMainPanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfileImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -316,8 +315,7 @@
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.BorderRadius = 10;
-            this.guna2GradientPanel2.Controls.Add(this.lblDescription);
-            this.guna2GradientPanel2.Controls.Add(this.pbUserProfile);
+            this.guna2GradientPanel2.Controls.Add(this.pbProfileImage);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(80)))), ((int)(((byte)(59)))));
             this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -326,27 +324,16 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(270, 594);
             this.guna2GradientPanel2.TabIndex = 9;
             // 
-            // lblDescription
+            // pbProfileImage
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescription.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblDescription.ForeColor = System.Drawing.Color.White;
-            this.lblDescription.Location = new System.Drawing.Point(79, 416);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(108, 23);
-            this.lblDescription.TabIndex = 13;
-            this.lblDescription.Text = "Description";
-            // 
-            // pbUserProfile
-            // 
-            this.pbUserProfile.BorderRadius = 26;
-            this.pbUserProfile.ImageRotate = 0F;
-            this.pbUserProfile.Location = new System.Drawing.Point(38, 137);
-            this.pbUserProfile.Name = "pbUserProfile";
-            this.pbUserProfile.Size = new System.Drawing.Size(200, 250);
-            this.pbUserProfile.TabIndex = 1;
-            this.pbUserProfile.TabStop = false;
+            this.pbProfileImage.BorderRadius = 26;
+            this.pbProfileImage.ImageRotate = 0F;
+            this.pbProfileImage.Location = new System.Drawing.Point(38, 137);
+            this.pbProfileImage.Name = "pbProfileImage";
+            this.pbProfileImage.Size = new System.Drawing.Size(200, 250);
+            this.pbProfileImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbProfileImage.TabIndex = 1;
+            this.pbProfileImage.TabStop = false;
             // 
             // guna2GradientPanel1
             // 
@@ -378,8 +365,7 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
-            this.guna2GradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbUserProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfileImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.ResumeLayout(false);
 
@@ -406,8 +392,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private System.Windows.Forms.Label lblDescription;
-        private Guna.UI2.WinForms.Guna2PictureBox pbUserProfile;
+        private Guna.UI2.WinForms.Guna2PictureBox pbProfileImage;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2GradientButton btnUpdate;

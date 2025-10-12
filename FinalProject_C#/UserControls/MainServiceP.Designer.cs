@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainServiceP));
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.txtSearchService = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnAllServices = new Guna.UI2.WinForms.Guna2Button();
             this.pnlServicesP = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlElectric = new Guna.UI2.WinForms.Guna2Panel();
@@ -43,7 +43,7 @@
             // 
             // pnlMainPanel
             // 
-            this.pnlMainPanel.Controls.Add(this.txtSearchService);
+            this.pnlMainPanel.Controls.Add(this.btnAllServices);
             this.pnlMainPanel.Controls.Add(this.pnlServicesP);
             this.pnlMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
@@ -56,29 +56,25 @@
             this.pnlMainPanel.Size = new System.Drawing.Size(918, 713);
             this.pnlMainPanel.TabIndex = 5;
             // 
-            // txtSearchService
+            // btnAllServices
             // 
-            this.txtSearchService.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchService.BorderRadius = 8;
-            this.txtSearchService.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchService.DefaultText = "";
-            this.txtSearchService.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchService.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchService.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSearchService.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchService.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchService.ForeColor = System.Drawing.Color.Black;
-            this.txtSearchService.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchService.Location = new System.Drawing.Point(16, 13);
-            this.txtSearchService.Name = "txtSearchService";
-            this.txtSearchService.PlaceholderText = "";
-            this.txtSearchService.SelectedText = "";
-            this.txtSearchService.Size = new System.Drawing.Size(887, 37);
-            this.txtSearchService.TabIndex = 4;
-            this.txtSearchService.TextChanged += new System.EventHandler(this.txtSearchService_TextChanged);
-            this.txtSearchService.Click += new System.EventHandler(this.txtSearchService_Click);
+            this.btnAllServices.BackColor = System.Drawing.Color.Transparent;
+            this.btnAllServices.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.btnAllServices.BorderRadius = 8;
+            this.btnAllServices.BorderThickness = 1;
+            this.btnAllServices.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllServices.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllServices.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAllServices.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAllServices.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
+            this.btnAllServices.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.btnAllServices.ForeColor = System.Drawing.Color.White;
+            this.btnAllServices.Location = new System.Drawing.Point(16, 12);
+            this.btnAllServices.Name = "btnAllServices";
+            this.btnAllServices.Size = new System.Drawing.Size(887, 35);
+            this.btnAllServices.TabIndex = 12;
+            this.btnAllServices.Text = "All Services";
+            this.btnAllServices.Click += new System.EventHandler(this.btnAllServices_Click);
             // 
             // pnlServicesP
             // 
@@ -151,6 +147,6 @@
         private Guna.UI2.WinForms.Guna2Panel pnlGardening;
         private Guna.UI2.WinForms.Guna2Panel pnlClening;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchService;
+        private Guna.UI2.WinForms.Guna2Button btnAllServices;
     }
 }

@@ -52,18 +52,19 @@
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.txtUserImage = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnUpload = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnChoseFile = new Guna.UI2.WinForms.Guna2GradientButton();
             this.lblP = new System.Windows.Forms.Label();
             this.lblUY = new System.Windows.Forms.Label();
             this.lblDes = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pbProfilePic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ofdChoseFile = new System.Windows.Forms.OpenFileDialog();
             this.pnlMainPanel.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfilePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -404,11 +405,11 @@
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.BorderRadius = 10;
             this.guna2GradientPanel2.Controls.Add(this.txtUserImage);
-            this.guna2GradientPanel2.Controls.Add(this.btnUpload);
+            this.guna2GradientPanel2.Controls.Add(this.btnChoseFile);
             this.guna2GradientPanel2.Controls.Add(this.lblP);
             this.guna2GradientPanel2.Controls.Add(this.lblUY);
             this.guna2GradientPanel2.Controls.Add(this.lblDes);
-            this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2GradientPanel2.Controls.Add(this.pbProfilePic);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(187)))), ((int)(((byte)(189)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(80)))), ((int)(((byte)(59)))));
             this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -440,24 +441,25 @@
             this.txtUserImage.TabIndex = 25;
             this.txtUserImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // btnUpload
+            // btnChoseFile
             // 
-            this.btnUpload.BackColor = System.Drawing.Color.Transparent;
-            this.btnUpload.BorderRadius = 8;
-            this.btnUpload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpload.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpload.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
-            this.btnUpload.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
-            this.btnUpload.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.btnUpload.ForeColor = System.Drawing.Color.White;
-            this.btnUpload.Location = new System.Drawing.Point(68, 492);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(135, 36);
-            this.btnUpload.TabIndex = 17;
-            this.btnUpload.Text = "Upload";
+            this.btnChoseFile.BackColor = System.Drawing.Color.Transparent;
+            this.btnChoseFile.BorderRadius = 8;
+            this.btnChoseFile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChoseFile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChoseFile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChoseFile.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChoseFile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChoseFile.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(54)))));
+            this.btnChoseFile.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(77)))), ((int)(((byte)(32)))));
+            this.btnChoseFile.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.btnChoseFile.ForeColor = System.Drawing.Color.White;
+            this.btnChoseFile.Location = new System.Drawing.Point(68, 492);
+            this.btnChoseFile.Name = "btnChoseFile";
+            this.btnChoseFile.Size = new System.Drawing.Size(135, 36);
+            this.btnChoseFile.TabIndex = 17;
+            this.btnChoseFile.Text = "Upload";
+            this.btnChoseFile.Click += new System.EventHandler(this.btnChoseFile_Click);
             // 
             // lblP
             // 
@@ -495,15 +497,16 @@
             this.lblDes.TabIndex = 13;
             this.lblDes.Text = "Select a profile picture";
             // 
-            // guna2PictureBox1
+            // pbProfilePic
             // 
-            this.guna2PictureBox1.BorderRadius = 26;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(38, 153);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(200, 250);
-            this.guna2PictureBox1.TabIndex = 1;
-            this.guna2PictureBox1.TabStop = false;
+            this.pbProfilePic.BorderRadius = 26;
+            this.pbProfilePic.ImageRotate = 0F;
+            this.pbProfilePic.Location = new System.Drawing.Point(38, 153);
+            this.pbProfilePic.Name = "pbProfilePic";
+            this.pbProfilePic.Size = new System.Drawing.Size(200, 250);
+            this.pbProfilePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbProfilePic.TabIndex = 1;
+            this.pbProfilePic.TabStop = false;
             // 
             // guna2GradientPanel1
             // 
@@ -523,6 +526,11 @@
             this.guna2PictureBox6.TabIndex = 7;
             this.guna2PictureBox6.TabStop = false;
             // 
+            // ofdChoseFile
+            // 
+            this.ofdChoseFile.FileName = "openFileDialog1";
+            this.ofdChoseFile.FileOk += new System.ComponentModel.CancelEventHandler(this.ofdChoseFile_FileOk);
+            // 
             // UpdateUP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -536,7 +544,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbProfilePic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.ResumeLayout(false);
 
@@ -558,13 +566,13 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private System.Windows.Forms.Label lblDes;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox pbProfilePic;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private System.Windows.Forms.Label lblUY;
         private System.Windows.Forms.Label lblP;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2GradientButton btnUpload;
+        private Guna.UI2.WinForms.Guna2GradientButton btnChoseFile;
         private System.Windows.Forms.Label label7;
         private Guna.UI2.WinForms.Guna2TextBox txtFullName;
         private Guna.UI2.WinForms.Guna2GradientButton btnBack;
@@ -574,5 +582,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPhoneNo;
         private Guna.UI2.WinForms.Guna2TextBox txtUserImage;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpDate;
+        private System.Windows.Forms.OpenFileDialog ofdChoseFile;
     }
 }

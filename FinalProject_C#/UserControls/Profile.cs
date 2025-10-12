@@ -24,7 +24,12 @@ namespace FinalProject_C_.UserControls
             string Gender = MainWindow.loginUser.Rows[0][2].ToString();
             string Description = MainWindow.loginUser.Rows[0][7].ToString();
 
-           
+            try
+            {
+                this.pbProfileImage.Image = System.Drawing.Image.FromFile(MainWindow.loginUser.Rows[0][9].ToString());
+            }
+            catch { }
+
 
             this.lblFullName.Text = FullName;
             this.lblUserType.Text = UserType;
@@ -33,7 +38,6 @@ namespace FinalProject_C_.UserControls
             this.lblEmail.Text = Email;
             this.lblDOB.Text = DOB;
             this.lblGender.Text = Gender;
-            this.lblDescription.Text = Description;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

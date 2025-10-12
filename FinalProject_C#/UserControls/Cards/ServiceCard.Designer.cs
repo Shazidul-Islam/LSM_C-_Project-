@@ -125,10 +125,13 @@
             // 
             // pbSeviceImage
             // 
+            this.pbSeviceImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbSeviceImage.Dock = System.Windows.Forms.DockStyle.Top;
             this.pbSeviceImage.ImageRotate = 0F;
             this.pbSeviceImage.Location = new System.Drawing.Point(0, 0);
             this.pbSeviceImage.Name = "pbSeviceImage";
             this.pbSeviceImage.Size = new System.Drawing.Size(225, 72);
+            this.pbSeviceImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbSeviceImage.TabIndex = 0;
             this.pbSeviceImage.TabStop = false;
             this.pbSeviceImage.Click += new System.EventHandler(this.pnlCard_Click);

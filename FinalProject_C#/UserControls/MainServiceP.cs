@@ -30,18 +30,6 @@ namespace FinalProject_C_.UserControls
             ServicesPanel.Controls.Add(services);
         }
 
-        private void txtSearchService_Click(object sender, EventArgs e)
-        {
-            TrackPage = "0";
-            Query = "select S.ServiceID,S.Name,C.CategoryName,SC.SubCategoryName,S.Description,S.Price, S.Image ,SC.SubCategoryID from Service as S, ServiceCategory as C, SubCategory as SC where S.SubCategoryID=SC.SubCategoryID and SC.CategoryID=C.CategoryID";
-            LoadServices();
-        }
-
-        private void txtSearchService_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void ChangeQuery()
         {
             Query = $"select S.ServiceID,S.Name,C.CategoryName,SC.SubCategoryName,S.Description,S.Price, S.Image ,SC.SubCategoryID from Service as S, ServiceCategory as C, SubCategory as SC where S.SubCategoryID=SC.SubCategoryID and SC.CategoryID=C.CategoryID and C.CategoryID = '{TrackPage}';";
@@ -64,6 +52,13 @@ namespace FinalProject_C_.UserControls
         {
             TrackPage = "C-03";
             ChangeQuery();
+        }
+
+        private void btnAllServices_Click(object sender, EventArgs e)
+        {
+            TrackPage = "0";
+            Query = "select S.ServiceID,S.Name,C.CategoryName,SC.SubCategoryName,S.Description,S.Price, S.Image ,SC.SubCategoryID from Service as S, ServiceCategory as C, SubCategory as SC where S.SubCategoryID=SC.SubCategoryID and SC.CategoryID=C.CategoryID";
+            LoadServices();
         }
     }
 }

@@ -41,12 +41,12 @@
             this.lblServiceN = new System.Windows.Forms.Label();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.flpReviews = new System.Windows.Forms.FlowLayoutPanel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.ptbServicePic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlMainPanel.SuspendLayout();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbServicePic)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMainPanel
@@ -70,7 +70,7 @@
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
             this.guna2GradientPanel2.Controls.Add(this.guna2GradientButton1);
             this.guna2GradientPanel2.Controls.Add(this.flpReviews);
-            this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2GradientPanel2.Controls.Add(this.ptbServicePic);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -214,17 +214,17 @@
             this.flpReviews.Size = new System.Drawing.Size(313, 329);
             this.flpReviews.TabIndex = 2;
             // 
-            // guna2PictureBox1
+            // ptbServicePic
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.BackgroundImage")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.InitialImage = null;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(11, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(896, 290);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.ptbServicePic.BackColor = System.Drawing.Color.Transparent;
+            this.ptbServicePic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbServicePic.BackgroundImage")));
+            this.ptbServicePic.ImageRotate = 0F;
+            this.ptbServicePic.InitialImage = null;
+            this.ptbServicePic.Location = new System.Drawing.Point(11, 3);
+            this.ptbServicePic.Name = "ptbServicePic";
+            this.ptbServicePic.Size = new System.Drawing.Size(896, 290);
+            this.ptbServicePic.TabIndex = 0;
+            this.ptbServicePic.TabStop = false;
             // 
             // guna2GradientPanel1
             // 
@@ -244,7 +244,7 @@
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbServicePic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -254,7 +254,7 @@
         private Guna.UI2.WinForms.Guna2GradientPanel pnlMainPanel;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox ptbServicePic;
         private System.Windows.Forms.FlowLayoutPanel flpReviews;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;

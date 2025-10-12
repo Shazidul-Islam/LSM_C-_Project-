@@ -143,6 +143,11 @@ namespace FinalProject_C_.UserControls
                 MessageBox.Show("Fill All The Field First");
                 return;
             }
+            if(this.txtPassword.Text != MainWindow.loginUser.Rows[0][6].ToString())
+            {
+                MessageBox.Show("Password Did not match");
+                return;
+            }
             if (selectedPAYM == "0")
             {
                 MessageBox.Show("Please Select a Payment Method");

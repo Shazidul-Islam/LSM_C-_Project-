@@ -53,7 +53,6 @@
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.gdvBookingsTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txtSearchBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.colBookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAssignedID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colServiceID = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,7 +77,6 @@
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel2);
             this.guna2GradientPanel2.Controls.Add(this.btnClear);
             this.guna2GradientPanel2.Controls.Add(this.guna2Panel1);
-            this.guna2GradientPanel2.Controls.Add(this.txtSearchBox);
             this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(52)))), ((int)(((byte)(51)))));
@@ -323,9 +321,9 @@
             this.guna2Panel1.BorderRadius = 8;
             this.guna2Panel1.Controls.Add(this.gdvBookingsTable);
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(71)))), ((int)(((byte)(63)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(13, 65);
+            this.guna2Panel1.Location = new System.Drawing.Point(13, 14);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(572, 635);
+            this.guna2Panel1.Size = new System.Drawing.Size(572, 686);
             this.guna2Panel1.TabIndex = 3;
             // 
             // gdvBookingsTable
@@ -372,7 +370,7 @@
             this.gdvBookingsTable.Name = "gdvBookingsTable";
             this.gdvBookingsTable.ReadOnly = true;
             this.gdvBookingsTable.RowHeadersVisible = false;
-            this.gdvBookingsTable.Size = new System.Drawing.Size(572, 635);
+            this.gdvBookingsTable.Size = new System.Drawing.Size(572, 686);
             this.gdvBookingsTable.TabIndex = 2;
             this.gdvBookingsTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gdvBookingsTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -396,28 +394,6 @@
             this.gdvBookingsTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gdvBookingsTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gdvBookingsTable.DoubleClick += new System.EventHandler(this.gdvBookingsTable_DoubleClick);
-            // 
-            // txtSearchBox
-            // 
-            this.txtSearchBox.BackColor = System.Drawing.Color.Transparent;
-            this.txtSearchBox.BorderRadius = 8;
-            this.txtSearchBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearchBox.DefaultText = "";
-            this.txtSearchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.txtSearchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtSearchBox.ForeColor = System.Drawing.Color.Black;
-            this.txtSearchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearchBox.Location = new System.Drawing.Point(13, 14);
-            this.txtSearchBox.Name = "txtSearchBox";
-            this.txtSearchBox.PlaceholderText = "";
-            this.txtSearchBox.SelectedText = "";
-            this.txtSearchBox.Size = new System.Drawing.Size(572, 37);
-            this.txtSearchBox.TabIndex = 1;
             // 
             // colBookingID
             // 
@@ -530,7 +506,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Button btnClear;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearchBox;
         private System.Windows.Forms.Label lblBookingDetails;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblAssignedID;

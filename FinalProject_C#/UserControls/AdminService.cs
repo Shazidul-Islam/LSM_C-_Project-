@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -14,6 +15,7 @@ namespace FinalProject_C_.UserControls
 {
     public partial class AdminService : UserControl
     {
+        internal static string destinationFilePath { get; set; }
         public AdminService()
         {
             InitializeComponent();
@@ -135,7 +137,6 @@ namespace FinalProject_C_.UserControls
             string SubCategory = cmbServiceSCN.SelectedValue == null ? string.Empty : cmbServiceSCN.SelectedValue.ToString(); ;
             string Description = txtServiceD.Text;
             string Price = txtServiceP.Text;
-            string Image = txtServiceI.Text;
 
 
             if (string.IsNullOrWhiteSpace(ServiceID) ||
@@ -143,8 +144,7 @@ namespace FinalProject_C_.UserControls
                string.IsNullOrWhiteSpace(Category) ||
                string.IsNullOrWhiteSpace(SubCategory) ||
                string.IsNullOrWhiteSpace(Description) ||
-               string.IsNullOrWhiteSpace(Price)||
-               string.IsNullOrWhiteSpace(Image))
+               string.IsNullOrWhiteSpace(Price))
             {
                 MessageBox.Show("Fill All the Field First");
                 return;
@@ -159,6 +159,9 @@ namespace FinalProject_C_.UserControls
             {
                 var ServiceCheck = MainWindow.dataAccess.ExecuteQueryTable($"select * from Service where ServiceID='{ServiceID}'");
                 string query = "";
+                this.CopyFIle();
+                string Image = destinationFilePath;
+
                 if (ServiceCheck.Rows.Count == 1)
                 {
                     query = $@"Update Service set Name = '{Name}',Price = '{Price}',Description = '{Description}',Image = '{Image}',SubCategoryID='{SubCategory}' where ServiceID='{ServiceID}'";
@@ -222,5 +225,36 @@ namespace FinalProject_C_.UserControls
             this.load_ServiceTable(query);
             this.gdvServiceTable.ClearSelection();
         }
+
+        private void ofdChoseFile_FileOk(object sender, CancelEventArgs e)
+        {
+            this.txtServiceI.Text = this.ofdChoseFile.FileName;
+        }
+
+        private void btnSelect_Click(object sender, EventArgs e)
+        {
+            this.ofdChoseFile.ShowDialog();
+        }
+
+
+        private void CopyFIle()
+        {
+            string sourceFilePath = this.txtServiceI.Text;
+            string fileName = $"{this.txtServiceID.Text}.png";
+            destinationFilePath = Path.Combine(@"..\..\ServiceImage", fileName);
+
+            string destinationDirectory = Path.GetDirectoryName(destinationFilePath);
+            if (!Directory.Exists(destinationDirectory))
+            {
+                Directory.CreateDirectory(destinationDirectory);
+            }
+
+            try
+            {
+                File.Copy(sourceFilePath, destinationFilePath, true);
+            }
+            catch{ }
+        }
+
     }
 }

@@ -34,7 +34,7 @@ namespace FinalProject_C_.UserControls
             }
             try
             {
-                var query =$@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and Email='{this.txtEmail.Text}' and Password='{this.txtPassword.Text}'";
+                var query =$@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName,U.ImagePath from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and Email='{this.txtEmail.Text}' and Password='{this.txtPassword.Text}'";
                 var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
                 if (DA.Rows.Count == 1)
                 {
@@ -54,7 +54,7 @@ namespace FinalProject_C_.UserControls
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
-            var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='U-0001'";
+            var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName,U.ImagePath from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='U-0001'";
             var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
 
             MainWindow.loginUser = DA;
