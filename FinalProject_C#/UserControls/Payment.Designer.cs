@@ -33,8 +33,10 @@
             this.lblTotalCost = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pnlSelectCard = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.pnlSelectNagad = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pnlSelectBkash = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,25 +46,23 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnPayLater = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnConfirmPayment = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gunaPass = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.gunaGmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.gunaEnterphnNum = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPNorCN = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.pnlSelectCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.pnlSelectNagad.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlSelectBkash.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPicBkash)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientPanel2
@@ -133,6 +133,18 @@
             this.pnlSelectCard.TabIndex = 10;
             this.pnlSelectCard.Click += new System.EventHandler(this.pnlSelectCard_Click);
             // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BorderRadius = 8;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Black;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(7, 7);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(99, 98);
+            this.guna2PictureBox2.TabIndex = 2;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.pnlSelectCard_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -156,6 +168,18 @@
             this.pnlSelectNagad.Size = new System.Drawing.Size(113, 159);
             this.pnlSelectNagad.TabIndex = 10;
             this.pnlSelectNagad.Click += new System.EventHandler(this.pnlSelectNagad_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 8;
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(7, 7);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(99, 98);
+            this.guna2PictureBox1.TabIndex = 2;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.pnlSelectNagad_Click);
             // 
             // label9
             // 
@@ -231,11 +255,11 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel1.Controls.Add(this.btnPayLater);
             this.guna2GradientPanel1.Controls.Add(this.btnConfirmPayment);
-            this.guna2GradientPanel1.Controls.Add(this.gunaPass);
+            this.guna2GradientPanel1.Controls.Add(this.txtPassword);
             this.guna2GradientPanel1.Controls.Add(this.label5);
-            this.guna2GradientPanel1.Controls.Add(this.gunaGmail);
+            this.guna2GradientPanel1.Controls.Add(this.txtEmail);
             this.guna2GradientPanel1.Controls.Add(this.label4);
-            this.guna2GradientPanel1.Controls.Add(this.gunaEnterphnNum);
+            this.guna2GradientPanel1.Controls.Add(this.txtPNorCN);
             this.guna2GradientPanel1.Controls.Add(this.label3);
             this.guna2GradientPanel1.Controls.Add(this.label2);
             this.guna2GradientPanel1.Controls.Add(this.label1);
@@ -287,24 +311,24 @@
             this.btnConfirmPayment.Text = "Confirm Payment";
             this.btnConfirmPayment.Click += new System.EventHandler(this.btnConfirmPayment_Click);
             // 
-            // gunaPass
+            // txtPassword
             // 
-            this.gunaPass.BorderRadius = 8;
-            this.gunaPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaPass.DefaultText = "";
-            this.gunaPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaPass.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaPass.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaPass.Location = new System.Drawing.Point(29, 431);
-            this.gunaPass.Name = "gunaPass";
-            this.gunaPass.PlaceholderText = "";
-            this.gunaPass.SelectedText = "";
-            this.gunaPass.Size = new System.Drawing.Size(328, 46);
-            this.gunaPass.TabIndex = 7;
+            this.txtPassword.BorderRadius = 8;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Location = new System.Drawing.Point(29, 431);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(328, 46);
+            this.txtPassword.TabIndex = 7;
             // 
             // label5
             // 
@@ -317,24 +341,24 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Enter Your Password";
             // 
-            // gunaGmail
+            // txtEmail
             // 
-            this.gunaGmail.BorderRadius = 8;
-            this.gunaGmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaGmail.DefaultText = "";
-            this.gunaGmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaGmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaGmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaGmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaGmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaGmail.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaGmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaGmail.Location = new System.Drawing.Point(29, 331);
-            this.gunaGmail.Name = "gunaGmail";
-            this.gunaGmail.PlaceholderText = "";
-            this.gunaGmail.SelectedText = "";
-            this.gunaGmail.Size = new System.Drawing.Size(328, 46);
-            this.gunaGmail.TabIndex = 5;
+            this.txtEmail.BorderRadius = 8;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Location = new System.Drawing.Point(29, 330);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.Size = new System.Drawing.Size(328, 46);
+            this.txtEmail.TabIndex = 5;
             // 
             // label4
             // 
@@ -347,24 +371,24 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Email";
             // 
-            // gunaEnterphnNum
+            // txtPNorCN
             // 
-            this.gunaEnterphnNum.BorderRadius = 8;
-            this.gunaEnterphnNum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaEnterphnNum.DefaultText = "";
-            this.gunaEnterphnNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.gunaEnterphnNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.gunaEnterphnNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaEnterphnNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.gunaEnterphnNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaEnterphnNum.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaEnterphnNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunaEnterphnNum.Location = new System.Drawing.Point(29, 229);
-            this.gunaEnterphnNum.Name = "gunaEnterphnNum";
-            this.gunaEnterphnNum.PlaceholderText = "";
-            this.gunaEnterphnNum.SelectedText = "";
-            this.gunaEnterphnNum.Size = new System.Drawing.Size(328, 46);
-            this.gunaEnterphnNum.TabIndex = 3;
+            this.txtPNorCN.BorderRadius = 8;
+            this.txtPNorCN.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPNorCN.DefaultText = "";
+            this.txtPNorCN.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPNorCN.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPNorCN.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPNorCN.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPNorCN.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPNorCN.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPNorCN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPNorCN.Location = new System.Drawing.Point(29, 229);
+            this.txtPNorCN.Name = "txtPNorCN";
+            this.txtPNorCN.PlaceholderText = "";
+            this.txtPNorCN.SelectedText = "";
+            this.txtPNorCN.Size = new System.Drawing.Size(328, 46);
+            this.txtPNorCN.TabIndex = 3;
             // 
             // label3
             // 
@@ -399,30 +423,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ENTER YOUR";
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BorderRadius = 8;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Black;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(7, 7);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(99, 98);
-            this.guna2PictureBox1.TabIndex = 2;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.pnlSelectNagad_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BorderRadius = 8;
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.Black;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(7, 7);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(99, 98);
-            this.guna2PictureBox2.TabIndex = 2;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.pnlSelectCard_Click);
-            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,15 +435,15 @@
             this.guna2GradientPanel3.PerformLayout();
             this.pnlSelectCard.ResumeLayout(false);
             this.pnlSelectCard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.pnlSelectNagad.ResumeLayout(false);
             this.pnlSelectNagad.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.pnlSelectBkash.ResumeLayout(false);
             this.pnlSelectBkash.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPicBkash)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -457,11 +457,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox gunaPass;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox gunaGmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtEmail;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2TextBox gunaEnterphnNum;
+        private Guna.UI2.WinForms.Guna2TextBox txtPNorCN;
         private Guna.UI2.WinForms.Guna2Panel pnlSelectBkash;
         private Guna.UI2.WinForms.Guna2PictureBox gunaPicBkash;
         private System.Windows.Forms.Label label7;

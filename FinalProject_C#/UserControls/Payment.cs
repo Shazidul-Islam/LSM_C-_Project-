@@ -136,7 +136,13 @@ namespace FinalProject_C_.UserControls
 
         private void btnConfirmPayment_Click(object sender, EventArgs e)
         {
+
             //Validate
+            if(this.txtPNorCN.Text==""||this.txtEmail.Text==""||this.txtPassword.Text=="")
+            {
+                MessageBox.Show("Fill All The Field First");
+                return;
+            }
             if (selectedPAYM == "0")
             {
                 MessageBox.Show("Please Select a Payment Method");
