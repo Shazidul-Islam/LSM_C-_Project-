@@ -36,9 +36,6 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblClientID = new System.Windows.Forms.Label();
             this.lblBookingID = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.lblUserReview = new System.Windows.Forms.Label();
-            this.lblRating = new System.Windows.Forms.Label();
             this.lblTotalCost = new System.Windows.Forms.Label();
             this.lblBookingStatus = new System.Windows.Forms.Label();
             this.lblWorkHour = new System.Windows.Forms.Label();
@@ -102,9 +99,6 @@
             this.guna2Panel2.BorderRadius = 8;
             this.guna2Panel2.Controls.Add(this.lblClientID);
             this.guna2Panel2.Controls.Add(this.lblBookingID);
-            this.guna2Panel2.Controls.Add(this.label9);
-            this.guna2Panel2.Controls.Add(this.lblUserReview);
-            this.guna2Panel2.Controls.Add(this.lblRating);
             this.guna2Panel2.Controls.Add(this.lblTotalCost);
             this.guna2Panel2.Controls.Add(this.lblBookingStatus);
             this.guna2Panel2.Controls.Add(this.lblWorkHour);
@@ -143,40 +137,6 @@
             this.lblBookingID.Size = new System.Drawing.Size(105, 19);
             this.lblBookingID.TabIndex = 17;
             this.lblBookingID.Text = "Booking ID : ";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(14, 509);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(266, 39);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "COMING SOON";
-            // 
-            // lblUserReview
-            // 
-            this.lblUserReview.AutoSize = true;
-            this.lblUserReview.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblUserReview.ForeColor = System.Drawing.Color.White;
-            this.lblUserReview.Location = new System.Drawing.Point(5, 481);
-            this.lblUserReview.Name = "lblUserReview";
-            this.lblUserReview.Size = new System.Drawing.Size(114, 19);
-            this.lblUserReview.TabIndex = 15;
-            this.lblUserReview.Text = "User Review : ";
-            // 
-            // lblRating
-            // 
-            this.lblRating.AutoSize = true;
-            this.lblRating.Font = new System.Drawing.Font("Arial", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.lblRating.ForeColor = System.Drawing.Color.White;
-            this.lblRating.Location = new System.Drawing.Point(5, 447);
-            this.lblRating.Name = "lblRating";
-            this.lblRating.Size = new System.Drawing.Size(70, 19);
-            this.lblRating.TabIndex = 14;
-            this.lblRating.Text = "Rating : ";
             // 
             // lblTotalCost
             // 
@@ -518,9 +478,6 @@
         private System.Windows.Forms.Label lblTotalCost;
         private System.Windows.Forms.Label lblBookingStatus;
         private System.Windows.Forms.Label lblWorkHour;
-        private System.Windows.Forms.Label lblRating;
-        private System.Windows.Forms.Label lblUserReview;
-        private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2DataGridView gdvBookingsTable;
         private System.Windows.Forms.Label lblBookingID;
         private System.Windows.Forms.Label lblClientID;

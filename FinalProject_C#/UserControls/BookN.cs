@@ -118,7 +118,7 @@ namespace FinalProject_C_.UserControls
         {
             if(txtHours.Text != "")
             {
-                TotalCost = (Convert.ToInt32(Price) * Convert.ToInt32(txtHours.Text)).ToString();
+                TotalCost = (Convert.ToInt32(Price) * Convert.ToInt32(this.txtHours.Text)).ToString();
             }
             else { TotalCost = ""; }
             this.lblTotalCost.Text = "Your Total cost : " + TotalCost;

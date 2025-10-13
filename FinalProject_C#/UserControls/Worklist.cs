@@ -25,7 +25,7 @@ namespace FinalProject_C_.UserControls
             this.lblCategory.Text = "Category Name : ";
             this.lblClientName.Text = "Client Name : ";
             this.lblClientPhone.Text = "Client Phone : ";
-            this.lblClientPhone.Text = "Address : ";
+            this.lblAddress.Text = "Address : ";
             this.lblDT.Text = "Date and Time : ";
             this.lblWorkHour.Text = "Work Hours : ";
             this.lblEarnings.Text = "Earnings : ";

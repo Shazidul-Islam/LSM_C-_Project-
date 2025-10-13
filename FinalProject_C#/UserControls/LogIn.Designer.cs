@@ -261,7 +261,7 @@
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtEmail.PlaceholderText = "User Name";
+            this.txtEmail.PlaceholderText = "Email";
             this.txtEmail.SelectedText = "";
             this.txtEmail.Size = new System.Drawing.Size(285, 42);
             this.txtEmail.TabIndex = 5;

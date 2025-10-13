@@ -74,29 +74,19 @@ namespace FinalProject_C_.UserControls
                 MainWindow.BTNPANEL4.Visible = false;
             }
         }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-            var query = $@"select U.UserID,U.FullName,U.Gender,U.DOB,U.Email,U.PhoneNo,U.Password,U.UserDescription,UT.TypeName,U.ImagePath from Users as U,UserType as UT where U.UserTypeID=UT.UserTypeID and U.UserID='U-0001'";
-            var DA = MainWindow.dataAccess.ExecuteQueryTable(query);
-
-            MainWindow.loginUser = DA;
-            MainWindow.ProfileButton.Text = DA.Rows[0][1].ToString();
-
-            MainWindow.SideBar.Visible = true;
-
-            MainWindow.ucMainServiceP = new MainServiceP();
-            MainWindow.ucMainServiceP.Dock = DockStyle.Fill;
-            MainWindow.MainPanel.Controls.Clear();
-            MainWindow.MainPanel.Controls.Add(MainWindow.ucMainServiceP);
-        }
-
         private void btnLabel_Click(object sender, EventArgs e)
         {
             ForgotPass forgot = new ForgotPass();
             forgot.Dock = DockStyle.Fill;
             MainWindow.MainPanel.Controls.Clear();
             MainWindow.MainPanel.Controls.Add(forgot);
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            var query = $"select UserID from Users where Email='{this.txtEmail.Text}'";
+            var DA=MainWindow.dataAccess.ExecuteQueryTable(query);
+            MessageBox.Show(DA.Rows[0][0].ToString());
         }
     }
 }

@@ -131,8 +131,11 @@ namespace FinalProject_C_.UserControls
                 MessageBox.Show("Fill All the Field First");
                 return;
             }
-
-            string ServiceTypeID = this.cmbServiceType.SelectedValue.ToString();
+            string ServiceTypeID = "";
+            if (this.cmbUserType.Text == "EMPLOYEE")
+            {
+                ServiceTypeID = this.cmbServiceType.SelectedValue.ToString();
+            }
 
             if (this.cmbUserType.Text == "USER") { ServiceTypeID = "02"; }
 
@@ -148,7 +151,7 @@ namespace FinalProject_C_.UserControls
                 }
                 else
                 {
-                    query = $@"Insert into Users values ('{this.txtUserID.Text}','{this.txtFullName.Text}','{Gender}','{this.dtpDate.Text}','{this.txtEmail.Text}','{this.txtPhoneNo.Text}','{this.txtPassword.Text}','{this.txtUserDescription.Text}','{ServiceTypeID}');";
+                    query = $@"Insert into Users values ('{this.txtUserID.Text}','{this.txtFullName.Text}','{Gender}','{this.dtpDate.Text}','{this.txtEmail.Text}','{this.txtPhoneNo.Text}','{this.txtPassword.Text}','{this.txtUserDescription.Text}','{ServiceTypeID}','');";
                 }
 
                 var validate = MainWindow.dataAccess.ExecuteDMLQuery(query);
