@@ -56,7 +56,7 @@ namespace FinalProject_C_.UserControls
         private void Clear()
         {
             this.lblBookingID.Text = "Booking ID : ";
-            this.lblServiceName.Text = "Service Name : ";
+            this.lblServiceName.Text = "Worker Name : ";
             this.lblAssignedID.Text = "Assigned ID : ";
             this.lblCategoryName.Text = "Category Name : ";
             this.lblWorkerPhone.Text = "Worker Phone : ";

@@ -60,6 +60,7 @@ namespace FinalProject_C_.UserControls
             this.lblServiceID.Text = "Service ID : ";
             this.lblServiceName.Text = "Service Name : ";
             this.lblCatagoryName.Text = "Category Name : ";
+            this.lblClientID.Text = "Client ID : ";
             this.lblEmployeID.Text = "Employee ID : ";
             this.lblAddress.Text = "Work Address : ";
             this.lblDT.Text = "Date and Time : ";
