@@ -51,7 +51,10 @@ namespace FinalProject_C_.UserControls
 
         private void btlBBBack_Click(object sender, EventArgs e)
         {
-
+            MainWindow.ucLogIn = new LogIn();
+            MainWindow.MainPanel.Controls.Clear();
+            MainWindow.MainPanel.Controls.Add(MainWindow.ucLogIn);
+            MainWindow.ucLogIn.Show();
         }
     }
 }
