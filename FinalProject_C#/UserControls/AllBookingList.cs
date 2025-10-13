@@ -66,8 +66,8 @@ namespace FinalProject_C_.UserControls
             this.lblWorkHour.Text = "Work Hour : ";
             this.lblBookingStatus.Text = "Booking Status : ";
             this.lblTotalCost.Text = "Total Cose : ";
-            this.lblRating.Text = "Rating : ";
-            this.lblUserReview.Text = "User Review : "; 
+            //this.lblRating.Text = "Rating : ";
+            //this.lblUserReview.Text = "User Review : "; 
         }
 
         private void gdvBookingsTable_DoubleClick(object sender, EventArgs e)
