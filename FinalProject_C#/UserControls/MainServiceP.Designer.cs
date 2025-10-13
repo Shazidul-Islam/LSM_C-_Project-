@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainServiceP));
             this.pnlMainPanel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnAllServices = new Guna.UI2.WinForms.Guna2Button();
             this.pnlServicesP = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlElectric = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlGardening = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlClening = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnAllS = new Guna.UI2.WinForms.Guna2Button();
             this.pnlMainPanel.SuspendLayout();
             this.pnlServicesP.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -43,7 +43,7 @@
             // 
             // pnlMainPanel
             // 
-            this.pnlMainPanel.Controls.Add(this.btnAllServices);
+            this.pnlMainPanel.Controls.Add(this.btnAllS);
             this.pnlMainPanel.Controls.Add(this.pnlServicesP);
             this.pnlMainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMainPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(75)))), ((int)(((byte)(55)))));
@@ -55,26 +55,6 @@
             this.pnlMainPanel.ShadowDecoration.Depth = 1;
             this.pnlMainPanel.Size = new System.Drawing.Size(918, 713);
             this.pnlMainPanel.TabIndex = 5;
-            // 
-            // btnAllServices
-            // 
-            this.btnAllServices.BackColor = System.Drawing.Color.Transparent;
-            this.btnAllServices.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.btnAllServices.BorderRadius = 8;
-            this.btnAllServices.BorderThickness = 1;
-            this.btnAllServices.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllServices.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAllServices.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAllServices.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAllServices.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(147)))), ((int)(((byte)(138)))));
-            this.btnAllServices.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btnAllServices.ForeColor = System.Drawing.Color.White;
-            this.btnAllServices.Location = new System.Drawing.Point(16, 12);
-            this.btnAllServices.Name = "btnAllServices";
-            this.btnAllServices.Size = new System.Drawing.Size(887, 35);
-            this.btnAllServices.TabIndex = 12;
-            this.btnAllServices.Text = "All Services";
-            this.btnAllServices.Click += new System.EventHandler(this.btnAllServices_Click);
             // 
             // pnlServicesP
             // 
@@ -125,6 +105,24 @@
             this.pnlClening.TabIndex = 0;
             this.pnlClening.Click += new System.EventHandler(this.pnlClening_Click);
             // 
+            // btnAllS
+            // 
+            this.btnAllS.BackColor = System.Drawing.Color.Transparent;
+            this.btnAllS.BorderRadius = 8;
+            this.btnAllS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAllS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAllS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAllS.FillColor = System.Drawing.Color.Green;
+            this.btnAllS.Font = new System.Drawing.Font("Arial", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.btnAllS.ForeColor = System.Drawing.Color.White;
+            this.btnAllS.Location = new System.Drawing.Point(16, 12);
+            this.btnAllS.Name = "btnAllS";
+            this.btnAllS.Size = new System.Drawing.Size(180, 45);
+            this.btnAllS.TabIndex = 12;
+            this.btnAllS.Text = "All SERVICE";
+            this.btnAllS.Click += new System.EventHandler(this.btnAllS_Click);
+            // 
             // MainServiceP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +145,6 @@
         private Guna.UI2.WinForms.Guna2Panel pnlGardening;
         private Guna.UI2.WinForms.Guna2Panel pnlClening;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Button btnAllServices;
+        private Guna.UI2.WinForms.Guna2Button btnAllS;
     }
 }
